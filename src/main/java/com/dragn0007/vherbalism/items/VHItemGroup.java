@@ -1,6 +1,7 @@
 package com.dragn0007.vherbalism.items;
 
 import com.dragn0007.vherbalism.Herbalism;
+import com.dragn0007.vherbalism.blocks.VHBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +19,16 @@ public class VHItemGroup {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(VHItems.ALDER_BARK.get())).title(Component.translatable("itemGroup.vherbalism"))
                     .displayItems((displayParameters, output) -> {
 
+                        output.accept(VHItems.ALDER_BARK.get());
+
+                        output.accept(VHBlocks.ALDER_LOG.get());
+                        output.accept(VHBlocks.ALDER_LEAVES.get());
+                        output.accept(VHBlocks.ALDER_PLANKS.get());
+                        output.accept(VHBlocks.ALDER_SAPLING.get());
+                        output.accept(VHBlocks.ALDER_SLAB.get());
+                        output.accept(VHBlocks.ALDER_STAIRS.get());
+                        output.accept(VHBlocks.ALDER_FENCE.get());
+                        output.accept(VHBlocks.ALDER_FENCE_GATE.get());
 
                     }).build());
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vherbalism:block/alder_slab"
+    },
+    "type=double": {
+      "model": "vherbalism:block/alder_planks"
+    },
+    "type=top": {
+      "model": "vherbalism:block/alder_slab_top"
+    }
+  }
+}

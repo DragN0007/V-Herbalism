@@ -19,6 +19,8 @@ public class VHBlockstateProvider extends BlockStateProvider {
         
         logBlock(VHBlocks.ALDER_LOG.get());
         blockWithItem(VHBlocks.ALDER_PLANKS);
+        simpleBlockWithItem(VHBlocks.ALDER_LEAVES.get(), models().cubeAll(VHBlocks.ALDER_LEAVES.getId().getPath(),
+                blockTexture(VHBlocks.ALDER_LEAVES.get())).renderType("cutout"));
         stairsBlock((StairBlock) VHBlocks.ALDER_STAIRS.get(), blockTexture(VHBlocks.ALDER_PLANKS.get()));
         simpleBlockItem(VHBlocks.ALDER_STAIRS.get(), models().stairs(VHBlocks.ALDER_STAIRS.getId().getPath(),
                 blockTexture(VHBlocks.ALDER_PLANKS.get()), blockTexture(VHBlocks.ALDER_PLANKS.get()), blockTexture(VHBlocks.ALDER_PLANKS.get())));
@@ -26,7 +28,7 @@ public class VHBlockstateProvider extends BlockStateProvider {
         simpleBlockItem(VHBlocks.ALDER_SLAB.get(), models().slab(VHBlocks.ALDER_SLAB.getId().getPath(),
                 blockTexture(VHBlocks.ALDER_PLANKS.get()), blockTexture(VHBlocks.ALDER_PLANKS.get()), blockTexture(VHBlocks.ALDER_PLANKS.get())));
         simpleBlock(VHBlocks.ALDER_SAPLING.get(), models().cross(VHBlocks.ALDER_SAPLING.getId().getPath(),
-                blockTexture(VHBlocks.ALDER_SAPLING.get())));
+                blockTexture(VHBlocks.ALDER_SAPLING.get())).renderType("cutout"));
         fenceBlock((FenceBlock) VHBlocks.ALDER_FENCE.get(), blockTexture(VHBlocks.ALDER_PLANKS.get()));
         simpleBlockItem(VHBlocks.ALDER_FENCE.get(), models().fenceInventory(VHBlocks.ALDER_FENCE.getId().getPath(),
                 blockTexture(VHBlocks.ALDER_PLANKS.get())));

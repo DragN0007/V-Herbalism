@@ -25,5 +25,4 @@ public class Herbalism
 
         System.out.println("[V-Herbalism] Registered V-Herbalism.");
     }
-
 }

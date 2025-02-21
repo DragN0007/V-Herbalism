@@ -1,6 +1,7 @@
 package com.dragn0007.vherbalism.datagen;
 
 import com.dragn0007.vherbalism.Herbalism;
+import com.dragn0007.vherbalism.datagen.biglooter.VHLootTableProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -20,8 +21,12 @@ public class JsonDataGenerator {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeClient(), new VHItemModelProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeServer(), new VHWorldGenerator(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new VHRecipeMaker(packOutput));
+        generator.addProvider(event.includeServer(), VHLootTableProvider.create(packOutput));
+
+        generator.addProvider(event.includeClient(), new VHBlockstateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new VHItemModelProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new VHWorldGenerator(packOutput, lookupProvider));
     }
 }

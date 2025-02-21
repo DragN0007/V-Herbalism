@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "vherbalism:alder_planks",
+    "vherbalism:alder_log",
+    "vherbalism:alder_stairs",
+    "vherbalism:alder_slab",
+    "vherbalism:alder_fence",
+    "vherbalism:alder_fence_gate"
+  ]
+}

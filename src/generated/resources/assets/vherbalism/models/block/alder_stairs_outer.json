@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "vherbalism:block/alder_planks",
+    "side": "vherbalism:block/alder_planks",
+    "top": "vherbalism:block/alder_planks"
+  }
+}
