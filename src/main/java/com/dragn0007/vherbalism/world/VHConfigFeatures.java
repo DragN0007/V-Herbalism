@@ -38,7 +38,7 @@ public class VHConfigFeatures {
 
         register(context, BINDWEED, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.BINDWEED.get().defaultBlockState().setValue(HerbalismCropBlock.AGE, 3))))));
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_BINDWEED.get())))));
 
     }
     

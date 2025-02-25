@@ -5,6 +5,7 @@ import com.dragn0007.vherbalism.blocks.crop.BindweedCrop;
 import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.world.tree.AlderTreeGrower;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -24,6 +25,8 @@ public class VHBlocks {
 
     public static final RegistryObject<Block> BINDWEED = registerBlockWithoutItem("bindweed",
             () -> new BindweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_BINDWEED = registerBlockWithoutItem("wild_bindweed",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
     public static final RegistryObject<RotatedPillarBlock> ALDER_LOG = registerBlock("alder_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).noLootTable()));

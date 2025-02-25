@@ -5,11 +5,10 @@ import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.crop.HerbalismCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.client.model.generators.ConfiguredModel;
-import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -43,7 +42,8 @@ public class VHBlockstateProvider extends BlockStateProvider {
                 blockTexture(VHBlocks.ALDER_PLANKS.get())));
 
         createCrop((CropBlock) VHBlocks.BINDWEED.get(), "bindweed_stage_", "bindweed_stage_");
-
+        simpleBlock(VHBlocks.WILD_BINDWEED.get(), models().cross(VHBlocks.WILD_BINDWEED.getId().getPath(),
+                wildPlantTexture("bindweed_stage_3")).renderType("cutout"));
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
@@ -65,5 +65,9 @@ public class VHBlockstateProvider extends BlockStateProvider {
                 new ResourceLocation(Herbalism.MODID, "block/" + textureName + state.getValue(((HerbalismCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
+    }
+
+    public ResourceLocation wildPlantTexture(String getTextureName) {
+        return new ResourceLocation(Herbalism.MODID,"block/" + getTextureName);
     }
 }

@@ -25,11 +25,6 @@ public class HerbalismCropBlock extends CropBlock {
     }
 
     @Override
-    public boolean mayPlaceOn(BlockState blockState, BlockGetter p_52303_, BlockPos p_52304_) {
-        return blockState.is(BlockTags.DIRT);
-    }
-
-    @Override
     public BlockState getPlant(BlockGetter level, BlockPos pos) {
         return null;
     }

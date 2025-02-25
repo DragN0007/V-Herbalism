@@ -8,10 +8,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "vherbalism:bindweed",
-              "Properties": {
-                "age": "3"
-              }
+              "Name": "vherbalism:wild_bindweed"
             }
           }
         }

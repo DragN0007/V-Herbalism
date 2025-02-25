@@ -28,7 +28,7 @@ public class VHPlacedFeatures {
                         VHBlocks.ALDER_SAPLING.get()));
 
         register(context, BINDWEED_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BINDWEED),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(24),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
     }
