@@ -23,6 +23,7 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.ALDER_BARK);
         simpleBlockItem(VHBlocks.ALDER_SAPLING);
         parentBlockItem(VHBlocks.ALDER_LOG);
+        simpleItem(VHItems.BINDWEED_BUNDLE);
     }
 
     public ItemModelBuilder simpleItem(RegistryObject<Item> item) {

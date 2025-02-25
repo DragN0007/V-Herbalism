@@ -30,6 +30,8 @@ public class VHItemGroup {
                         output.accept(VHBlocks.ALDER_FENCE.get());
                         output.accept(VHBlocks.ALDER_FENCE_GATE.get());
 
+                        output.accept(VHItems.BINDWEED_BUNDLE.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-21T01:05:50.017294	Block States: vherbalism
+// 1.20.1	2025-02-25T02:34:34.4181518	Block States: vherbalism
 ff2a98483594ac56b3b253870cb9440db2e0215e assets/vherbalism/blockstates/alder_fence.json
 091021aa238b3c92292593f4f904f3c5f7866da6 assets/vherbalism/blockstates/alder_fence_gate.json
 0ea8ae8af491bc81a1e6faf82a00de8579ae1765 assets/vherbalism/blockstates/alder_leaves.json
@@ -7,6 +7,7 @@ c404c1d146b56b9b95af0d7819c211738f6d6532 assets/vherbalism/blockstates/alder_pla
 69711760aae2ef14efa3c6da41dc3bb5cff4502f assets/vherbalism/blockstates/alder_sapling.json
 b7371f5026b1c04a3f37dffd91966ef759962d89 assets/vherbalism/blockstates/alder_slab.json
 540f58b9c4d6a77f91778659f44a40c46b36da66 assets/vherbalism/blockstates/alder_stairs.json
+c52afcea34d9915f1056dc8148942ecf0f7c2d84 assets/vherbalism/blockstates/bindweed.json
 16ef5db1637f42411b0be019943e397444b84611 assets/vherbalism/models/block/alder_fence.json
 8f6731972d69e84a271ea26632ae4b4abab88a83 assets/vherbalism/models/block/alder_fence_gate.json
 c52a56c3c471581058ddbeb5bb6eaaad81efb3f9 assets/vherbalism/models/block/alder_fence_gate_open.json
@@ -24,6 +25,10 @@ fc303372022bcd99b38aa15b2d3f989ba4444fec assets/vherbalism/models/block/alder_sl
 3eb9aefed4d564ad34ccc8e11704ec9ac12fcd39 assets/vherbalism/models/block/alder_stairs.json
 64453b56a722454e60a6e6dc7ded2693abac7d88 assets/vherbalism/models/block/alder_stairs_inner.json
 6211c50c9835c28736227917c63da0019b2382d8 assets/vherbalism/models/block/alder_stairs_outer.json
+dcefa3bafe74445c98b37ba57b7a9849ca889107 assets/vherbalism/models/block/bindweed_stage_0.json
+dd65ea33dc8d9a63f0832acf23f997a9aae25e57 assets/vherbalism/models/block/bindweed_stage_1.json
+cc28f8723c3136b413951f21d2f6e779c5ab0e11 assets/vherbalism/models/block/bindweed_stage_2.json
+bf0aa22a86a3f9e2b5ec1811912469f05148156b assets/vherbalism/models/block/bindweed_stage_3.json
 6a3e4fd0763148f33dfb00186eda9d4a65745200 assets/vherbalism/models/item/alder_fence.json
 6d166edb6eb2548264d34e67fd3a78806e6a15df assets/vherbalism/models/item/alder_fence_gate.json
 d14e331e432655e5321b6c32f3c1d24a9325ba47 assets/vherbalism/models/item/alder_leaves.json

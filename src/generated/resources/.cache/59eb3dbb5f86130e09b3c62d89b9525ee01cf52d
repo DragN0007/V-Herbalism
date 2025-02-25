@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-21T00:59:58.3700786	Loot Tables
+// 1.20.1	2025-02-25T02:34:34.4171543	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -6,3 +6,4 @@ caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alde
 7d9ef358dacfb1de7874431e549d8c5a42b1348a data/vherbalism/loot_tables/blocks/alder_sapling.json
 693b59ea07a5396baf3c2306a2d4d3c2bd3c8fd1 data/vherbalism/loot_tables/blocks/alder_slab.json
 567e677d8d92e1af357ef1484b64cfc64230dc96 data/vherbalism/loot_tables/blocks/alder_stairs.json
+b857c9cfd21ea17556d9cdeb279e6bb3d615cd40 data/vherbalism/loot_tables/blocks/bindweed.json

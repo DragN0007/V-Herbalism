@@ -1,6 +1,7 @@
 package com.dragn0007.vherbalism.blocks;
 
 import com.dragn0007.vherbalism.Herbalism;
+import com.dragn0007.vherbalism.blocks.crop.BindweedCrop;
 import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.world.tree.AlderTreeGrower;
 import net.minecraft.sounds.SoundEvents;
@@ -20,6 +21,9 @@ import static net.minecraft.world.level.block.Blocks.OAK_PLANKS;
 public class VHBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, Herbalism.MODID);
+
+    public static final RegistryObject<Block> BINDWEED = registerBlockWithoutItem("bindweed",
+            () -> new BindweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
 
     public static final RegistryObject<RotatedPillarBlock> ALDER_LOG = registerBlock("alder_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).noLootTable()));
@@ -46,6 +50,9 @@ public class VHBlocks {
     public static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         VHItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties()));
+    }
+    protected static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
+        return BLOCKS.register(name, block);
     }
 
     public static void register(IEventBus eventBus) {

@@ -11,14 +11,14 @@ import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
 public class VHPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> ALDER_PLACED = registerKey("alder_placed");
+    public static final ResourceKey<PlacedFeature> BINDWEED_PLACED = registerKey("bindweed_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -26,6 +26,10 @@ public class VHPlacedFeatures {
         register(context, ALDER_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.ALDER),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
                         VHBlocks.ALDER_SAPLING.get()));
+
+        register(context, BINDWEED_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BINDWEED),
+                List.of(RarityFilter.onAverageOnceEvery(16),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
     }
 
