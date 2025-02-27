@@ -13,9 +13,12 @@ import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import javax.xml.parsers.SAXParserFactory;
+
 public class BiomeHitter {
 
     public static final ResourceKey<BiomeModifier> ADD_ALDER = registerKey("add_alder");
+    public static final ResourceKey<BiomeModifier> ADD_SAPPY_BIRCH = registerKey("add_sappy_birch");
     public static final ResourceKey<BiomeModifier> ADD_BINDWEED_FOREST = registerKey("add_bindweed_forest");
     public static final ResourceKey<BiomeModifier> ADD_BINDWEED_PLAINS = registerKey("add_bindweed_plains");
     public static final ResourceKey<BiomeModifier> ADD_BINDWEED_RIVER = registerKey("add_bindweed_river");
@@ -44,6 +47,10 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BINDWEED_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(ADD_SAPPY_BIRCH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.SAPPY_BIRCH_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 
     public static ResourceKey<BiomeModifier> registerKey(String name) {

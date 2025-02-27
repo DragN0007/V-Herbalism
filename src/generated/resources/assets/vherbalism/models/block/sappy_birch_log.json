@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "vherbalism:block/sappy_birch_log_top",
+    "side": "vherbalism:block/sappy_birch_log"
+  }
+}

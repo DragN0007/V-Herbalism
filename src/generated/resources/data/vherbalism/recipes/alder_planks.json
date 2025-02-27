@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:alder_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "vherbalism:alder_planks"
+  }
+}

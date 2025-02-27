@@ -1,19 +1,22 @@
 package com.dragn0007.vherbalism.items.custom;
 
+import com.dragn0007.vherbalism.items.custom.base.HerbalItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class AlderTreeBarkItem extends Item {
+public class AlderTreeBarkItem extends HerbalItem {
 
     public AlderTreeBarkItem(Properties properties) {
         super(properties);
+    }
+
+    public UseAnim getUseAnimation(ItemStack p_42931_) {
+        return UseAnim.EAT;
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.dragn0007.vherbalism.datagen;
 
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
+import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
 import com.dragn0007.vherbalism.blocks.crop.HerbalismCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -22,7 +23,7 @@ public class VHBlockstateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         
-        logBlock(VHBlocks.ALDER_LOG.get());
+        logBlock(VHBlocksNoDatagenLoot.ALDER_LOG.get());
         blockWithItem(VHBlocks.ALDER_PLANKS);
         simpleBlockWithItem(VHBlocks.ALDER_LEAVES.get(), models().cubeAll(VHBlocks.ALDER_LEAVES.getId().getPath(),
                 blockTexture(VHBlocks.ALDER_LEAVES.get())).renderType("cutout"));
@@ -40,6 +41,10 @@ public class VHBlockstateProvider extends BlockStateProvider {
         fenceGateBlock((FenceGateBlock) VHBlocks.ALDER_FENCE_GATE.get(), blockTexture(VHBlocks.ALDER_PLANKS.get()));
         simpleBlockItem(VHBlocks.ALDER_FENCE_GATE.get(), models().fenceGate(VHBlocks.ALDER_FENCE_GATE.getId().getPath(),
                 blockTexture(VHBlocks.ALDER_PLANKS.get())));
+
+        logBlock(VHBlocksNoDatagenLoot.SAPPY_BIRCH_LOG.get());
+        simpleBlock(VHBlocks.SAPPY_BIRCH_SAPLING.get(), models().cross(VHBlocks.SAPPY_BIRCH_SAPLING.getId().getPath(),
+                blockTexture(VHBlocks.SAPPY_BIRCH_SAPLING.get())).renderType("cutout"));
 
         createCrop((CropBlock) VHBlocks.BINDWEED.get(), "bindweed_stage_", "bindweed_stage_");
         simpleBlock(VHBlocks.WILD_BINDWEED.get(), models().cross(VHBlocks.WILD_BINDWEED.getId().getPath(),

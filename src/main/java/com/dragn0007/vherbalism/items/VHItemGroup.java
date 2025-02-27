@@ -2,6 +2,7 @@ package com.dragn0007.vherbalism.items;
 
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
+import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,7 +22,7 @@ public class VHItemGroup {
 
                         output.accept(VHItems.ALDER_BARK.get());
 
-                        output.accept(VHBlocks.ALDER_LOG.get());
+                        output.accept(VHBlocksNoDatagenLoot.ALDER_LOG.get());
                         output.accept(VHBlocks.ALDER_LEAVES.get());
                         output.accept(VHBlocks.ALDER_PLANKS.get());
                         output.accept(VHBlocks.ALDER_SAPLING.get());
@@ -29,6 +30,10 @@ public class VHItemGroup {
                         output.accept(VHBlocks.ALDER_STAIRS.get());
                         output.accept(VHBlocks.ALDER_FENCE.get());
                         output.accept(VHBlocks.ALDER_FENCE_GATE.get());
+
+                        output.accept(VHBlocksNoDatagenLoot.SAPPY_BIRCH_LOG.get());
+                        output.accept(VHBlocks.SAPPY_BIRCH_SAPLING.get());
+                        output.accept(VHItems.BIRCH_SAP.get());
 
                         output.accept(VHItems.BINDWEED_BUNDLE.get());
 

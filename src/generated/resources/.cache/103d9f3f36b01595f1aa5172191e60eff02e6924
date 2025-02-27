@@ -1,9 +1,12 @@
-// 1.20.1	2025-02-25T03:41:49.6757153	Registries
+// 1.20.1	2025-02-27T06:05:56.3573517	Registries
 10531dee53da2f1fba318d89cfb77a867c9e6e80 data/vherbalism/forge/biome_modifier/add_alder.json
 56cc15cb9a4e0893f2ef5f31b3b0208415f9b033 data/vherbalism/forge/biome_modifier/add_bindweed_forest.json
 4418d418066bc5edc220756b08bcddc0c921c032 data/vherbalism/forge/biome_modifier/add_bindweed_plains.json
 48eacf3873c19be56a4ef68b6f0a74ca8381780e data/vherbalism/forge/biome_modifier/add_bindweed_river.json
-5ca056fd9ef9c354f9140750fea9ea942c451a3e data/vherbalism/worldgen/configured_feature/alder.json
+0d07b4fac71f2a10285955d65115a15a569c3128 data/vherbalism/forge/biome_modifier/add_sappy_birch.json
+4b1385d3b480b9ca643b09bb9e9726543a29362b data/vherbalism/worldgen/configured_feature/alder.json
 ed84880e39351f58e676a5b6639504e9f2fa3ea8 data/vherbalism/worldgen/configured_feature/bindweed.json
+c22b966b833d70975ec2964a68db538b0b440ecc data/vherbalism/worldgen/configured_feature/sappy_birch.json
 3600b40bde28f95b7a48828a2b0b893587a5bf78 data/vherbalism/worldgen/placed_feature/alder_placed.json
-261c424deb49ed644186b1b1af43da17fd6faff5 data/vherbalism/worldgen/placed_feature/bindweed_placed.json
+4897ea7921830cefb101e97525ebbc195e85bc19 data/vherbalism/worldgen/placed_feature/bindweed_placed.json
+9002b5c091861f94bf81ef4ad11f61c0053cea12 data/vherbalism/worldgen/placed_feature/sappy_birch_placed.json

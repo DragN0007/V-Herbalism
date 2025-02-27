@@ -1,6 +1,8 @@
 {
   "itemGroup.vherbalism": "V-Herbalism",
 
+  "item.vherbalism.birch_sap": "Birch Sap",
+  "tooltip.vherbalism.birch_sap.tooltip": "Helps soothe and treat Yellowcough when eaten.",
 
   "item.vherbalism.bindweed_bundle": "Bindweed Bundle",
   "block.vherbalism.bindweed": "Bindweed",
@@ -17,5 +19,8 @@
   "block.vherbalism.alder_stairs": "Alder Stairs",
   "block.vherbalism.alder_slab": "Alder Slab",
   "block.vherbalism.alder_fence": "Alder Fence",
-  "block.vherbalism.alder_fence_gate": "Alder Fence Gate"
+  "block.vherbalism.alder_fence_gate": "Alder Fence Gate",
+
+  "block.vherbalism.sappy_birch_log": "Sappy Birch Log",
+  "block.vherbalism.sappy_birch_sapling": "Sappy Birch Sapling"
 }

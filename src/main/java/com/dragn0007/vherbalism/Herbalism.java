@@ -1,6 +1,7 @@
 package com.dragn0007.vherbalism;
 
 import com.dragn0007.vherbalism.blocks.VHBlocks;
+import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
 import com.dragn0007.vherbalism.items.VHItemGroup;
 import com.dragn0007.vherbalism.items.VHItems;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +21,7 @@ public class Herbalism
         VHItems.register(eventBus);
         VHItemGroup.register(eventBus);
         VHBlocks.register(eventBus);
+        VHBlocksNoDatagenLoot.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
