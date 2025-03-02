@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class SappyBirchTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
-    protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+    public ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
         return VHConfigFeatures.SAPPY_BIRCH;
     }
 }

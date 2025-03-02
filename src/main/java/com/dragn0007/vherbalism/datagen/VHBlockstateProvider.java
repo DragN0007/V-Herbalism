@@ -3,13 +3,15 @@ package com.dragn0007.vherbalism.datagen;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
-import com.dragn0007.vherbalism.blocks.crop.HerbalismCropBlock;
+import com.dragn0007.vherbalism.blocks.crop.base.HerbalismBushBlock;
+import com.dragn0007.vherbalism.blocks.crop.base.HerbalismCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.client.model.generators.*;
+import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -21,7 +23,7 @@ public class VHBlockstateProvider extends BlockStateProvider {
         super(output, Herbalism.MODID, exFileHelper);
     }
     @Override
-    protected void registerStatesAndModels() {
+    public void registerStatesAndModels() {
         
         logBlock(VHBlocksNoDatagenLoot.ALDER_LOG.get());
         blockWithItem(VHBlocks.ALDER_PLANKS);
@@ -51,11 +53,11 @@ public class VHBlockstateProvider extends BlockStateProvider {
                 wildPlantTexture("bindweed_stage_3")).renderType("cutout"));
     }
 
-    private void blockItem(RegistryObject<Block> blockRegistryObject) {
+    public void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(Herbalism.MODID +
                 ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+    public void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
@@ -64,7 +66,7 @@ public class VHBlockstateProvider extends BlockStateProvider {
 
         getVariantBuilder(block).forAllStates(function);
     }
-    private ConfiguredModel[] cropStates(BlockState state, CropBlock block, String modelName, String textureName) {
+    public ConfiguredModel[] cropStates(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((HerbalismCropBlock) block).getAgeProperty()),
                 new ResourceLocation(Herbalism.MODID, "block/" + textureName + state.getValue(((HerbalismCropBlock) block).getAgeProperty()))).renderType("cutout"));

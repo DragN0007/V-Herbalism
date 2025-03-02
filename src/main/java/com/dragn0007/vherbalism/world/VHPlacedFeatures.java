@@ -10,7 +10,6 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 
@@ -21,6 +20,7 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ALDER_PLACED = registerKey("alder_placed");
     public static final ResourceKey<PlacedFeature> SAPPY_BIRCH_PLACED = registerKey("sappy_birch_placed");
     public static final ResourceKey<PlacedFeature> BINDWEED_PLACED = registerKey("bindweed_placed");
+    public static final ResourceKey<PlacedFeature> BLACKBERRY_BUSH_PLACED = registerKey("blackberry_bush_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -34,6 +34,10 @@ public class VHPlacedFeatures {
                         VHBlocks.SAPPY_BIRCH_SAPLING.get()));
 
         register(context, BINDWEED_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BINDWEED),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, BLACKBERRY_BUSH_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BLACKBERRY_BUSH),
                 List.of(RarityFilter.onAverageOnceEvery(24),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 

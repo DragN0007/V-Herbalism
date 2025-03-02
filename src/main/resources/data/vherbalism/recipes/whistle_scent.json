@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "visionssmp:paw"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:whistle_scent",
+    "count": 8
+  }
+}

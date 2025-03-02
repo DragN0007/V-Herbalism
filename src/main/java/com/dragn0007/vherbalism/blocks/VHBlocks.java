@@ -2,6 +2,8 @@ package com.dragn0007.vherbalism.blocks;
 
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.crop.BindweedCrop;
+import com.dragn0007.vherbalism.blocks.crop.BlackberryBush;
+import com.dragn0007.vherbalism.blocks.crop.Scent;
 import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.world.tree.AlderTreeGrower;
 import com.dragn0007.vherbalism.world.tree.SappyBirchTreeGrower;
@@ -23,6 +25,9 @@ import static net.minecraft.world.level.block.Blocks.OAK_PLANKS;
 public class VHBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, Herbalism.MODID);
+
+    public static final RegistryObject<Block> BLACKBERRY_BUSH = registerBlockWithoutItem("blackberry_bush",
+            () -> new BlackberryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH)));
 
     public static final RegistryObject<Block> BINDWEED = registerBlockWithoutItem("bindweed",
             () -> new BindweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
@@ -47,6 +52,14 @@ public class VHBlocks {
     public static final RegistryObject<Block> ALDER_FENCE_GATE = registerBlock("alder_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(OAK_PLANKS), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
+    public static final RegistryObject<Block> KITTYPET_SCENT = registerBlock("kittypet_scent", Scent::new);
+    public static final RegistryObject<Block> LONER_SCENT = registerBlock("loner_scent", Scent::new);
+    public static final RegistryObject<Block> MEDIATOR_SCENT = registerBlock("mediator_scent", Scent::new);
+    public static final RegistryObject<Block> ROGUE_SCENT = registerBlock("rogue_scent", Scent::new);
+    public static final RegistryObject<Block> SHARP_SCENT = registerBlock("sharp_scent", Scent::new);
+    public static final RegistryObject<Block> WHARF_SCENT = registerBlock("wharf_scent", Scent::new);
+    public static final RegistryObject<Block> WHISTLE_SCENT = registerBlock("whistle_scent", Scent::new);
+
     public static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
@@ -56,7 +69,7 @@ public class VHBlocks {
         VHItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties()));
     }
-    protected static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
+    public static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
         return BLOCKS.register(name, block);
     }
 

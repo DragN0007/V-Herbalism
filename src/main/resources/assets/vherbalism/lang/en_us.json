@@ -9,6 +9,13 @@
   "block.vherbalism.wild_bindweed": "Wild Bindweed",
   "tooltip.vherbalism.bindweed.tooltip": "Helps promote healing in broken bones when placed within a splint.",
 
+  "item.vherbalism.blackberry": "Blackberry",
+  "item.vherbalism.blackberry_leaves": "Blackberry Leaves",
+  "item.vherbalism.blackberry_leaf_poultice": "Blackberry Leaf Poultice",
+  "block.vherbalism.blackberry_bush": "Blackberry Bush",
+  "tooltip.vherbalism.blackberry_leaves.tooltip": "Can be mashed into Blackberry Leaf Poultice.",
+  "tooltip.vherbalism.blackberry_poultice.tooltip": "Helps soothe the pain of bee stings when applied to the affected area.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 
@@ -22,5 +29,13 @@
   "block.vherbalism.alder_fence_gate": "Alder Fence Gate",
 
   "block.vherbalism.sappy_birch_log": "Sappy Birch Log",
-  "block.vherbalism.sappy_birch_sapling": "Sappy Birch Sapling"
+  "block.vherbalism.sappy_birch_sapling": "Sappy Birch Sapling",
+
+  "block.vherbalism.kittypet_scent": "Kittypet Scent",
+  "block.vherbalism.loner_scent": "Loner Scent",
+  "block.vherbalism.mediator_scent": "Mediator Scent",
+  "block.vherbalism.rogue_scent": "Rogue Scent",
+  "block.vherbalism.sharp_scent": "Sharp Scent",
+  "block.vherbalism.wharf_scent": "Wharf Scent",
+  "block.vherbalism.whistle_scent": "Whistle Scent"
 }

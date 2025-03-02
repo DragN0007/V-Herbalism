@@ -1,0 +1,6 @@
+{
+  "parent": "vherbalism:block/scent",
+  "textures": {
+    "type": "vherbalism:block/loner_scent"
+  }
+}

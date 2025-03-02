@@ -1,0 +1,6 @@
+{
+  "parent": "vherbalism:block/scent",
+  "textures": {
+    "type": "vherbalism:block/rogue_scent"
+  }
+}

@@ -36,6 +36,17 @@ public class VHItemGroup {
                         output.accept(VHItems.BIRCH_SAP.get());
 
                         output.accept(VHItems.BINDWEED_BUNDLE.get());
+                        output.accept(VHItems.BLACKBERRY.get());
+                        output.accept(VHItems.BLACKBERRY_LEAVES.get());
+                        output.accept(VHItems.BLACKBERRY_LEAF_POULTICE.get());
+
+                        output.accept(VHBlocks.KITTYPET_SCENT.get());
+                        output.accept(VHBlocks.LONER_SCENT.get());
+                        output.accept(VHBlocks.MEDIATOR_SCENT.get());
+                        output.accept(VHBlocks.ROGUE_SCENT.get());
+                        output.accept(VHBlocks.SHARP_SCENT.get());
+                        output.accept(VHBlocks.WHARF_SCENT.get());
+                        output.accept(VHBlocks.WHISTLE_SCENT.get());
 
                     }).build());
 

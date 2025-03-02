@@ -2,6 +2,7 @@ package com.dragn0007.vherbalism.datagen;
 
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
+import com.dragn0007.vherbalism.items.VHItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -18,6 +19,14 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
 
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.BLACKBERRY_LEAF_POULTICE.get())
+                .requires(VHItems.BLACKBERRY_LEAVES.get())
+                .requires(VHItems.BLACKBERRY_LEAVES.get())
+                .unlockedBy("has_blackberry_leaves", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.BLACKBERRY_LEAVES.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHBlocks.ALDER_PLANKS.get(), 4)
                 .requires(VHBlocksNoDatagenLoot.ALDER_LOG.get())

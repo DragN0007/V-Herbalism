@@ -47,7 +47,7 @@ public class ForgeEvent {
             }
         }
     }
-    private static Property<Integer> getCropProperty(BlockState state, String propertyName) {
+    public static Property<Integer> getCropProperty(BlockState state, String propertyName) {
         Block block = state.getBlock();
         if (block instanceof CropBlock cropBlock) {
             for (Property<?> prop : state.getProperties()) {
@@ -58,7 +58,7 @@ public class ForgeEvent {
         }
         return null;
     }
-    private static int getMaxAge(Block block) {
+    public static int getMaxAge(Block block) {
         if (block instanceof CropBlock cropBlock) {
             return cropBlock.getMaxAge();
         }

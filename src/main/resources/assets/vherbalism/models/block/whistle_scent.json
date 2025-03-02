@@ -1,0 +1,6 @@
+{
+  "parent": "vherbalism:block/scent",
+  "textures": {
+    "type": "vherbalism:block/whistle_scent"
+  }
+}
