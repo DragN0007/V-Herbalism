@@ -2,14 +2,17 @@ package com.dragn0007.vherbalism.blocks.crop;
 
 import com.dragn0007.vherbalism.util.HerbalismCommonConfig;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -20,51 +23,61 @@ public class Scent extends Block {
 
     public Scent() {
         super(Properties.of().sound(SoundType.EMPTY).noLootTable().instabreak().pushReaction(PushReaction.DESTROY).noOcclusion().noCollission().randomTicks());
+        this.registerDefaultState(this.stateDefinition.any().setValue(this.getDissipateTimeProperty(), 0));
     }
-
-    public final RandomSource random = RandomSource.create();
-    public int dissipateTime = this.random.nextInt(48000) + 24000;
 
     public VoxelShape getShape(BlockState p_152917_, BlockGetter p_152918_, BlockPos p_152919_, CollisionContext p_152920_) {
         return SHAPE;
     }
 
-    @Override
-    public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
-        level.scheduleTick(pos, this, dissipateTime);
+    public static final IntegerProperty DISSIPATE_TIME = IntegerProperty.create("dissipate_time", 0, 13);
+
+    protected IntegerProperty getDissipateTimeProperty() {
+        return DISSIPATE_TIME;
     }
 
-    @Override
+    public int getMaxDissipateTime() {
+        return 12;
+    }
+
+    public int getDissipateTime(BlockState state) {
+        return state.getValue(this.getDissipateTimeProperty());
+    }
+
+    public BlockState getStateForDissipateTime(int i) {
+        return this.defaultBlockState().setValue(this.getDissipateTimeProperty(), Integer.valueOf(i));
+    }
+
     public boolean isRandomlyTicking(BlockState state) {
         return true;
     }
 
-    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource source) {
-        this.tick(state, level, pos, source);
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(DISSIPATE_TIME);
     }
 
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource source) {
 
-        --dissipateTime;
-        level.scheduleTick(pos, this, Mth.nextInt(source, 40, 40));
+        int dissipateTime = this.getDissipateTime(state);
+
+        if (dissipateTime <= this.getMaxDissipateTime() && level.getRandom().nextDouble() < 0.85) {
+            BlockState newState = this.getStateForDissipateTime(dissipateTime + 1);
+            level.setBlockAndUpdate(pos, newState);
+        }
+
+        if (dissipateTime >= this.getMaxDissipateTime()) {
+            if (HerbalismCommonConfig.DEBUG_LOGS.get()) {
+                System.out.println("[V-Herbalism DEBUG] Dissipated scent at " + pos + ", at dissipate time " + dissipateTime);
+            }
+            level.removeBlock(pos, false);
+        }
 
         if (level.isRaining() && level.getRandom().nextDouble() < HerbalismCommonConfig.SCENT_WASH_CHANCE.get()) {
             if (HerbalismCommonConfig.DEBUG_LOGS.get()) {
                 System.out.println("[V-Herbalism DEBUG] Washed away scent at " + pos + " due to rain.");
             }
             level.removeBlock(pos, false);
-        }
-
-        if (--dissipateTime <= 0) {
-            if (HerbalismCommonConfig.DEBUG_LOGS.get()) {
-                System.out.println("[V-Herbalism DEBUG] Dissipated scent at " + pos + ", at tick time " + dissipateTime);
-            }
-            level.removeBlock(pos, false);
-            dissipateTime = this.random.nextInt(48000) + 24000;
-            if (HerbalismCommonConfig.DEBUG_LOGS.get()) {
-                System.out.println("[V-Herbalism DEBUG] Reset tick time to " + dissipateTime);
-            }
         }
     }
 

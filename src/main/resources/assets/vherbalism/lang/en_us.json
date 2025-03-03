@@ -9,6 +9,11 @@
   "block.vherbalism.wild_bindweed": "Wild Bindweed",
   "tooltip.vherbalism.bindweed.tooltip": "Helps promote healing in broken bones when placed within a splint.",
 
+  "item.vherbalism.borage": "Borage Flower",
+  "block.vherbalism.borage": "Borage",
+  "block.vherbalism.wild_borage": "Wild Borage",
+  "tooltip.vherbalism.borage.tooltip": "Dampens fevers, helps with stomach pain and tight chests when eaten.",
+
   "item.vherbalism.blackberry": "Blackberry",
   "item.vherbalism.blackberry_leaves": "Blackberry Leaves",
   "item.vherbalism.blackberry_leaf_poultice": "Blackberry Leaf Poultice",

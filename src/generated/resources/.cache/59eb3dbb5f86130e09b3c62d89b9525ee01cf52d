@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-02T00:27:28.6164713	Loot Tables
+// 1.20.1	2025-03-03T04:22:46.3303498	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -8,5 +8,7 @@ caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alde
 567e677d8d92e1af357ef1484b64cfc64230dc96 data/vherbalism/loot_tables/blocks/alder_stairs.json
 b857c9cfd21ea17556d9cdeb279e6bb3d615cd40 data/vherbalism/loot_tables/blocks/bindweed.json
 9a1dcab4254724054eb6311f0355ba46c3f21bda data/vherbalism/loot_tables/blocks/blackberry_bush.json
+0d2860d13efc02d96ae3520d56a1ffc8fde67bb3 data/vherbalism/loot_tables/blocks/borage.json
 e934f771185809702bb4c866c411db0caf494399 data/vherbalism/loot_tables/blocks/sappy_birch_sapling.json
 6f960715cf523b4e3859b549291e125aea8e0197 data/vherbalism/loot_tables/blocks/wild_bindweed.json
+519b4ab5bee9bdf79de05d86fab595c9253329b8 data/vherbalism/loot_tables/blocks/wild_borage.json

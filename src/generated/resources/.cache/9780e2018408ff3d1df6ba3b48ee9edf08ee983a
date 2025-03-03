@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-02T00:47:24.9209961	Item Models: vherbalism
+// 1.20.1	2025-03-03T04:22:46.3323448	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -7,5 +7,6 @@ ae06c39f24041664f64cd2c3b4cfecdd8d371d62 assets/vherbalism/models/item/birch_sap
 2d63839e03006c6cc2bc09e5dbc4e9e9e3d72aab assets/vherbalism/models/item/blackberry.json
 2bc5e2e1681c1265e692c24346207b84bcb375b6 assets/vherbalism/models/item/blackberry_leaf_poultice.json
 d7c2e3f2d7edebf577ef762947a63d04d7ed746c assets/vherbalism/models/item/blackberry_leaves.json
+d899bc3f5b1a89979da396edf8d84cdcb87481f7 assets/vherbalism/models/item/borage.json
 e3ff0b77422005725f67fffc4aebadffaf24fdd7 assets/vherbalism/models/item/sappy_birch_log.json
 58101560ef8f6cf48336c3957b9d134ea362f3c8 assets/vherbalism/models/item/sappy_birch_sapling.json

@@ -3,6 +3,7 @@ package com.dragn0007.vherbalism.blocks;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.crop.BindweedCrop;
 import com.dragn0007.vherbalism.blocks.crop.BlackberryBush;
+import com.dragn0007.vherbalism.blocks.crop.BorageCrop;
 import com.dragn0007.vherbalism.blocks.crop.Scent;
 import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.world.tree.AlderTreeGrower;
@@ -32,6 +33,11 @@ public class VHBlocks {
     public static final RegistryObject<Block> BINDWEED = registerBlockWithoutItem("bindweed",
             () -> new BindweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
     public static final RegistryObject<Block> WILD_BINDWEED = registerBlockWithoutItem("wild_bindweed",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> BORAGE = registerBlockWithoutItem("borage",
+            () -> new BorageCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_BORAGE = registerBlockWithoutItem("wild_borage",
             () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
     public static final RegistryObject<Block> SAPPY_BIRCH_SAPLING = registerBlock("sappy_birch_sapling",

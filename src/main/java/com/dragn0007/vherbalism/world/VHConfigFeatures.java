@@ -29,6 +29,7 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SAPPY_BIRCH = registerKey("sappy_birch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BINDWEED = registerKey("bindweed");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACKBERRY_BUSH = registerKey("blackberry_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BORAGE = registerKey("borage");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -56,6 +57,10 @@ public class VHConfigFeatures {
         register(context, BLACKBERRY_BUSH, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.BLACKBERRY_BUSH.get())))));
+
+        register(context, BORAGE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.BORAGE.get())))));
 
     }
     
