@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:blackberry_leaves"
+    },
+    {
+      "item": "vherbalism:blackberry_leaves"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:blackberry_leaf_poultice"
+  }
+}
