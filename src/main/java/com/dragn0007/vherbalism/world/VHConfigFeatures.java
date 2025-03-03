@@ -60,7 +60,7 @@ public class VHConfigFeatures {
 
         register(context, BORAGE, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.BORAGE.get())))));
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_BORAGE.get())))));
 
     }
     

@@ -39,11 +39,11 @@ public class VHPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, BLACKBERRY_BUSH_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BLACKBERRY_BUSH),
-                List.of(RarityFilter.onAverageOnceEvery(24),
+                List.of(RarityFilter.onAverageOnceEvery(48),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, BORAGE_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BORAGE),
-                List.of(RarityFilter.onAverageOnceEvery(32),
+                List.of(RarityFilter.onAverageOnceEvery(48),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
     }
