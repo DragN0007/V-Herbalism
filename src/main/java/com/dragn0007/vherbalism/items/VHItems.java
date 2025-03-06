@@ -26,6 +26,10 @@ public class VHItems {
             () -> new BindweedItem(VHBlocks.BINDWEED.get(), new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> BORAGE = ITEMS.register("borage",
             () -> new BorageItem(VHBlocks.BORAGE.get(), new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> BROOM_BUNDLE = ITEMS.register("broom_bundle",
+            () -> new BroomItem(VHBlocks.BROOM_SHRUB.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> BROOM_POULTICE = ITEMS.register("broom_poultice",
+            () -> new BroomPoulticeItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> BIRCH_SAP = ITEMS.register("birch_sap",
             () -> new BirchSapItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> ALDER_BARK = ITEMS.register("alder_bark",

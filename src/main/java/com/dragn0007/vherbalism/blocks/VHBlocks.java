@@ -1,10 +1,7 @@
 package com.dragn0007.vherbalism.blocks;
 
 import com.dragn0007.vherbalism.Herbalism;
-import com.dragn0007.vherbalism.blocks.crop.BindweedCrop;
-import com.dragn0007.vherbalism.blocks.crop.BlackberryBush;
-import com.dragn0007.vherbalism.blocks.crop.BorageCrop;
-import com.dragn0007.vherbalism.blocks.crop.Scent;
+import com.dragn0007.vherbalism.blocks.crop.*;
 import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.world.tree.AlderTreeGrower;
 import com.dragn0007.vherbalism.world.tree.SappyBirchTreeGrower;
@@ -39,6 +36,9 @@ public class VHBlocks {
             () -> new BorageCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
     public static final RegistryObject<Block> WILD_BORAGE = registerBlockWithoutItem("wild_borage",
             () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> BROOM_SHRUB = registerBlockWithoutItem("broom_shrub",
+            () -> new BroomShrub(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH)));
 
     public static final RegistryObject<Block> SAPPY_BIRCH_SAPLING = registerBlock("sappy_birch_sapling",
             () -> new SaplingBlock(new SappyBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.BIRCH_SAPLING)));

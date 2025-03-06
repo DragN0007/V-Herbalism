@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_broom_bundle": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vherbalism:broom_bundle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vherbalism:broom_poultice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_broom_bundle",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vherbalism:broom_poultice"
+    ]
+  },
+  "sends_telemetry_event": false
+}

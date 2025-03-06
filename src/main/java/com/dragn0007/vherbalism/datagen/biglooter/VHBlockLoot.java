@@ -66,6 +66,13 @@ public class VHBlockLoot extends BlockLootSubProvider {
                 (VHItems.BORAGE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder3).add(LootItem.lootTableItem
                 (VHItems.BORAGE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
+        LootItemCondition.Builder lootitemcondition$builder4 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.BROOM_SHRUB.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (BindweedCrop.AGE, 3));
+        this.add(VHBlocks.BROOM_SHRUB.get(),
+                LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                        (VHItems.BROOM_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder4).add(LootItem.lootTableItem
+                        (VHItems.BROOM_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
     }
 
     public void ignore(Block block) {

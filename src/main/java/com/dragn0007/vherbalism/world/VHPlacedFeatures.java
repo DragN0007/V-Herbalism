@@ -22,6 +22,7 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BINDWEED_PLACED = registerKey("bindweed_placed");
     public static final ResourceKey<PlacedFeature> BLACKBERRY_BUSH_PLACED = registerKey("blackberry_bush_placed");
     public static final ResourceKey<PlacedFeature> BORAGE_PLACED = registerKey("borage_placed");
+    public static final ResourceKey<PlacedFeature> BROOM_PLACED = registerKey("broom_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -43,6 +44,10 @@ public class VHPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, BORAGE_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BORAGE),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, BROOM_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BROOM),
                 List.of(RarityFilter.onAverageOnceEvery(48),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 

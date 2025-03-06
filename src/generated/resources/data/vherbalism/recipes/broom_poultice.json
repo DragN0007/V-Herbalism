@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:broom_bundle"
+    },
+    {
+      "item": "vherbalism:broom_bundle"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:broom_poultice"
+  }
+}

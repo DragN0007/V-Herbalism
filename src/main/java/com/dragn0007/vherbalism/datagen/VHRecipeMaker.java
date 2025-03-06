@@ -20,6 +20,14 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.BROOM_POULTICE.get())
+                .requires(VHItems.BROOM_BUNDLE.get())
+                .requires(VHItems.BROOM_BUNDLE.get())
+                .unlockedBy("has_broom_bundle", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.BROOM_BUNDLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.BLACKBERRY_LEAF_POULTICE.get())
                 .requires(VHItems.BLACKBERRY_LEAVES.get())
                 .requires(VHItems.BLACKBERRY_LEAVES.get())

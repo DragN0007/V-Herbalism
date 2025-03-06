@@ -23,6 +23,8 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> ADD_BLACKBERRY_BUSH = registerKey("add_blackberry_bush");
     public static final ResourceKey<BiomeModifier> ADD_BORAGE_FOREST = registerKey("add_borage_forest");
     public static final ResourceKey<BiomeModifier> ADD_BORAGE_RIVER = registerKey("add_borage_river");
+    public static final ResourceKey<BiomeModifier> ADD_BROOM_PLAINS = registerKey("add_broom_plains");
+    public static final ResourceKey<BiomeModifier> ADD_BROOM_BEACH = registerKey("add_broom_beach");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -66,6 +68,16 @@ public class BiomeHitter {
         context.register(ADD_BORAGE_FOREST, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_FOREST),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BORAGE_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_BROOM_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BROOM_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_BROOM_BEACH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_BEACH),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BROOM_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

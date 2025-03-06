@@ -14,6 +14,12 @@
   "block.vherbalism.wild_borage": "Wild Borage",
   "tooltip.vherbalism.borage.tooltip": "Dampens fevers, helps with stomach pain and tight chests when eaten.",
 
+  "item.vherbalism.broom_bundle": "Broom Bundle",
+  "item.vherbalism.broom_poultice": "Broom Poultice",
+  "block.vherbalism.broom_shrub": "Broom Shrub",
+  "tooltip.vherbalism.broom.tooltip": "Can be mashed into Broom Poultice.",
+  "tooltip.vherbalism.broom_poultice.tooltip": "Helps promote healing in broken bones and wounds when applied to/ around the affected area.",
+
   "item.vherbalism.blackberry": "Blackberry",
   "item.vherbalism.blackberry_leaves": "Blackberry Leaves",
   "item.vherbalism.blackberry_leaf_poultice": "Blackberry Leaf Poultice",

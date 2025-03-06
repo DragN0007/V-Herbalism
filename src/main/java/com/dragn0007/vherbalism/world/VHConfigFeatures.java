@@ -4,13 +4,16 @@ package com.dragn0007.vherbalism.world;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
@@ -22,6 +25,12 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlac
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.placement.BiomeFilter;
+import net.minecraft.world.level.levelgen.placement.BlockPredicateFilter;
+import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
+import net.minecraft.world.level.levelgen.placement.RarityFilter;
+
+import java.util.List;
 
 public class VHConfigFeatures {
 
@@ -30,6 +39,7 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BINDWEED = registerKey("bindweed");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACKBERRY_BUSH = registerKey("blackberry_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BORAGE = registerKey("borage");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BROOM = registerKey("broom");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -62,6 +72,9 @@ public class VHConfigFeatures {
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_BORAGE.get())))));
 
+        register(context, BROOM, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 0, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.BROOM_SHRUB.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

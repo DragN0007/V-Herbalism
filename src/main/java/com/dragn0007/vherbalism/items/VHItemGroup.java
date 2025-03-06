@@ -40,6 +40,8 @@ public class VHItemGroup {
                         output.accept(VHItems.BLACKBERRY_LEAVES.get());
                         output.accept(VHItems.BLACKBERRY_LEAF_POULTICE.get());
                         output.accept(VHItems.BORAGE.get());
+                        output.accept(VHItems.BROOM_BUNDLE.get());
+                        output.accept(VHItems.BROOM_POULTICE.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());
