@@ -3,6 +3,8 @@ package com.dragn0007.vherbalism.items;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.items.custom.*;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -30,6 +32,10 @@ public class VHItems {
             () -> new BroomItem(VHBlocks.BROOM_SHRUB.get(), (new Item.Properties())));
     public static final RegistryObject<Item> BROOM_POULTICE = ITEMS.register("broom_poultice",
             () -> new BroomPoulticeItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> BURNET_BUNDLE = ITEMS.register("burnet_bundle",
+            () -> new BurnetItem(VHBlocks.BURNET.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(1).build()))));
+    public static final RegistryObject<Item> CATCHWEED_BUNDLE = ITEMS.register("catchweed_bundle",
+            () -> new CatchweedItem(VHBlocks.CATCHWEED.get(), (new Item.Properties())));
     public static final RegistryObject<Item> BIRCH_SAP = ITEMS.register("birch_sap",
             () -> new BirchSapItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> ALDER_BARK = ITEMS.register("alder_bark",

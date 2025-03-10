@@ -27,6 +27,16 @@
   "tooltip.vherbalism.blackberry_leaves.tooltip": "Can be mashed into Blackberry Leaf Poultice.",
   "tooltip.vherbalism.blackberry_poultice.tooltip": "Helps soothe the pain of bee stings when applied to the affected area.",
 
+  "item.vherbalism.burnet_bundle": "Burnet Bundle",
+  "block.vherbalism.burnet": "Burnet",
+  "block.vherbalism.wild_burnet": "Wild Burnet",
+  "tooltip.vherbalism.burnet.tooltip": "Can be chewed for strength when traveling.",
+
+  "item.vherbalism.catchweed_bundle": "Catchweed Bundle",
+  "block.vherbalism.catchweed": "Catchweed",
+  "block.vherbalism.wild_catchweed": "Wild Catchweed",
+  "tooltip.vherbalism.catchweed.tooltip": "Used in poultices to prevent them from being easily rubbed off from the skin.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

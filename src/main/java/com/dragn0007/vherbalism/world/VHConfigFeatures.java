@@ -40,6 +40,8 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACKBERRY_BUSH = registerKey("blackberry_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BORAGE = registerKey("borage");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BROOM = registerKey("broom");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BURNET = registerKey("burnet");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CATCHWEED = registerKey("catchweed");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -73,8 +75,16 @@ public class VHConfigFeatures {
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_BORAGE.get())))));
 
         register(context, BROOM, Feature.FLOWER,
-                new RandomPatchConfiguration(10, 0, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                new RandomPatchConfiguration(12, 0, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.BROOM_SHRUB.get())))));
+
+        register(context, BURNET, Feature.FLOWER,
+                new RandomPatchConfiguration(12, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_BURNET.get())))));
+
+        register(context, CATCHWEED, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_CATCHWEED.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

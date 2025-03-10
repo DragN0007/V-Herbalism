@@ -4,6 +4,8 @@ import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
 import com.dragn0007.vherbalism.blocks.crop.BindweedCrop;
 import com.dragn0007.vherbalism.blocks.crop.BorageCrop;
+import com.dragn0007.vherbalism.blocks.crop.BurnetCrop;
+import com.dragn0007.vherbalism.blocks.crop.CatchweedCrop;
 import com.dragn0007.vherbalism.items.VHItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -73,6 +75,24 @@ public class VHBlockLoot extends BlockLootSubProvider {
                 LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
                         (VHItems.BROOM_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder4).add(LootItem.lootTableItem
                         (VHItems.BROOM_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_BURNET.get(), VHItems.BURNET_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder5 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.BURNET.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (BurnetCrop.AGE, 3));
+        this.add(VHBlocks.BURNET.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.BURNET_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder5).add(LootItem.lootTableItem
+                (VHItems.BURNET_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_CATCHWEED.get(), VHItems.CATCHWEED_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder6 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.CATCHWEED.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (CatchweedCrop.AGE, 3));
+        this.add(VHBlocks.CATCHWEED.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.CATCHWEED_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder6).add(LootItem.lootTableItem
+                (VHItems.CATCHWEED_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+
     }
 
     public void ignore(Block block) {

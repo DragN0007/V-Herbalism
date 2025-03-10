@@ -2,6 +2,7 @@ package com.dragn0007.vherbalism.blocks;
 
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.crop.*;
+import com.dragn0007.vherbalism.blocks.crop.base.HerbalismSandyFlowerBlock;
 import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.world.tree.AlderTreeGrower;
 import com.dragn0007.vherbalism.world.tree.SappyBirchTreeGrower;
@@ -39,6 +40,16 @@ public class VHBlocks {
 
     public static final RegistryObject<Block> BROOM_SHRUB = registerBlockWithoutItem("broom_shrub",
             () -> new BroomShrub(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH)));
+
+    public static final RegistryObject<Block> BURNET = registerBlockWithoutItem("burnet",
+            () -> new BurnetCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_BURNET = registerBlockWithoutItem("wild_burnet",
+            () -> new HerbalismSandyFlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> CATCHWEED = registerBlockWithoutItem("catchweed",
+            () -> new CatchweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_CATCHWEED = registerBlockWithoutItem("wild_catchweed",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
     public static final RegistryObject<Block> SAPPY_BIRCH_SAPLING = registerBlock("sappy_birch_sapling",
             () -> new SaplingBlock(new SappyBirchTreeGrower(), BlockBehaviour.Properties.copy(Blocks.BIRCH_SAPLING)));

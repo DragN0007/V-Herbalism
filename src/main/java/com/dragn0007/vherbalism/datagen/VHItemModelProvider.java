@@ -32,6 +32,8 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.BORAGE);
         simpleItem(VHItems.BROOM_BUNDLE);
         simpleItem(VHItems.BROOM_POULTICE);
+        simpleItem(VHItems.BURNET_BUNDLE);
+        simpleItem(VHItems.CATCHWEED_BUNDLE);
 
         simpleItem(VHItems.BIRCH_SAP);
         simpleBlockItem(VHBlocks.SAPPY_BIRCH_SAPLING);

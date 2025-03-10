@@ -33,7 +33,7 @@ public class HerbalNameBlockItem extends ItemNameBlockItem {
             stack.shrink(1);
         }
 
-        return stack.isEmpty() ? new ItemStack(Items.AIR) : stack;
+        return super.finishUsingItem(stack, level, livingEntity);
     }
 
     public int getUseDuration(ItemStack p_42933_) {
@@ -44,8 +44,9 @@ public class HerbalNameBlockItem extends ItemNameBlockItem {
         return UseAnim.NONE;
     }
 
-    public InteractionResultHolder<ItemStack> use(Level p_42927_, Player p_42928_, InteractionHand p_42929_) {
-        return ItemUtils.startUsingInstantly(p_42927_, p_42928_, p_42929_);
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        ItemUtils.startUsingInstantly(level, player, hand);
+        return super.use(level, player, hand);
     }
 
     @Override

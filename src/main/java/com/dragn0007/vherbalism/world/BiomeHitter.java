@@ -25,6 +25,8 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> ADD_BORAGE_RIVER = registerKey("add_borage_river");
     public static final ResourceKey<BiomeModifier> ADD_BROOM_PLAINS = registerKey("add_broom_plains");
     public static final ResourceKey<BiomeModifier> ADD_BROOM_BEACH = registerKey("add_broom_beach");
+    public static final ResourceKey<BiomeModifier> ADD_BURNET_BEACH = registerKey("add_burnet_beach");
+    public static final ResourceKey<BiomeModifier> ADD_CATCHWEED_WET = registerKey("add_burnet_wet");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -78,6 +80,16 @@ public class BiomeHitter {
         context.register(ADD_BROOM_BEACH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_BEACH),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BROOM_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_BURNET_BEACH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_BEACH),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BURNET_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CATCHWEED_WET, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CATCHWEED_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

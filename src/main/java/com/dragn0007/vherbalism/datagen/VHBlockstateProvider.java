@@ -55,6 +55,14 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.BORAGE.get(), "borage_stage_", "borage_stage_");
         simpleBlock(VHBlocks.WILD_BORAGE.get(), models().cross(VHBlocks.WILD_BORAGE.getId().getPath(),
                 wildPlantTexture("borage_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.BURNET.get(), "burnet_stage_", "burnet_stage_");
+        simpleBlock(VHBlocks.WILD_BURNET.get(), models().cross(VHBlocks.WILD_BURNET.getId().getPath(),
+                wildPlantTexture("burnet_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.CATCHWEED.get(), "catchweed_stage_", "catchweed_stage_");
+        simpleBlock(VHBlocks.WILD_CATCHWEED.get(), models().cross(VHBlocks.WILD_CATCHWEED.getId().getPath(),
+                wildPlantTexture("catchweed_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

@@ -8,10 +8,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "vherbalism:broom_shrub",
-              "Properties": {
-                "age": "0"
-              }
+              "Name": "vherbalism:wild_burnet"
             }
           }
         }
@@ -27,7 +24,7 @@
       ]
     },
     "tries": 12,
-    "xz_spread": 0,
-    "y_spread": 1
+    "xz_spread": 3,
+    "y_spread": 2
   }
 }
