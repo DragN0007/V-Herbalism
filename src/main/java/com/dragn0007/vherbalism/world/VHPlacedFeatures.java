@@ -25,6 +25,9 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BROOM_PLACED = registerKey("broom_placed");
     public static final ResourceKey<PlacedFeature> BURNET_PLACED = registerKey("burnet_placed");
     public static final ResourceKey<PlacedFeature> CATCHWEED_PLACED = registerKey("catchweed_placed");
+    public static final ResourceKey<PlacedFeature> CATMINT_PLACED = registerKey("catmint_placed");
+    public static final ResourceKey<PlacedFeature> CELADINE_PLACED = registerKey("celadine_placed");
+    public static final ResourceKey<PlacedFeature> CAMOMILE_PLACED = registerKey("camomile_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -58,6 +61,18 @@ public class VHPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, CATCHWEED_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.CATCHWEED),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, CATMINT_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.CATMINT),
+                List.of(RarityFilter.onAverageOnceEvery(128),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, CELADINE_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.CELADINE),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, CAMOMILE_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.CAMOMILE),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 

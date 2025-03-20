@@ -2,10 +2,7 @@ package com.dragn0007.vherbalism.datagen.biglooter;
 
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
-import com.dragn0007.vherbalism.blocks.crop.BindweedCrop;
-import com.dragn0007.vherbalism.blocks.crop.BorageCrop;
-import com.dragn0007.vherbalism.blocks.crop.BurnetCrop;
-import com.dragn0007.vherbalism.blocks.crop.CatchweedCrop;
+import com.dragn0007.vherbalism.blocks.crop.*;
 import com.dragn0007.vherbalism.items.VHItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -92,6 +89,29 @@ public class VHBlockLoot extends BlockLootSubProvider {
                 (VHItems.CATCHWEED_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder6).add(LootItem.lootTableItem
                 (VHItems.CATCHWEED_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
+        this.dropOther(VHBlocks.WILD_CATMINT.get(), VHItems.CATMINT_LEAVES.get());
+        LootItemCondition.Builder lootitemcondition$builder7 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.CATMINT.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (CatmintCrop.AGE, 3));
+        this.add(VHBlocks.CATMINT.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.CATMINT_LEAVES.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder7).add(LootItem.lootTableItem
+                (VHItems.CATMINT_LEAVES.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_CELADINE.get(), VHItems.CELADINE_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder8 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.CELADINE.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (CatmintCrop.AGE, 3));
+        this.add(VHBlocks.CELADINE.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.CELADINE_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder8).add(LootItem.lootTableItem
+                (VHItems.CELADINE_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_CAMOMILE.get(), VHItems.CAMOMILE_FLOWER.get());
+        LootItemCondition.Builder lootitemcondition$builder9 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.CAMOMILE.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (CatmintCrop.AGE, 3));
+        this.add(VHBlocks.CAMOMILE.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.CAMOMILE_FLOWER.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder9).add(LootItem.lootTableItem
+                (VHItems.CAMOMILE_FLOWER.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
     }
 

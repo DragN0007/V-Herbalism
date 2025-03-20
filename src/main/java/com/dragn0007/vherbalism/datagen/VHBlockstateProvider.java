@@ -63,6 +63,18 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.CATCHWEED.get(), "catchweed_stage_", "catchweed_stage_");
         simpleBlock(VHBlocks.WILD_CATCHWEED.get(), models().cross(VHBlocks.WILD_CATCHWEED.getId().getPath(),
                 wildPlantTexture("catchweed_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.CATMINT.get(), "catmint_stage_", "catmint_stage_");
+        simpleBlock(VHBlocks.WILD_CATMINT.get(), models().cross(VHBlocks.WILD_CATMINT.getId().getPath(),
+                wildPlantTexture("catmint_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.CELADINE.get(), "celadine_stage_", "celadine_stage_");
+        simpleBlock(VHBlocks.WILD_CELADINE.get(), models().cross(VHBlocks.WILD_CELADINE.getId().getPath(),
+                wildPlantTexture("celadine_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.CAMOMILE.get(), "camomile_stage_", "camomile_stage_");
+        simpleBlock(VHBlocks.WILD_CAMOMILE.get(), models().cross(VHBlocks.WILD_CAMOMILE.getId().getPath(),
+                wildPlantTexture("camomile_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

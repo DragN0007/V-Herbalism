@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "vherbalism:bindweed"
+    "vherbalism:bindweed",
+    "vherbalism:blackberry_bush",
+    "vherbalism:borage",
+    "vherbalism:broom_shrub",
+    "vherbalism:burnet",
+    "vherbalism:catchweed",
+    "vherbalism:catmint"
   ]
 }

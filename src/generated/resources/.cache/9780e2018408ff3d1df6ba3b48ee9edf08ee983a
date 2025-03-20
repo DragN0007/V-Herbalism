@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-10T04:23:05.7944161	Item Models: vherbalism
+// 1.20.1	2025-03-20T05:08:20.8516225	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -11,6 +11,10 @@ d899bc3f5b1a89979da396edf8d84cdcb87481f7 assets/vherbalism/models/item/borage.js
 7b3e9d0f4de30ac578dd7a8fe99d5b8bd064bf26 assets/vherbalism/models/item/broom_bundle.json
 f8d7f644446538934df340848bf7f81508fb9d34 assets/vherbalism/models/item/broom_poultice.json
 133ccfb7057ce2ee1234d10eaf3eb3604746cb49 assets/vherbalism/models/item/burnet_bundle.json
+a56886b03b221489d719e26d7adf5cb26b1d696d assets/vherbalism/models/item/camomile_flower.json
 f79ec85ddbe27e9a2f398132631d4ce6c47844e6 assets/vherbalism/models/item/catchweed_bundle.json
+7655e716dcbe9608fef6ae88d303b39dbd13df84 assets/vherbalism/models/item/catmint_leaves.json
+1a24ce9083d78420dc4407a42dee9e74432661d7 assets/vherbalism/models/item/celadine_bundle.json
+7e22f5165876b13c45572f4cbd74ac69cd2ed794 assets/vherbalism/models/item/celadine_juice.json
 e3ff0b77422005725f67fffc4aebadffaf24fdd7 assets/vherbalism/models/item/sappy_birch_log.json
 58101560ef8f6cf48336c3957b9d134ea362f3c8 assets/vherbalism/models/item/sappy_birch_sapling.json

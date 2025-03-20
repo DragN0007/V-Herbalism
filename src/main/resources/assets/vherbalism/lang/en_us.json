@@ -37,6 +37,18 @@
   "block.vherbalism.wild_catchweed": "Wild Catchweed",
   "tooltip.vherbalism.catchweed.tooltip": "Used in poultices to prevent them from being easily rubbed off from the skin.",
 
+  "item.vherbalism.celadine_bundle": "Celadine Bundle",
+  "item.vherbalism.celadine_juice": "Celadine Poultice",
+  "block.vherbalism.wild_celadine": "Wild Celadine",
+  "block.vherbalism.celadine_shrub": "Celadine Shrub",
+  "tooltip.vherbalism.celadine.tooltip": "Can be mashed into Celadine Juice.",
+  "tooltip.vherbalism.celadine_juice.tooltip": "Can be dripped into damaged/ injured eyes to help with healing.",
+
+  "item.vherbalism.camomile_flower": "Camomile Flower",
+  "block.vherbalism.camomile": "Camomile",
+  "block.vherbalism.wild_camomile": "Wild Camomile",
+  "tooltip.vherbalism.camomile.tooltip": "Can be chewed for strength when traveling.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

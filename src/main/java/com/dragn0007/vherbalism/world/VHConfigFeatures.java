@@ -42,6 +42,9 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BROOM = registerKey("broom");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BURNET = registerKey("burnet");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CATCHWEED = registerKey("catchweed");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CATMINT = registerKey("catmint");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CELADINE = registerKey("celadine");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CAMOMILE = registerKey("camomile");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -85,6 +88,18 @@ public class VHConfigFeatures {
         register(context, CATCHWEED, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_CATCHWEED.get())))));
+
+        register(context, CATMINT, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 0, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_CATMINT.get())))));
+
+        register(context, CELADINE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 0, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_CELADINE.get())))));
+
+        register(context, CAMOMILE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 0, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_CAMOMILE.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

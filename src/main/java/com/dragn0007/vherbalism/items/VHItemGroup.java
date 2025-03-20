@@ -44,6 +44,9 @@ public class VHItemGroup {
                         output.accept(VHItems.BROOM_POULTICE.get());
                         output.accept(VHItems.BURNET_BUNDLE.get());
                         output.accept(VHItems.CATCHWEED_BUNDLE.get());
+                        output.accept(VHItems.CELADINE_BUNDLE.get());
+                        output.accept(VHItems.CELADINE_JUICE.get());
+                        output.accept(VHItems.CAMOMILE_FLOWER.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

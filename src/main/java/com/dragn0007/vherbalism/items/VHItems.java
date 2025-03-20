@@ -24,18 +24,38 @@ public class VHItems {
             () -> new BlackberryLeavesItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> BLACKBERRY_LEAF_POULTICE = ITEMS.register("blackberry_leaf_poultice",
             () -> new BlackberryLeafPoulticeItem(new Item.Properties().stacksTo(64)));
+
     public static final RegistryObject<Item> BINDWEED_BUNDLE = ITEMS.register("bindweed_bundle",
             () -> new BindweedItem(VHBlocks.BINDWEED.get(), new Item.Properties().stacksTo(64)));
+
     public static final RegistryObject<Item> BORAGE = ITEMS.register("borage",
             () -> new BorageItem(VHBlocks.BORAGE.get(), new Item.Properties().stacksTo(64)));
+
     public static final RegistryObject<Item> BROOM_BUNDLE = ITEMS.register("broom_bundle",
             () -> new BroomItem(VHBlocks.BROOM_SHRUB.get(), (new Item.Properties())));
     public static final RegistryObject<Item> BROOM_POULTICE = ITEMS.register("broom_poultice",
             () -> new BroomPoulticeItem(new Item.Properties().stacksTo(64)));
+
     public static final RegistryObject<Item> BURNET_BUNDLE = ITEMS.register("burnet_bundle",
             () -> new BurnetItem(VHBlocks.BURNET.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(1).build()))));
+
     public static final RegistryObject<Item> CATCHWEED_BUNDLE = ITEMS.register("catchweed_bundle",
             () -> new CatchweedItem(VHBlocks.CATCHWEED.get(), (new Item.Properties())));
+
+
+    public static final RegistryObject<Item> CATMINT_LEAVES = ITEMS.register("catmint_leaves",
+            () -> new CatchweedItem(VHBlocks.CATMINT.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> CELADINE_BUNDLE = ITEMS.register("celadine_bundle",
+            () -> new CeladineItem(VHBlocks.CELADINE.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> CELADINE_JUICE = ITEMS.register("celadine_juice",
+            () -> new CeladineJuiceItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> CAMOMILE_FLOWER = ITEMS.register("camomile_flower",
+            () -> new CamomileItem(VHBlocks.CAMOMILE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(1).build()))));
+
+
+
     public static final RegistryObject<Item> BIRCH_SAP = ITEMS.register("birch_sap",
             () -> new BirchSapItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> ALDER_BARK = ITEMS.register("alder_bark",

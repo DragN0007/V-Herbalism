@@ -26,7 +26,10 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> ADD_BROOM_PLAINS = registerKey("add_broom_plains");
     public static final ResourceKey<BiomeModifier> ADD_BROOM_BEACH = registerKey("add_broom_beach");
     public static final ResourceKey<BiomeModifier> ADD_BURNET_BEACH = registerKey("add_burnet_beach");
-    public static final ResourceKey<BiomeModifier> ADD_CATCHWEED_WET = registerKey("add_burnet_wet");
+    public static final ResourceKey<BiomeModifier> ADD_CATCHWEED_WET = registerKey("add_catchweed_wet");
+    public static final ResourceKey<BiomeModifier> ADD_CATMINT_OVERWORLD = registerKey("add_catmint_overworld");
+    public static final ResourceKey<BiomeModifier> ADD_CELADINE_WET = registerKey("add_celadine_wet");
+    public static final ResourceKey<BiomeModifier> ADD_CAMOMILE_PLAINS = registerKey("add_camomile_plains");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -90,6 +93,21 @@ public class BiomeHitter {
         context.register(ADD_CATCHWEED_WET, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_WET),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CATCHWEED_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CATMINT_OVERWORLD, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CATMINT_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CELADINE_WET, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CELADINE_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CAMOMILE_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CAMOMILE_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 
