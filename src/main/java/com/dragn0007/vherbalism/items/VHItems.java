@@ -36,6 +36,9 @@ public class VHItems {
     public static final RegistryObject<Item> BROOM_POULTICE = ITEMS.register("broom_poultice",
             () -> new BroomPoulticeItem(new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> BURDOCK_ROOT = ITEMS.register("burdock_root",
+            () -> new BurdockRootItem(new Item.Properties()));
+
     public static final RegistryObject<Item> BURNET_BUNDLE = ITEMS.register("burnet_bundle",
             () -> new BurnetItem(VHBlocks.BURNET.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(1).build()))));
 
@@ -53,6 +56,16 @@ public class VHItems {
 
     public static final RegistryObject<Item> CAMOMILE_FLOWER = ITEMS.register("camomile_flower",
             () -> new CamomileItem(VHBlocks.CAMOMILE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(1).build()))));
+
+    public static final RegistryObject<Item> COBWEB = ITEMS.register("cobweb",
+            () -> new CobwebItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHERVIL = ITEMS.register("chervil",
+            () -> new ChervilItem(VHBlocks.CHERVIL.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> CHICKWEED = ITEMS.register("chickweed",
+            () -> new ChickweedItem(VHBlocks.CHICKWEED.get(), (new Item.Properties())));
+
 
 
 

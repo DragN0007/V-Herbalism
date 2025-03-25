@@ -9,6 +9,7 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -38,6 +39,15 @@ public class VHBlockLoot extends BlockLootSubProvider {
 
         this.ignore(VHBlocksNoDatagenLoot.SAPPY_BIRCH_LOG.get());
         this.dropSelf(VHBlocks.SAPPY_BIRCH_SAPLING.get());
+
+        this.dropOther(VHBlocks.HANGING_BURDOCK_ROOT.get(), VHItems.BURDOCK_ROOT.get());
+        LootItemCondition.Builder lootitemcondition$builder0 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.BURDOCK_ROOT.get());
+        this.add(VHBlocks.BURDOCK_ROOT.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.BURDOCK_ROOT.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder0).add(LootItem.lootTableItem
+                (VHItems.BURDOCK_ROOT.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))).add(LootItem.lootTableItem
+                (Blocks.DIRT))).withPool(LootPool.lootPool().when(lootitemcondition$builder0).add(LootItem.lootTableItem
+                (Blocks.DIRT).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
         this.dropOther(VHBlocks.WILD_BINDWEED.get(), VHItems.BINDWEED_BUNDLE.get());
         LootItemCondition.Builder lootitemcondition$builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
@@ -100,7 +110,7 @@ public class VHBlockLoot extends BlockLootSubProvider {
         this.dropOther(VHBlocks.WILD_CELADINE.get(), VHItems.CELADINE_BUNDLE.get());
         LootItemCondition.Builder lootitemcondition$builder8 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
                 (VHBlocks.CELADINE.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
-                (CatmintCrop.AGE, 3));
+                (CeladineCrop.AGE, 3));
         this.add(VHBlocks.CELADINE.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
                 (VHItems.CELADINE_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder8).add(LootItem.lootTableItem
                 (VHItems.CELADINE_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
@@ -108,10 +118,28 @@ public class VHBlockLoot extends BlockLootSubProvider {
         this.dropOther(VHBlocks.WILD_CAMOMILE.get(), VHItems.CAMOMILE_FLOWER.get());
         LootItemCondition.Builder lootitemcondition$builder9 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
                 (VHBlocks.CAMOMILE.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
-                (CatmintCrop.AGE, 3));
+                (CamomileCrop.AGE, 3));
         this.add(VHBlocks.CAMOMILE.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
                 (VHItems.CAMOMILE_FLOWER.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder9).add(LootItem.lootTableItem
                 (VHItems.CAMOMILE_FLOWER.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.COBWEB.get(), VHItems.COBWEB.get());
+
+        this.dropOther(VHBlocks.WILD_CHERVIL.get(), VHItems.CHERVIL.get());
+        LootItemCondition.Builder lootitemcondition$builder10 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.CHERVIL.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (ChervilCrop.AGE, 3));
+        this.add(VHBlocks.CHERVIL.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.CHERVIL.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder10).add(LootItem.lootTableItem
+                (VHItems.CHERVIL.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_CHICKWEED.get(), VHItems.CHICKWEED.get());
+        LootItemCondition.Builder lootitemcondition$builder11 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.CHICKWEED.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (ChickweedCrop.AGE, 3));
+        this.add(VHBlocks.CHICKWEED.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.CHICKWEED.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder11).add(LootItem.lootTableItem
+                (VHItems.CHICKWEED.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
     }
 

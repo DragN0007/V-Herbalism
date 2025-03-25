@@ -3,7 +3,6 @@ package com.dragn0007.vherbalism.datagen;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
-import com.dragn0007.vherbalism.blocks.crop.base.HerbalismBushBlock;
 import com.dragn0007.vherbalism.blocks.crop.base.HerbalismCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -48,6 +47,10 @@ public class VHBlockstateProvider extends BlockStateProvider {
         simpleBlock(VHBlocks.SAPPY_BIRCH_SAPLING.get(), models().cross(VHBlocks.SAPPY_BIRCH_SAPLING.getId().getPath(),
                 blockTexture(VHBlocks.SAPPY_BIRCH_SAPLING.get())).renderType("cutout"));
 
+        blockWithItem(VHBlocks.BURDOCK_ROOT);
+        simpleBlock(VHBlocks.HANGING_BURDOCK_ROOT.get(), models().cross(VHBlocks.HANGING_BURDOCK_ROOT.getId().getPath(),
+                wildPlantTexture("hanging_burdock_root")).renderType("cutout"));
+
         createCrop((CropBlock) VHBlocks.BINDWEED.get(), "bindweed_stage_", "bindweed_stage_");
         simpleBlock(VHBlocks.WILD_BINDWEED.get(), models().cross(VHBlocks.WILD_BINDWEED.getId().getPath(),
                 wildPlantTexture("bindweed_stage_3")).renderType("cutout"));
@@ -75,6 +78,17 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.CAMOMILE.get(), "camomile_stage_", "camomile_stage_");
         simpleBlock(VHBlocks.WILD_CAMOMILE.get(), models().cross(VHBlocks.WILD_CAMOMILE.getId().getPath(),
                 wildPlantTexture("camomile_stage_3")).renderType("cutout"));
+
+        simpleBlock(VHBlocks.COBWEB.get(), models().cross(VHBlocks.COBWEB.getId().getPath(),
+                wildPlantTexture("cobweb")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.CHERVIL.get(), "chervil_stage_", "chervil_stage_");
+        simpleBlock(VHBlocks.WILD_CHERVIL.get(), models().cross(VHBlocks.WILD_CHERVIL.getId().getPath(),
+                wildPlantTexture("chervil_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.CHICKWEED.get(), "chickweed_stage_", "chickweed_stage_");
+        simpleBlock(VHBlocks.WILD_CHICKWEED.get(), models().cross(VHBlocks.WILD_CHICKWEED.getId().getPath(),
+                wildPlantTexture("chickweed_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

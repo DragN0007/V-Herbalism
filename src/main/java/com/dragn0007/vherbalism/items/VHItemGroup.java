@@ -42,11 +42,16 @@ public class VHItemGroup {
                         output.accept(VHItems.BORAGE.get());
                         output.accept(VHItems.BROOM_BUNDLE.get());
                         output.accept(VHItems.BROOM_POULTICE.get());
+                        output.accept(VHItems.BURDOCK_ROOT.get());
                         output.accept(VHItems.BURNET_BUNDLE.get());
                         output.accept(VHItems.CATCHWEED_BUNDLE.get());
+                        output.accept(VHItems.CATMINT_LEAVES.get());
                         output.accept(VHItems.CELADINE_BUNDLE.get());
                         output.accept(VHItems.CELADINE_JUICE.get());
                         output.accept(VHItems.CAMOMILE_FLOWER.get());
+                        output.accept(VHItems.COBWEB.get());
+                        output.accept(VHItems.CHERVIL.get());
+                        output.accept(VHItems.CHICKWEED.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

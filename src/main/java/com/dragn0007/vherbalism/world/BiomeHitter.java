@@ -24,12 +24,18 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> ADD_BORAGE_FOREST = registerKey("add_borage_forest");
     public static final ResourceKey<BiomeModifier> ADD_BORAGE_RIVER = registerKey("add_borage_river");
     public static final ResourceKey<BiomeModifier> ADD_BROOM_PLAINS = registerKey("add_broom_plains");
+    public static final ResourceKey<BiomeModifier> ADD_BURDOCK_ROOT = registerKey("add_burdock_root");
     public static final ResourceKey<BiomeModifier> ADD_BROOM_BEACH = registerKey("add_broom_beach");
     public static final ResourceKey<BiomeModifier> ADD_BURNET_BEACH = registerKey("add_burnet_beach");
     public static final ResourceKey<BiomeModifier> ADD_CATCHWEED_WET = registerKey("add_catchweed_wet");
     public static final ResourceKey<BiomeModifier> ADD_CATMINT_OVERWORLD = registerKey("add_catmint_overworld");
     public static final ResourceKey<BiomeModifier> ADD_CELADINE_WET = registerKey("add_celadine_wet");
     public static final ResourceKey<BiomeModifier> ADD_CAMOMILE_PLAINS = registerKey("add_camomile_plains");
+    public static final ResourceKey<BiomeModifier> ADD_COBWEB_FOREST = registerKey("add_cobweb_forest");
+    public static final ResourceKey<BiomeModifier> ADD_CHERVIL_HILLS = registerKey("add_chervil_hills");
+    public static final ResourceKey<BiomeModifier> ADD_CHERVIL_MOUNTAINS = registerKey("add_chervil_mountains");
+    public static final ResourceKey<BiomeModifier> ADD_CHICKWEED_RIVER = registerKey("add_chickweed_river");
+    public static final ResourceKey<BiomeModifier> ADD_CHICKWEED_PLAINS = registerKey("add_chickweed_plains");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -85,6 +91,11 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BROOM_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(ADD_BURDOCK_ROOT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BURDOCK_ROOT_PLACED)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
         context.register(ADD_BURNET_BEACH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_BEACH),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BURNET_PLACED)),
@@ -108,6 +119,31 @@ public class BiomeHitter {
         context.register(ADD_CAMOMILE_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_WET),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CAMOMILE_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_COBWEB_FOREST, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.COBWEB_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CHERVIL_HILLS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_HILL),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CHERVIL_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CHERVIL_MOUNTAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_MOUNTAIN),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CHERVIL_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CHICKWEED_RIVER, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_RIVER),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CHICKWEED_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_CHICKWEED_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CHICKWEED_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

@@ -32,12 +32,16 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.BORAGE);
         simpleItem(VHItems.BROOM_BUNDLE);
         simpleItem(VHItems.BROOM_POULTICE);
+        simpleItem(VHItems.BURDOCK_ROOT);
         simpleItem(VHItems.BURNET_BUNDLE);
         simpleItem(VHItems.CATCHWEED_BUNDLE);
         simpleItem(VHItems.CATMINT_LEAVES);
         simpleItem(VHItems.CELADINE_BUNDLE);
         simpleItem(VHItems.CELADINE_JUICE);
         simpleItem(VHItems.CAMOMILE_FLOWER);
+        simpleItem(VHItems.COBWEB);
+        simpleItem(VHItems.CHERVIL);
+        simpleItem(VHItems.CHICKWEED);
 
         simpleItem(VHItems.BIRCH_SAP);
         simpleBlockItem(VHBlocks.SAPPY_BIRCH_SAPLING);

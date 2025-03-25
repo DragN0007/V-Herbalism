@@ -1,11 +1,13 @@
 package com.dragn0007.vherbalism.datagen;
 
+import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
 import com.dragn0007.vherbalism.items.VHItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -20,6 +22,23 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.COBWEB.get())
+                .requires(Items.STICK)
+                .requires(Items.STRING)
+                .requires(Items.STRING)
+                .unlockedBy("has_stick", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.STICK)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "cobweb_string"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.COBWEB.get())
+                .requires(Items.STICK)
+                .requires(Blocks.COBWEB)
+                .unlockedBy("has_stick", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.STICK)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "cobweb_cobweb"));
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.CELADINE_JUICE.get())
                 .requires(VHItems.CELADINE_BUNDLE.get())
                 .requires(VHItems.CELADINE_BUNDLE.get())
@@ -32,6 +51,7 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .requires(VHItems.BROOM_BUNDLE.get())
                 .requires(VHItems.BROOM_BUNDLE.get())
                 .requires(VHItems.CATCHWEED_BUNDLE.get())
+                .requires(VHItems.COBWEB.get())
                 .unlockedBy("has_broom_bundle", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(VHItems.BROOM_BUNDLE.get())
                         .build()))
@@ -41,6 +61,7 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .requires(VHItems.BLACKBERRY_LEAVES.get())
                 .requires(VHItems.BLACKBERRY_LEAVES.get())
                 .requires(VHItems.CATCHWEED_BUNDLE.get())
+                .requires(VHItems.COBWEB.get())
                 .unlockedBy("has_blackberry_leaves", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(VHItems.BLACKBERRY_LEAVES.get())
                         .build()))

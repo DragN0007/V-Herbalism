@@ -2,6 +2,7 @@ package com.dragn0007.vherbalism.world;
 
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -10,6 +11,9 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 
@@ -23,11 +27,15 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACKBERRY_BUSH_PLACED = registerKey("blackberry_bush_placed");
     public static final ResourceKey<PlacedFeature> BORAGE_PLACED = registerKey("borage_placed");
     public static final ResourceKey<PlacedFeature> BROOM_PLACED = registerKey("broom_placed");
+    public static final ResourceKey<PlacedFeature> BURDOCK_ROOT_PLACED = registerKey("burdock_root_placed");
     public static final ResourceKey<PlacedFeature> BURNET_PLACED = registerKey("burnet_placed");
     public static final ResourceKey<PlacedFeature> CATCHWEED_PLACED = registerKey("catchweed_placed");
     public static final ResourceKey<PlacedFeature> CATMINT_PLACED = registerKey("catmint_placed");
     public static final ResourceKey<PlacedFeature> CELADINE_PLACED = registerKey("celadine_placed");
     public static final ResourceKey<PlacedFeature> CAMOMILE_PLACED = registerKey("camomile_placed");
+    public static final ResourceKey<PlacedFeature> COBWEB_PLACED = registerKey("cobweb_placed");
+    public static final ResourceKey<PlacedFeature> CHERVIL_PLACED = registerKey("chervil_placed");
+    public static final ResourceKey<PlacedFeature> CHICKWEED_PLACED = registerKey("chickweed_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -56,6 +64,10 @@ public class VHPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
+        register(context, BURDOCK_ROOT_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BURDOCK_ROOT),
+                OrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(20), VerticalAnchor.absolute(80))));
+
         register(context, BURNET_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.BURNET),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
@@ -76,6 +88,20 @@ public class VHPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
+        register(context, COBWEB_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.COBWEB),
+                List.of(RarityFilter.onAverageOnceEvery(24),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome(),
+                        BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.noFluid(), BlockPredicate.anyOf(BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT), BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.LEAVES))))));
+
+        register(context, CHERVIL_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.CHERVIL),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, CHICKWEED_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.CHICKWEED),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 
     public static ResourceKey<PlacedFeature> registerKey (String name){

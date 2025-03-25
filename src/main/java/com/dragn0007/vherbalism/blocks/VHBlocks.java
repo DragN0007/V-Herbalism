@@ -3,6 +3,8 @@ package com.dragn0007.vherbalism.blocks;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.crop.*;
 import com.dragn0007.vherbalism.blocks.crop.base.HerbalismSandyFlowerBlock;
+import com.dragn0007.vherbalism.blocks.other.BurdockRootBlock;
+import com.dragn0007.vherbalism.blocks.other.HangingBurdockRootBlock;
 import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.world.tree.AlderTreeGrower;
 import com.dragn0007.vherbalism.world.tree.SappyBirchTreeGrower;
@@ -51,6 +53,11 @@ public class VHBlocks {
     public static final RegistryObject<Block> BROOM_SHRUB = registerBlockWithoutItem("broom_shrub",
             () -> new BroomShrub(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH)));
 
+    public static final RegistryObject<Block> BURDOCK_ROOT = registerBlockWithoutItem("burdock_root",
+            () -> new BurdockRootBlock(BlockBehaviour.Properties.copy(Blocks.ROOTED_DIRT)));
+    public static final RegistryObject<Block> HANGING_BURDOCK_ROOT = registerBlockWithoutItem("hanging_burdock_root",
+            () -> new HangingBurdockRootBlock(BlockBehaviour.Properties.copy(Blocks.HANGING_ROOTS)));
+
     public static final RegistryObject<Block> BURNET = registerBlockWithoutItem("burnet",
             () -> new BurnetCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
     public static final RegistryObject<Block> WILD_BURNET = registerBlockWithoutItem("wild_burnet",
@@ -76,15 +83,18 @@ public class VHBlocks {
     public static final RegistryObject<Block> WILD_CELADINE = registerBlockWithoutItem("wild_celadine",
             () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
-//    public static final RegistryObject<Block> CHERVIL = registerBlockWithoutItem("chervil",
-//            () -> new ChervilCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_CHERVIL = registerBlockWithoutItem("wild_chervil",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+    public static final RegistryObject<Block> COBWEB = registerBlockWithoutItem("cobweb",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POPPY).noCollission()));
+
+    public static final RegistryObject<Block> CHERVIL = registerBlockWithoutItem("chervil",
+            () -> new ChervilCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_CHERVIL = registerBlockWithoutItem("wild_chervil",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 //
-//    public static final RegistryObject<Block> CHICKWEED = registerBlockWithoutItem("chickweed",
-//            () -> new ChickweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_CHICKWEED = registerBlockWithoutItem("wild_chickweed",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+    public static final RegistryObject<Block> CHICKWEED = registerBlockWithoutItem("chickweed",
+            () -> new ChickweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_CHICKWEED = registerBlockWithoutItem("wild_chickweed",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 //
 //    public static final RegistryObject<Block> COLTSFOOT = registerBlockWithoutItem("coltsfoot",
 //            () -> new ColtsfootCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));

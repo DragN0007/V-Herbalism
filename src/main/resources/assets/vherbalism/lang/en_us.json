@@ -20,6 +20,11 @@
   "tooltip.vherbalism.broom.tooltip": "Can be mashed into Broom Poultice.",
   "tooltip.vherbalism.broom_poultice.tooltip": "Helps promote healing in broken bones and wounds when applied to/ around the affected area.",
 
+  "item.vherbalism.burdock_root": "Burdock Root",
+  "block.vherbalism.burdock_root": "Burdock Root",
+  "block.vherbalism.hanging_burdock_root": "Burdock Root",
+  "tooltip.vherbalism.burdock_root.tooltip": "Soothes sores, bites, and other minor afflictions when chewed and applied to affected areas.",
+
   "item.vherbalism.blackberry": "Blackberry",
   "item.vherbalism.blackberry_leaves": "Blackberry Leaves",
   "item.vherbalism.blackberry_leaf_poultice": "Blackberry Leaf Poultice",
@@ -37,6 +42,11 @@
   "block.vherbalism.wild_catchweed": "Wild Catchweed",
   "tooltip.vherbalism.catchweed.tooltip": "Used in poultices to prevent them from being easily rubbed off from the skin.",
 
+  "item.vherbalism.catmint_leaves": "Catmint Leaves",
+  "block.vherbalism.catmint": "Catmint",
+  "block.vherbalism.wild_catmint": "Wild Catmint",
+  "tooltip.vherbalism.catmint_leaves.tooltip": "Treats Greencough.",
+
   "item.vherbalism.celadine_bundle": "Celadine Bundle",
   "item.vherbalism.celadine_juice": "Celadine Poultice",
   "block.vherbalism.wild_celadine": "Wild Celadine",
@@ -48,6 +58,20 @@
   "block.vherbalism.camomile": "Camomile",
   "block.vherbalism.wild_camomile": "Wild Camomile",
   "tooltip.vherbalism.camomile.tooltip": "Can be chewed for strength when traveling.",
+
+  "item.vherbalism.cobweb": "Cobweb",
+  "block.vherbalism.cobweb": "Cobweb",
+  "tooltip.vherbalism.cobweb.tooltip": "Can be used in poultices or directly on wounds to help seal them.",
+
+  "item.vherbalism.chervil": "Chervil",
+  "block.vherbalism.chervil": "Chervil",
+  "block.vherbalism.wild_chervil": "Wild Chervil",
+  "tooltip.vherbalism.chervil.tooltip": "Can soothe infections or bellyaches when chewed.",
+
+  "item.vherbalism.chickweed": "Chickweed",
+  "block.vherbalism.chickweed": "Chickweed",
+  "block.vherbalism.wild_chickweed": "Wild Chickweed",
+  "tooltip.vherbalism.chickweed.tooltip": "Treats Greencough.",
 
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
