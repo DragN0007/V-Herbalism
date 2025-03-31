@@ -22,6 +22,28 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.DANDELION_ROOT.get(), 2)
+                .requires(Items.DANDELION)
+                .requires(Items.DANDELION)
+                .unlockedBy("has_dandelion", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.DANDELION)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.DANDELION_LEAVES.get(), 2)
+                .requires(Items.DANDELION)
+                .unlockedBy("has_dandelion", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.DANDELION)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.DAISY_LEAVES.get(), 2)
+                .requires(Items.OXEYE_DAISY)
+                .unlockedBy("has_daisy", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.OXEYE_DAISY)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.COBWEB.get())
                 .requires(Items.STICK)
                 .requires(Items.STRING)

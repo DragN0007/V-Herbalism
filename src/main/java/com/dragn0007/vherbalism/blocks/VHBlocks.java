@@ -90,29 +90,35 @@ public class VHBlocks {
             () -> new ChervilCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
     public static final RegistryObject<Block> WILD_CHERVIL = registerBlockWithoutItem("wild_chervil",
             () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
+
     public static final RegistryObject<Block> CHICKWEED = registerBlockWithoutItem("chickweed",
             () -> new ChickweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
     public static final RegistryObject<Block> WILD_CHICKWEED = registerBlockWithoutItem("wild_chickweed",
             () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> COLTSFOOT = registerBlockWithoutItem("coltsfoot",
-//            () -> new ColtsfootCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_COLTSFOOT = registerBlockWithoutItem("wild_coltsfoot",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> COMFREY = registerBlockWithoutItem("comfrey",
-//            () -> new ComfreyCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_COMFREY = registerBlockWithoutItem("wild_comfrey",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> COLTSFOOT = registerBlockWithoutItem("coltsfoot",
+            () -> new ColtsfootCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_COLTSFOOT = registerBlockWithoutItem("wild_coltsfoot",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> COMFREY = registerBlockWithoutItem("comfrey",
+            () -> new ComfreyCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_COMFREY = registerBlockWithoutItem("wild_comfrey",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> DAISY = registerBlockWithoutItem("daisy",
+            () -> new DaisyCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+
+    public static final RegistryObject<Block> DANDELION = registerBlockWithoutItem("dandelion",
+            () -> new DandelionCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
 //
 //    public static final RegistryObject<Block> DEATHBERRY_BUSH = registerBlockWithoutItem("deathberry_bush",
 //            () -> new DeathberryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH)));
 //
-//    public static final RegistryObject<Block> DOCK = registerBlockWithoutItem("dock",
-//            () -> new DockCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_DOCK = registerBlockWithoutItem("wild_dock",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+    public static final RegistryObject<Block> DOCK = registerBlockWithoutItem("dock",
+            () -> new DockCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_DOCK = registerBlockWithoutItem("wild_dock",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 //
 //    public static final RegistryObject<Block> FENNEL = registerBlockWithoutItem("fennel",
 //            () -> new FennelCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));

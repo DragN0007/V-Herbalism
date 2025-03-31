@@ -73,6 +73,33 @@
   "block.vherbalism.wild_chickweed": "Wild Chickweed",
   "tooltip.vherbalism.chickweed.tooltip": "Treats Greencough.",
 
+  "item.vherbalism.coltsfoot_bundle": "Coltsfoot Bundle",
+  "block.vherbalism.coltsfoot": "Coltsfoot",
+  "block.vherbalism.wild_coltsfoot": "Wild Coltsfoot",
+  "tooltip.vherbalism.coltsfoot_bundle.tooltip": "Can soothe lung-illnesses and coughs when chewed.",
+
+  "item.vherbalism.comfrey_leaf": "Comfrey Leaf",
+  "item.vherbalism.comfrey_root": "Comfrey Root",
+  "block.vherbalism.comfrey": "Comfrey",
+  "block.vherbalism.wild_comfrey": "Wild Comfrey",
+  "tooltip.vherbalism.comfrey_leaf.tooltip": "Helps soothe pain from broken bones, other injuries and ailments when chewed or wrapped around them.",
+  "tooltip.vherbalism.comfrey_root.tooltip": "Helps soothe pain from broken bones, other injuries and ailments when chewed.",
+
+  "item.vherbalism.daisy_leaves": "Daisy Leaves",
+  "block.vherbalism.daisy": "Daisy",
+  "tooltip.vherbalism.daisy_leaves.tooltip": "Soothes pain from aching joints when chewed.",
+
+  "item.vherbalism.dandelion_leaves": "Dandelion Leaves",
+  "item.vherbalism.dandelion_root": "Dandelion Root",
+  "block.vherbalism.dandelion": "Daisy",
+  "tooltip.vherbalism.dandelion_leaves.tooltip": "Helps bring down fevers when chewed.",
+  "tooltip.vherbalism.dandelion_root.tooltip": "Treats Saffron Poisoning when chewed.",
+
+  "item.vherbalism.dock_leaf": "Dock Leaf",
+  "block.vherbalism.dock": "Dock",
+  "block.vherbalism.wild_dock": "Wild Dock",
+  "tooltip.vherbalism.dock_leaf.tooltip": "Soothes pain from minor wounds.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

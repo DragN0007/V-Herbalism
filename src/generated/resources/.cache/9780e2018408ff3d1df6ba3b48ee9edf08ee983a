@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-25T04:03:30.5462347	Item Models: vherbalism
+// 1.20.1	2025-03-30T23:37:46.9138453	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -20,5 +20,12 @@ f79ec85ddbe27e9a2f398132631d4ce6c47844e6 assets/vherbalism/models/item/catchweed
 b6278b358f3941ae5c6803e1b2ca31870dc680b8 assets/vherbalism/models/item/chervil.json
 b941cd394e9933cb211bbab48f0555b6a8f0c204 assets/vherbalism/models/item/chickweed.json
 ca5e51bb4e2fb537cbe6b2c4095546f8a51061ce assets/vherbalism/models/item/cobweb.json
+0d43314239f1bdcbad3499ae3adb079285ed0c3c assets/vherbalism/models/item/coltsfoot_bundle.json
+e95bb299acdc13b923e0537f41c103c8fd99a781 assets/vherbalism/models/item/comfrey_leaf.json
+aeacfba139c2e56c5e3bbc43cab267f3a6fde91d assets/vherbalism/models/item/comfrey_root.json
+2ff22d8a84559d80c3060b76e940feec3805b12b assets/vherbalism/models/item/daisy_leaves.json
+4f7c8e20f0a62a7585fedd6a7296a725eb586772 assets/vherbalism/models/item/dandelion_leaves.json
+35fc48a9549f3fa162d391d0931b1380acf3452d assets/vherbalism/models/item/dandelion_root.json
+47bc9f6b2dcbad80103b344e75e972e39fc965af assets/vherbalism/models/item/dock_leaf.json
 e3ff0b77422005725f67fffc4aebadffaf24fdd7 assets/vherbalism/models/item/sappy_birch_log.json
 58101560ef8f6cf48336c3957b9d134ea362f3c8 assets/vherbalism/models/item/sappy_birch_sapling.json

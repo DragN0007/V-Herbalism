@@ -36,6 +36,11 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> ADD_CHERVIL_MOUNTAINS = registerKey("add_chervil_mountains");
     public static final ResourceKey<BiomeModifier> ADD_CHICKWEED_RIVER = registerKey("add_chickweed_river");
     public static final ResourceKey<BiomeModifier> ADD_CHICKWEED_PLAINS = registerKey("add_chickweed_plains");
+    public static final ResourceKey<BiomeModifier> ADD_COLTSFOOT_PLAINS = registerKey("add_coltsfoot_plains");
+    public static final ResourceKey<BiomeModifier> ADD_COLTSFOOT_FOREST = registerKey("add_coltsfoot_forest");
+    public static final ResourceKey<BiomeModifier> ADD_COMFREY_WET = registerKey("add_comfrey_wet");
+    public static final ResourceKey<BiomeModifier> ADD_COMFREY_COLD = registerKey("add_comfrey_cold");
+    public static final ResourceKey<BiomeModifier> ADD_DOCK_FOREST = registerKey("add_dock_forest");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -144,6 +149,31 @@ public class BiomeHitter {
         context.register(ADD_CHICKWEED_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CHICKWEED_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_COLTSFOOT_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.COLTSFOOT_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_COLTSFOOT_FOREST, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.COLTSFOOT_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_COMFREY_WET, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.COMFREY_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_COMFREY_COLD, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_COLD_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.COMFREY_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_DOCK_FOREST, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.DOCK_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

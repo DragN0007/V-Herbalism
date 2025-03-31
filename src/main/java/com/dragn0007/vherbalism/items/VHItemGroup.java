@@ -17,7 +17,7 @@ public class VHItemGroup {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Herbalism.MODID);
 
     public static final RegistryObject<CreativeModeTab> HERBALISM_GROUP = CREATIVE_MODE_TABS.register("vherbalism",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(VHItems.ALDER_BARK.get())).title(Component.translatable("itemGroup.vherbalism"))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(VHItems.BROOM_BUNDLE.get())).title(Component.translatable("itemGroup.vherbalism"))
                     .displayItems((displayParameters, output) -> {
 
                         output.accept(VHItems.ALDER_BARK.get());
@@ -52,6 +52,13 @@ public class VHItemGroup {
                         output.accept(VHItems.COBWEB.get());
                         output.accept(VHItems.CHERVIL.get());
                         output.accept(VHItems.CHICKWEED.get());
+                        output.accept(VHItems.COLTSFOOT_BUNDLE.get());
+                        output.accept(VHItems.COMFREY_LEAF.get());
+                        output.accept(VHItems.COMFREY_ROOT.get());
+                        output.accept(VHItems.DAISY_LEAVES.get());
+                        output.accept(VHItems.DANDELION_LEAVES.get());
+                        output.accept(VHItems.DANDELION_ROOT.get());
+                        output.accept(VHItems.DOCK_LEAF.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

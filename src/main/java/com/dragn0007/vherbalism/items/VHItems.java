@@ -40,7 +40,7 @@ public class VHItems {
             () -> new BurdockRootItem(new Item.Properties()));
 
     public static final RegistryObject<Item> BURNET_BUNDLE = ITEMS.register("burnet_bundle",
-            () -> new BurnetItem(VHBlocks.BURNET.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(1).build()))));
+            () -> new BurnetItem(VHBlocks.BURNET.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(0).build()))));
 
     public static final RegistryObject<Item> CATCHWEED_BUNDLE = ITEMS.register("catchweed_bundle",
             () -> new CatchweedItem(VHBlocks.CATCHWEED.get(), (new Item.Properties())));
@@ -55,7 +55,7 @@ public class VHItems {
             () -> new CeladineJuiceItem(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> CAMOMILE_FLOWER = ITEMS.register("camomile_flower",
-            () -> new CamomileItem(VHBlocks.CAMOMILE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(1).build()))));
+            () -> new CamomileItem(VHBlocks.CAMOMILE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(0).build()))));
 
     public static final RegistryObject<Item> COBWEB = ITEMS.register("cobweb",
             () -> new CobwebItem(new Item.Properties()));
@@ -65,6 +65,25 @@ public class VHItems {
 
     public static final RegistryObject<Item> CHICKWEED = ITEMS.register("chickweed",
             () -> new ChickweedItem(VHBlocks.CHICKWEED.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> COLTSFOOT_BUNDLE = ITEMS.register("coltsfoot_bundle",
+            () -> new ColtsfootItem(VHBlocks.COLTSFOOT.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> COMFREY_LEAF = ITEMS.register("comfrey_leaf",
+            () -> new ComfreyItem(VHBlocks.COMFREY.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build()))));
+    public static final RegistryObject<Item> COMFREY_ROOT = ITEMS.register("comfrey_root",
+            () -> new ComfreyRootItem(VHBlocks.COMFREY.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build()))));
+
+    public static final RegistryObject<Item> DAISY_LEAVES = ITEMS.register("daisy_leaves",
+            () -> new DaisyItem(VHBlocks.DAISY.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> DANDELION_LEAVES = ITEMS.register("dandelion_leaves",
+            () -> new DandelionItem(VHBlocks.DANDELION.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> DANDELION_ROOT = ITEMS.register("dandelion_root",
+            () -> new DandelionRootItem(VHBlocks.DANDELION.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> DOCK_LEAF = ITEMS.register("dock_leaf",
+            () -> new DockItem(VHBlocks.DOCK.get(), (new Item.Properties())));
 
 
 

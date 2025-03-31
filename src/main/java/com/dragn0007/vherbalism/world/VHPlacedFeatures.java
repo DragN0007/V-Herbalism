@@ -36,6 +36,9 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> COBWEB_PLACED = registerKey("cobweb_placed");
     public static final ResourceKey<PlacedFeature> CHERVIL_PLACED = registerKey("chervil_placed");
     public static final ResourceKey<PlacedFeature> CHICKWEED_PLACED = registerKey("chickweed_placed");
+    public static final ResourceKey<PlacedFeature> COLTSFOOT_PLACED = registerKey("coltsfoot_placed");
+    public static final ResourceKey<PlacedFeature> COMFREY_PLACED = registerKey("comfrey_placed");
+    public static final ResourceKey<PlacedFeature> DOCK_PLACED = registerKey("dock_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -100,6 +103,18 @@ public class VHPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, CHICKWEED_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.CHICKWEED),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, COLTSFOOT_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.COLTSFOOT),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, COMFREY_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.COMFREY),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, DOCK_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.DOCK),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }

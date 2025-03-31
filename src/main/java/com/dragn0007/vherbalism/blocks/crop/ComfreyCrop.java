@@ -1,4 +1,4 @@
-package unused;
+package com.dragn0007.vherbalism.blocks.crop;
 
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.crop.base.HerbalismCropBlock;
@@ -8,8 +8,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class DockCrop extends HerbalismCropBlock {
-    public DockCrop(Properties properties) {
+public class ComfreyCrop extends HerbalismCropBlock {
+    public ComfreyCrop(Properties properties) {
         super(properties);
     }
 
@@ -20,11 +20,11 @@ public class DockCrop extends HerbalismCropBlock {
 
     @Override
     public BlockState getPlant(BlockGetter level, BlockPos pos) {
-        return VHBlocks.DOCK.get().defaultBlockState();
+        return VHBlocks.COMFREY.get().defaultBlockState();
     }
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.COMFREY_LEAF.get();
     }
 }

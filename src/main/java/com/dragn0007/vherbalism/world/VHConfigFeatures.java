@@ -43,6 +43,9 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> COBWEB = registerKey("cobweb");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHERVIL = registerKey("chervil");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHICKWEED = registerKey("chickweed");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> COLTSFOOT = registerKey("coltsfoot");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> COMFREY = registerKey("comfrey");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DOCK = registerKey("dock");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -116,8 +119,20 @@ public class VHConfigFeatures {
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_CHERVIL.get())))));
 
         register(context, CHICKWEED, Feature.FLOWER,
-                new RandomPatchConfiguration(10, 0, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                new RandomPatchConfiguration(10, 1, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_CHICKWEED.get())))));
+
+        register(context, COLTSFOOT, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 1, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_COLTSFOOT.get())))));
+
+        register(context, COMFREY, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 1, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_COMFREY.get())))));
+
+        register(context, DOCK, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_DOCK.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

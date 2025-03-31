@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-25T04:03:30.5432423	Loot Tables
+// 1.20.1	2025-03-30T23:37:46.9108521	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -19,6 +19,11 @@ cd63ad80000e2088c7cabec575ef0f1a4c4b9b10 data/vherbalism/loot_tables/blocks/catm
 c67b0d36b451571c672ac2b3748e24500535371a data/vherbalism/loot_tables/blocks/chervil.json
 bcb3441ecd82b7584bf30b14480ee2cf720f64a6 data/vherbalism/loot_tables/blocks/chickweed.json
 27ab8255198c052a40294b554edf51ee40faa67b data/vherbalism/loot_tables/blocks/cobweb.json
+ab01f42cf4f59813b67954253aedbcfebeb75d95 data/vherbalism/loot_tables/blocks/coltsfoot.json
+d7aed5a5cd2d8196f9bba28c1696584d208bcb2a data/vherbalism/loot_tables/blocks/comfrey.json
+da84793c9216e9239c70d852c6b601e9a5c60c0b data/vherbalism/loot_tables/blocks/daisy.json
+5b76af97e2134428c4dbbc422eac8d255d94358a data/vherbalism/loot_tables/blocks/dandelion.json
+64c15c6e39e9cfb15eaa8431f6813cc1978a4161 data/vherbalism/loot_tables/blocks/dock.json
 bf04d4800d69731cf3780ee275ac129462c9908a data/vherbalism/loot_tables/blocks/hanging_burdock_root.json
 e934f771185809702bb4c866c411db0caf494399 data/vherbalism/loot_tables/blocks/sappy_birch_sapling.json
 6f960715cf523b4e3859b549291e125aea8e0197 data/vherbalism/loot_tables/blocks/wild_bindweed.json
@@ -30,3 +35,6 @@ e934f771185809702bb4c866c411db0caf494399 data/vherbalism/loot_tables/blocks/sapp
 d25f666a9568a4f1d343680c4fe163e46db10c3a data/vherbalism/loot_tables/blocks/wild_celadine.json
 e0a51852afdc03ba2e15120bbc2bc85298714bbf data/vherbalism/loot_tables/blocks/wild_chervil.json
 912c4df650d8caf4c44ab4adebb5275d585c13ad data/vherbalism/loot_tables/blocks/wild_chickweed.json
+405fb18fe235059b8a82b3f20784ffe618dd243b data/vherbalism/loot_tables/blocks/wild_coltsfoot.json
+ef69c9e0f61ca6f7cba1c4cf746581a6bc94f83f data/vherbalism/loot_tables/blocks/wild_comfrey.json
+edb92fb5079b1d5e00267ef3692820006e2ad98d data/vherbalism/loot_tables/blocks/wild_dock.json
