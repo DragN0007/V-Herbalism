@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-30T23:37:46.9108521	Loot Tables
+// 1.20.1	2025-04-01T00:57:43.4910086	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -24,6 +24,12 @@ d7aed5a5cd2d8196f9bba28c1696584d208bcb2a data/vherbalism/loot_tables/blocks/comf
 da84793c9216e9239c70d852c6b601e9a5c60c0b data/vherbalism/loot_tables/blocks/daisy.json
 5b76af97e2134428c4dbbc422eac8d255d94358a data/vherbalism/loot_tables/blocks/dandelion.json
 64c15c6e39e9cfb15eaa8431f6813cc1978a4161 data/vherbalism/loot_tables/blocks/dock.json
+ee84b49e87a7eb58aff990cc8cbb90a76850256d data/vherbalism/loot_tables/blocks/elderberry_bush.json
+eaaffa84804229834b5a080e331e8741b50173b8 data/vherbalism/loot_tables/blocks/fennel.json
+c6d1d89f4a3f73b21ac41ee456d32933bc654d39 data/vherbalism/loot_tables/blocks/feverfew.json
+1b1f7c2615c523d2255452f746d355f96b573f57 data/vherbalism/loot_tables/blocks/garlic.json
+f65671306fab0a4675c36c01ba02b1c2e06d49ec data/vherbalism/loot_tables/blocks/goatweed.json
+d9f740cfd81fb27b45a41bb3c8d7c787f9d09269 data/vherbalism/loot_tables/blocks/goldenrod.json
 bf04d4800d69731cf3780ee275ac129462c9908a data/vherbalism/loot_tables/blocks/hanging_burdock_root.json
 e934f771185809702bb4c866c411db0caf494399 data/vherbalism/loot_tables/blocks/sappy_birch_sapling.json
 6f960715cf523b4e3859b549291e125aea8e0197 data/vherbalism/loot_tables/blocks/wild_bindweed.json
@@ -38,3 +44,8 @@ e0a51852afdc03ba2e15120bbc2bc85298714bbf data/vherbalism/loot_tables/blocks/wild
 405fb18fe235059b8a82b3f20784ffe618dd243b data/vherbalism/loot_tables/blocks/wild_coltsfoot.json
 ef69c9e0f61ca6f7cba1c4cf746581a6bc94f83f data/vherbalism/loot_tables/blocks/wild_comfrey.json
 edb92fb5079b1d5e00267ef3692820006e2ad98d data/vherbalism/loot_tables/blocks/wild_dock.json
+459134903e389be84addf7c54b6f76c2e5b3a31f data/vherbalism/loot_tables/blocks/wild_fennel.json
+79f14d029719671ff58d4b91802a1f887bfa7a09 data/vherbalism/loot_tables/blocks/wild_feverfew.json
+ca121064b7bdd57b94f6a6ef7553806161352793 data/vherbalism/loot_tables/blocks/wild_garlic.json
+9e52c58e06156492aae6b3b1be6634a0e3545a8e data/vherbalism/loot_tables/blocks/wild_goatweed.json
+c3532e4e3a7378ee1b45a27365f717eb677a1e2f data/vherbalism/loot_tables/blocks/wild_goldenrod.json

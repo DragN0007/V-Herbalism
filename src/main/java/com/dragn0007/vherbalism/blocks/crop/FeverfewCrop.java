@@ -1,4 +1,4 @@
-package unused;
+package com.dragn0007.vherbalism.blocks.crop;
 
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.crop.base.HerbalismCropBlock;
@@ -8,8 +8,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class GoldenrodCrop extends HerbalismCropBlock {
-    public GoldenrodCrop(Properties properties) {
+public class FeverfewCrop extends HerbalismCropBlock {
+    public FeverfewCrop(Properties properties) {
         super(properties);
     }
 
@@ -20,11 +20,11 @@ public class GoldenrodCrop extends HerbalismCropBlock {
 
     @Override
     public BlockState getPlant(BlockGetter level, BlockPos pos) {
-        return VHBlocks.GOLDENROD.get().defaultBlockState();
+        return VHBlocks.FEVERFEW.get().defaultBlockState();
     }
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.FEVERFEW_BUNDLE.get();
     }
 }

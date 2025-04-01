@@ -41,6 +41,14 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> ADD_COMFREY_WET = registerKey("add_comfrey_wet");
     public static final ResourceKey<BiomeModifier> ADD_COMFREY_COLD = registerKey("add_comfrey_cold");
     public static final ResourceKey<BiomeModifier> ADD_DOCK_FOREST = registerKey("add_dock_forest");
+    public static final ResourceKey<BiomeModifier> ADD_ELDERBERRY_BUSH = registerKey("add_elderberry_bush");
+    public static final ResourceKey<BiomeModifier> ADD_FENNEL_PLAINS = registerKey("add_fennel_plains");
+    public static final ResourceKey<BiomeModifier> ADD_FENNEL_RIVER = registerKey("add_fennel_river");
+    public static final ResourceKey<BiomeModifier> ADD_FEVERFEW_WET = registerKey("add_feverfew_wet");
+    public static final ResourceKey<BiomeModifier> ADD_GOATWEED_HOT = registerKey("add_goatweed_hot");
+    public static final ResourceKey<BiomeModifier> ADD_GOATWEED_WET = registerKey("add_goatweed_wet");
+    public static final ResourceKey<BiomeModifier> ADD_GARLIC_PLAINS = registerKey("add_garlic_plains");
+    public static final ResourceKey<BiomeModifier> ADD_GOLDENROD_PLAINS = registerKey("add_goldenrod_plains");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -174,6 +182,46 @@ public class BiomeHitter {
         context.register(ADD_DOCK_FOREST, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_FOREST),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.DOCK_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_ELDERBERRY_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.ELDERBERRY_BUSH_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_FENNEL_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.FENNEL_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_FENNEL_RIVER, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_RIVER),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.FENNEL_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_FEVERFEW_WET, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.FEVERFEW_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_GOATWEED_HOT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.GOATWEED_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_GOATWEED_WET, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.GOATWEED_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_GARLIC_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.GARLIC_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_GOLDENROD_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.GOLDENROD_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

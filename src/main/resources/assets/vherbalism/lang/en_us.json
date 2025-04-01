@@ -100,6 +100,40 @@
   "block.vherbalism.wild_dock": "Wild Dock",
   "tooltip.vherbalism.dock_leaf.tooltip": "Soothes pain from minor wounds.",
 
+  "item.vherbalism.elderberry": "Elderberry",
+  "item.vherbalism.elderberry_leaves": "Elderberry Leaves",
+  "item.vherbalism.elderberry_leaf_poultice": "Elderberry Leaf Poultice",
+  "block.vherbalism.elderberry_bush": "Elderberry Bush",
+  "tooltip.vherbalism.elderberry_leaves.tooltip": "Can be mashed into Elderberry Leaf Poultice.",
+  "tooltip.vherbalism.elderberry_poultice.tooltip": "Helps soothe the pain of sprains and sore muscles.",
+
+  "item.vherbalism.fennel_stalk": "Fennel Stalk",
+  "block.vherbalism.fennel": "Fennel",
+  "block.vherbalism.wild_fennel": "Wild Fennel",
+  "tooltip.vherbalism.fennel_stalk.tooltip": "Soothes pain from general aches.",
+
+  "item.vherbalism.feverfew_bundle": "Feverfew Bundle",
+  "block.vherbalism.feverfew": "Feverfew",
+  "block.vherbalism.wild_feverfew": "Wild Feverfew",
+  "tooltip.vherbalism.feverfew_bundle.tooltip": "Brings down fevers when chewed.",
+
+  "item.vherbalism.garlic": "Garlic",
+  "block.vherbalism.garlic": "Garlic",
+  "block.vherbalism.wild_garlic": "Wild Garlic",
+  "tooltip.vherbalism.garlic.tooltip": "Soothes inflammation in joints.",
+
+  "item.vherbalism.goatweed_bundle": "Goatweed Bundle",
+  "block.vherbalism.goatweed": "Goatweed",
+  "block.vherbalism.wild_goatweed": "Wild Goatweed",
+  "tooltip.vherbalism.goatweed_bundle.tooltip": "Eases grief.",
+
+  "item.vherbalism.goldenrod_bundle": "Goldenrod Bundle",
+  "item.vherbalism.goldenrod_poultice": "Goldenrod Poultice",
+  "block.vherbalism.goldenrod": "Goldenrod",
+  "block.vherbalism.wild_goldenrod": "Wild Goldenrod",
+  "tooltip.vherbalism.goldenrod_bundle.tooltip": "Can be mashed into Goldenrod Poultice.",
+  "tooltip.vherbalism.goldenrod_poultice.tooltip": "Cleans and helps wounds with healing.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

@@ -4,13 +4,19 @@ import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.crop.base.HerbalismCropBlock;
 import com.dragn0007.vherbalism.items.VHItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class BurnetCrop extends HerbalismCropBlock {
     public BurnetCrop(Properties properties) {
         super(properties);
+    }
+
+    public boolean mayPlaceOn(BlockState state, BlockGetter getter, BlockPos pos) {
+        return state.is(BlockTags.DIRT) || state.is(Blocks.FARMLAND) || state.is(Blocks.SAND);
     }
 
     @Override

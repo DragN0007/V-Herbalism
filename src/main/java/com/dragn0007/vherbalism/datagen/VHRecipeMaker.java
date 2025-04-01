@@ -22,6 +22,25 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.GOLDENROD_POULTICE.get())
+                .requires(VHItems.GOLDENROD_BUNDLE.get())
+                .requires(VHItems.GOLDENROD_BUNDLE.get())
+                .requires(VHItems.COBWEB.get())
+                .unlockedBy("has_goldenrod", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.GOLDENROD_BUNDLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.ELDERBERRY_LEAF_POULTICE.get())
+                .requires(VHItems.ELDERBERRY_LEAVES.get())
+                .requires(VHItems.ELDERBERRY_LEAVES.get())
+                .requires(VHItems.CATCHWEED_BUNDLE.get())
+                .requires(VHItems.COBWEB.get())
+                .unlockedBy("has_elderberry_leaves", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.ELDERBERRY_LEAVES.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.DANDELION_ROOT.get(), 2)
                 .requires(Items.DANDELION)
                 .requires(Items.DANDELION)
@@ -72,7 +91,6 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.BROOM_POULTICE.get())
                 .requires(VHItems.BROOM_BUNDLE.get())
                 .requires(VHItems.BROOM_BUNDLE.get())
-                .requires(VHItems.CATCHWEED_BUNDLE.get())
                 .requires(VHItems.COBWEB.get())
                 .unlockedBy("has_broom_bundle", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(VHItems.BROOM_BUNDLE.get())

@@ -3,6 +3,7 @@ package com.dragn0007.vherbalism.items;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.items.custom.*;
+import io.netty.handler.codec.compression.FastLzFrameEncoder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -84,6 +85,30 @@ public class VHItems {
 
     public static final RegistryObject<Item> DOCK_LEAF = ITEMS.register("dock_leaf",
             () -> new DockItem(VHBlocks.DOCK.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> ELDERBERRY = ITEMS.register("elderberry",
+            () -> new ItemNameBlockItem(VHBlocks.ELDERBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+    public static final RegistryObject<Item> ELDERBERRY_LEAVES = ITEMS.register("elderberry_leaves",
+            () -> new ElderberryLeavesItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> ELDERBERRY_LEAF_POULTICE = ITEMS.register("elderberry_leaf_poultice",
+            () -> new ElderberryLeafPoulticeItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> FENNEL_STALK = ITEMS.register("fennel_stalk",
+            () -> new FennelStalkItem(VHBlocks.FENNEL.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> FEVERFEW_BUNDLE = ITEMS.register("feverfew_bundle",
+            () -> new FeverfewItem(VHBlocks.FEVERFEW.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> GOATWEED_BUNDLE = ITEMS.register("goatweed_bundle",
+            () -> new GoatweedItem(VHBlocks.GOATWEED.get(), (new Item.Properties())));
+
+    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
+            () -> new GarlicItem(VHBlocks.GARLIC.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+
+    public static final RegistryObject<Item> GOLDENROD_BUNDLE = ITEMS.register("goldenrod_bundle",
+            () -> new GoldenrodItem(VHBlocks.GOLDENROD.get(), new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> GOLDENROD_POULTICE = ITEMS.register("goldenrod_poultice",
+            () -> new GoldenrodPoulticeItem(new Item.Properties().stacksTo(64)));
 
 
 

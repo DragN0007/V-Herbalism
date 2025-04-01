@@ -59,6 +59,15 @@ public class VHItemGroup {
                         output.accept(VHItems.DANDELION_LEAVES.get());
                         output.accept(VHItems.DANDELION_ROOT.get());
                         output.accept(VHItems.DOCK_LEAF.get());
+                        output.accept(VHItems.ELDERBERRY.get());
+                        output.accept(VHItems.ELDERBERRY_LEAVES.get());
+                        output.accept(VHItems.ELDERBERRY_LEAF_POULTICE.get());
+                        output.accept(VHItems.FENNEL_STALK.get());
+                        output.accept(VHItems.FEVERFEW_BUNDLE.get());
+                        output.accept(VHItems.GARLIC.get());
+                        output.accept(VHItems.GOATWEED_BUNDLE.get());
+                        output.accept(VHItems.GOLDENROD_BUNDLE.get());
+                        output.accept(VHItems.GOLDENROD_POULTICE.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

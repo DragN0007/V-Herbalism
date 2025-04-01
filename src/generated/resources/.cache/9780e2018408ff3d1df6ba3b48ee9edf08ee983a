@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-30T23:37:46.9138453	Item Models: vherbalism
+// 1.20.1	2025-04-01T00:57:43.4930035	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -27,5 +27,14 @@ aeacfba139c2e56c5e3bbc43cab267f3a6fde91d assets/vherbalism/models/item/comfrey_r
 4f7c8e20f0a62a7585fedd6a7296a725eb586772 assets/vherbalism/models/item/dandelion_leaves.json
 35fc48a9549f3fa162d391d0931b1380acf3452d assets/vherbalism/models/item/dandelion_root.json
 47bc9f6b2dcbad80103b344e75e972e39fc965af assets/vherbalism/models/item/dock_leaf.json
+2f0c187c75b0b243d33b45ef246625bfcd0c5f78 assets/vherbalism/models/item/elderberry.json
+9ddd78837290a09d7f4ca18c4b672964ea523547 assets/vherbalism/models/item/elderberry_leaf_poultice.json
+1da9c056edac519bff632c6a5b2d5bb2da5d2dba assets/vherbalism/models/item/elderberry_leaves.json
+de3126e6688bed92b06fc343e6c4601e1f3b48b6 assets/vherbalism/models/item/fennel_stalk.json
+85d79f67642a96db86480385a59899fa9549347a assets/vherbalism/models/item/feverfew_bundle.json
+46749388f7c41b2e3b597f9d95db3c63d8ea41b7 assets/vherbalism/models/item/garlic.json
+2e86bdd35d95c4df7c37fcf46f00a339e16168db assets/vherbalism/models/item/goatweed_bundle.json
+fecca6408d9ee92690940fbe314800b9bfeb6e6a assets/vherbalism/models/item/goldenrod_bundle.json
+699ff839aca441969703fb7ebc93e2d823f2ddef assets/vherbalism/models/item/goldenrod_poultice.json
 e3ff0b77422005725f67fffc4aebadffaf24fdd7 assets/vherbalism/models/item/sappy_birch_log.json
 58101560ef8f6cf48336c3957b9d134ea362f3c8 assets/vherbalism/models/item/sappy_birch_sapling.json

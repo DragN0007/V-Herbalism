@@ -105,6 +105,26 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.DOCK.get(), "dock_stage_", "dock_stage_");
         simpleBlock(VHBlocks.WILD_DOCK.get(), models().cross(VHBlocks.WILD_DOCK.getId().getPath(),
                 wildPlantTexture("dock_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.FENNEL.get(), "fennel_stage_", "fennel_stage_");
+        simpleBlock(VHBlocks.WILD_FENNEL.get(), models().cross(VHBlocks.WILD_FENNEL.getId().getPath(),
+                wildPlantTexture("fennel_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.FEVERFEW.get(), "feverfew_stage_", "feverfew_stage_");
+        simpleBlock(VHBlocks.WILD_FEVERFEW.get(), models().cross(VHBlocks.WILD_FEVERFEW.getId().getPath(),
+                wildPlantTexture("feverfew_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.GOATWEED.get(), "goatweed_stage_", "goatweed_stage_");
+        simpleBlock(VHBlocks.WILD_GOATWEED.get(), models().cross(VHBlocks.WILD_GOATWEED.getId().getPath(),
+                wildPlantTexture("goatweed_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.GARLIC.get(), "garlic_stage_", "garlic_stage_");
+        simpleBlock(VHBlocks.WILD_GARLIC.get(), models().cross(VHBlocks.WILD_GARLIC.getId().getPath(),
+                wildPlantTexture("garlic_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.GOLDENROD.get(), "goldenrod_stage_", "goldenrod_stage_");
+        simpleBlock(VHBlocks.WILD_GOLDENROD.get(), models().cross(VHBlocks.WILD_GOLDENROD.getId().getPath(),
+                wildPlantTexture("goldenrod_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

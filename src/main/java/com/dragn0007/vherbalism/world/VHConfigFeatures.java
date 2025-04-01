@@ -46,6 +46,12 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> COLTSFOOT = registerKey("coltsfoot");
     public static final ResourceKey<ConfiguredFeature<?, ?>> COMFREY = registerKey("comfrey");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOCK = registerKey("dock");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ELDERBERRY_BUSH = registerKey("elderberry_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FENNEL = registerKey("fennel");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FEVERFEW = registerKey("feverfew");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOATWEED = registerKey("goatweed");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GARLIC = registerKey("garlic");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDENROD = registerKey("goldenrod");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -133,6 +139,30 @@ public class VHConfigFeatures {
         register(context, DOCK, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_DOCK.get())))));
+
+        register(context, ELDERBERRY_BUSH, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.ELDERBERRY_BUSH.get())))));
+
+        register(context, FENNEL, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_FENNEL.get())))));
+
+        register(context, FEVERFEW, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_FEVERFEW.get())))));
+
+        register(context, GOATWEED, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_GOATWEED.get())))));
+
+        register(context, GARLIC, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_GARLIC.get())))));
+
+        register(context, GOLDENROD, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_GOLDENROD.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
