@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-01T00:57:43.4910086	Loot Tables
+// 1.20.1	2025-04-03T20:15:56.5520854	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -31,6 +31,11 @@ c6d1d89f4a3f73b21ac41ee456d32933bc654d39 data/vherbalism/loot_tables/blocks/feve
 f65671306fab0a4675c36c01ba02b1c2e06d49ec data/vherbalism/loot_tables/blocks/goatweed.json
 d9f740cfd81fb27b45a41bb3c8d7c787f9d09269 data/vherbalism/loot_tables/blocks/goldenrod.json
 bf04d4800d69731cf3780ee275ac129462c9908a data/vherbalism/loot_tables/blocks/hanging_burdock_root.json
+ea615070a3eabf4108a3abe12326c0cb1139cf0f data/vherbalism/loot_tables/blocks/hawkweed.json
+9d97b46f2567fe40417b5cab35130a34978a20de data/vherbalism/loot_tables/blocks/heather.json
+68acd91417a2db23802c568601479d90c171e665 data/vherbalism/loot_tables/blocks/horsetail.json
+222c4577c35baa957298bf0f8d408aade0c889c2 data/vherbalism/loot_tables/blocks/ivy.json
+9aa4c1b11e7c00f0efe15da5e934874699f934fd data/vherbalism/loot_tables/blocks/juniper_bush.json
 e934f771185809702bb4c866c411db0caf494399 data/vherbalism/loot_tables/blocks/sappy_birch_sapling.json
 6f960715cf523b4e3859b549291e125aea8e0197 data/vherbalism/loot_tables/blocks/wild_bindweed.json
 519b4ab5bee9bdf79de05d86fab595c9253329b8 data/vherbalism/loot_tables/blocks/wild_borage.json
@@ -49,3 +54,7 @@ edb92fb5079b1d5e00267ef3692820006e2ad98d data/vherbalism/loot_tables/blocks/wild
 ca121064b7bdd57b94f6a6ef7553806161352793 data/vherbalism/loot_tables/blocks/wild_garlic.json
 9e52c58e06156492aae6b3b1be6634a0e3545a8e data/vherbalism/loot_tables/blocks/wild_goatweed.json
 c3532e4e3a7378ee1b45a27365f717eb677a1e2f data/vherbalism/loot_tables/blocks/wild_goldenrod.json
+6789af2b5002dd7d52d196cfcb1b9deaa32aa249 data/vherbalism/loot_tables/blocks/wild_hawkweed.json
+c2a903437387380f97f8237ae14aa4fd3f5ae004 data/vherbalism/loot_tables/blocks/wild_heather.json
+b1d9cc78f3dca3e363932a09958cb5b71ad95299 data/vherbalism/loot_tables/blocks/wild_horsetail.json
+f9d387085ac20bebf506c058aab33e7c86397c69 data/vherbalism/loot_tables/blocks/wild_ivy.json

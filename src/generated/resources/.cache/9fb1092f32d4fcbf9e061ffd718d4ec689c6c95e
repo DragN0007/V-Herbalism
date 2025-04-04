@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-01T00:57:43.4940006	Recipes
+// 1.20.1	2025-04-03T20:15:56.5560749	Recipes
 4487211fd34bcfef990c2f6f8807db39fb73bc41 data/minecraft/advancements/recipes/misc/birch_planks.json
 f4b8c82c6f1a8e069785ad77244ffaddbc638cca data/minecraft/recipes/birch_planks.json
 9db65746eeace8ef4a0f0a13abe7cbba62d792ca data/vherbalism/advancements/recipes/misc/alder_fence.json
@@ -16,6 +16,8 @@ f84c1a17a4560de7bef79d8677a9bf5803989776 data/vherbalism/advancements/recipes/mi
 a8b8e7efe835eec0302caed6c731c016c34e4dfd data/vherbalism/advancements/recipes/misc/dandelion_root.json
 95fa41a097bda855c89d8dc0b638196aa9bea415 data/vherbalism/advancements/recipes/misc/elderberry_leaf_poultice.json
 a0876ebe4ea9d9bbc7a7ca89ac8099c37ef3d9d5 data/vherbalism/advancements/recipes/misc/goldenrod_poultice.json
+b07df5b79588bee1d50487d9ddce5a2671228593 data/vherbalism/advancements/recipes/misc/horsetail_poultice.json
+7b079028d3a982f196ea25298f333e9ade398fd7 data/vherbalism/advancements/recipes/misc/topical_poultice.json
 da6c49e7f7f45d887515a3d3c8fd858dcafc3f88 data/vherbalism/recipes/alder_fence.json
 b096cd1fdd197cb1598d7596e4859a7b9bb48924 data/vherbalism/recipes/alder_fence_gate.json
 e5260413bd877df31013b6aae979edd3aa152fbf data/vherbalism/recipes/alder_planks.json
@@ -31,3 +33,5 @@ c0bddecd2339eb74bf620d29a0c3b37477dbee6d data/vherbalism/recipes/daisy_leaves.js
 4a46e878585e8f6e82842105b744f2c61b2943f9 data/vherbalism/recipes/dandelion_root.json
 79d4db6d93856718401392932f1cf5c1ca6bf0cf data/vherbalism/recipes/elderberry_leaf_poultice.json
 43d1283b2b61122e6d4dffcde5fdcfd468037ef0 data/vherbalism/recipes/goldenrod_poultice.json
+277258ee92530fac0831d777bc2e500be2c39df2 data/vherbalism/recipes/horsetail_poultice.json
+41d2abbcbcdd2bf615f18df5ce7053c0d4279937 data/vherbalism/recipes/topical_poultice.json

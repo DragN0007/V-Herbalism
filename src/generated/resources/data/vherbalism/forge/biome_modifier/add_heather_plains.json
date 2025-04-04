@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_plains",
+  "features": "vherbalism:heather_placed",
+  "step": "vegetal_decoration"
+}

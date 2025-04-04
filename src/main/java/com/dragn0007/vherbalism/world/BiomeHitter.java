@@ -217,11 +217,6 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.GOATWEED_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
-        context.register(ADD_GOATWEED_WET, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.GOATWEED_PLACED)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
-
         context.register(ADD_GARLIC_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.GARLIC_PLACED)),
@@ -260,6 +255,16 @@ public class BiomeHitter {
         context.register(ADD_IVY_MOUNTAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_MOUNTAIN),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.IVY_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_JUNIPER_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.JUNIPER_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_JUNIPER_CONIFEROUS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_CONIFEROUS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.JUNIPER_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

@@ -100,7 +100,7 @@
   "block.vherbalism.wild_dock": "Wild Dock",
   "tooltip.vherbalism.dock_leaf.tooltip": "Soothes pain from minor wounds.",
 
-  "item.vherbalism.elderberry": "Elderberry",
+  "item.vherbalism.elderberry": "Elderberries",
   "item.vherbalism.elderberry_leaves": "Elderberry Leaves",
   "item.vherbalism.elderberry_leaf_poultice": "Elderberry Leaf Poultice",
   "block.vherbalism.elderberry_bush": "Elderberry Bush",
@@ -154,9 +154,10 @@
   "item.vherbalism.ivy_leaf": "Ivy Leaf",
   "block.vherbalism.ivy": "Ivy",
   "block.vherbalism.wild_ivy": "Wild Ivy",
-  "tooltip.vherbalism.ivy_bundle.tooltip": "Can bind things together.",
+  "tooltip.vherbalism.ivy_leaf.tooltip": "Can bind things together.",
 
   "item.vherbalism.juniperberry": "Juniper Berries",
+  "item.vherbalism.topical_poultice": "Topical Poultice",
   "block.vherbalism.juniper_bush": "Juniper Bush",
   "tooltip.vherbalism.juniperberry.tooltip": "Soothes bellyaches, coughs and shortness of breath. Can be used in Topical Poultice.",
   "tooltip.vherbalism.topical_poultice.tooltip": "Soothes aching joints.",
