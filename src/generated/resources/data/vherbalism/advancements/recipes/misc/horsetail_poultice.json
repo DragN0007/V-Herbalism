@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_horsetail": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vherbalism:horsetail_bundle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vherbalism:horsetail_poultice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_horsetail",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vherbalism:horsetail_poultice"
+    ]
+  },
+  "sends_telemetry_event": false
+}

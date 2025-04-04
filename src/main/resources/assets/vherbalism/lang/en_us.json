@@ -134,6 +134,33 @@
   "tooltip.vherbalism.goldenrod_bundle.tooltip": "Can be mashed into Goldenrod Poultice.",
   "tooltip.vherbalism.goldenrod_poultice.tooltip": "Cleans and helps wounds with healing.",
 
+  "item.vherbalism.hawkweed_bundle": "Hawkweed Bundle",
+  "block.vherbalism.hawkweed": "Hawkweed",
+  "block.vherbalism.wild_hawkweed": "Wild Hawkweed",
+  "tooltip.vherbalism.hawkweed_bundle.tooltip": "Treats Greencough.",
+
+  "item.vherbalism.heather_bundle": "Heather Bundle",
+  "block.vherbalism.heather": "Heather",
+  "block.vherbalism.wild_heather": "Wild Heather",
+  "tooltip.vherbalism.heather_bundle.tooltip": "Soothes aching joints.",
+
+  "item.vherbalism.horsetail_bundle": "Horsetail Bundle",
+  "item.vherbalism.horsetail_poultice": "Horsetail Poultice",
+  "block.vherbalism.horsetail": "Horsetail",
+  "block.vherbalism.wild_horsetail": "Wild Horsetail",
+  "tooltip.vherbalism.horsetail_bundle.tooltip": "Can be mashed into Horsetail Poultice.",
+  "tooltip.vherbalism.horsetail_poultice.tooltip": "Treats infected wounds.",
+
+  "item.vherbalism.ivy_leaf": "Ivy Leaf",
+  "block.vherbalism.ivy": "Ivy",
+  "block.vherbalism.wild_ivy": "Wild Ivy",
+  "tooltip.vherbalism.ivy_bundle.tooltip": "Can bind things together.",
+
+  "item.vherbalism.juniperberry": "Juniper Berries",
+  "block.vherbalism.juniper_bush": "Juniper Bush",
+  "tooltip.vherbalism.juniperberry.tooltip": "Soothes bellyaches, coughs and shortness of breath. Can be used in Topical Poultice.",
+  "tooltip.vherbalism.topical_poultice.tooltip": "Soothes aching joints.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

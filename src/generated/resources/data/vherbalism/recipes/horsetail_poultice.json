@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:horsetail_bundle"
+    },
+    {
+      "item": "vherbalism:horsetail_bundle"
+    },
+    {
+      "item": "vherbalism:cobweb"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:horsetail_poultice"
+  }
+}

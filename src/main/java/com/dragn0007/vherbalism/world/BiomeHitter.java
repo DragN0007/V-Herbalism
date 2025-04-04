@@ -49,6 +49,14 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> ADD_GOATWEED_WET = registerKey("add_goatweed_wet");
     public static final ResourceKey<BiomeModifier> ADD_GARLIC_PLAINS = registerKey("add_garlic_plains");
     public static final ResourceKey<BiomeModifier> ADD_GOLDENROD_PLAINS = registerKey("add_goldenrod_plains");
+    public static final ResourceKey<BiomeModifier> ADD_HAWKWEED = registerKey("add_hawkweed");
+    public static final ResourceKey<BiomeModifier> ADD_HEATHER_SWAMP = registerKey("add_heather_swamp");
+    public static final ResourceKey<BiomeModifier> ADD_HEATHER_PLAINS = registerKey("add_heather_plains");
+    public static final ResourceKey<BiomeModifier> ADD_HORSETAIL_WET = registerKey("add_horsetail_wet");
+    public static final ResourceKey<BiomeModifier> ADD_IVY_FOREST = registerKey("add_ivy_forest");
+    public static final ResourceKey<BiomeModifier> ADD_IVY_MOUNTAINS = registerKey("add_ivy_mountains");
+    public static final ResourceKey<BiomeModifier> ADD_JUNIPER_PLAINS = registerKey("add_juniper_plains");
+    public static final ResourceKey<BiomeModifier> ADD_JUNIPER_CONIFEROUS = registerKey("add_juniper_coniferous");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -222,6 +230,36 @@ public class BiomeHitter {
         context.register(ADD_GOLDENROD_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.GOLDENROD_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_HAWKWEED, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.HAWKWEED_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_HEATHER_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.HEATHER_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_HEATHER_SWAMP, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_SWAMP),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.HEATHER_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_HORSETAIL_WET, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.HORSETAIL_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_IVY_FOREST, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.IVY_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_IVY_MOUNTAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_MOUNTAIN),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.IVY_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

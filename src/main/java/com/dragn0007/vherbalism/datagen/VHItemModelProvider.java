@@ -58,6 +58,13 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.GARLIC);
         simpleItem(VHItems.GOLDENROD_BUNDLE);
         simpleItem(VHItems.GOLDENROD_POULTICE);
+        simpleItem(VHItems.HAWKWEED_BUNDLE);
+        simpleItem(VHItems.HEATHER_BUNDLE);
+        simpleItem(VHItems.HORSETAIL_BUNDLE);
+        simpleItem(VHItems.HORSETAIL_POULTICE);
+        simpleItem(VHItems.IVY_LEAF);
+        simpleItem(VHItems.JUNIPERBERRY);
+        simpleItem(VHItems.TOPICAL_POULTICE);
 
         simpleItem(VHItems.BIRCH_SAP);
         simpleBlockItem(VHBlocks.SAPPY_BIRCH_SAPLING);

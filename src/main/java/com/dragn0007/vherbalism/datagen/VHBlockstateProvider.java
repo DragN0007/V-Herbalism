@@ -125,6 +125,22 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.GOLDENROD.get(), "goldenrod_stage_", "goldenrod_stage_");
         simpleBlock(VHBlocks.WILD_GOLDENROD.get(), models().cross(VHBlocks.WILD_GOLDENROD.getId().getPath(),
                 wildPlantTexture("goldenrod_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.HAWKWEED.get(), "hawkweed_stage_", "hawkweed_stage_");
+        simpleBlock(VHBlocks.WILD_HAWKWEED.get(), models().cross(VHBlocks.WILD_HAWKWEED.getId().getPath(),
+                wildPlantTexture("hawkweed_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.HORSETAIL.get(), "horsetail_stage_", "horsetail_stage_");
+        simpleBlock(VHBlocks.WILD_HORSETAIL.get(), models().cross(VHBlocks.WILD_HORSETAIL.getId().getPath(),
+                wildPlantTexture("horsetail_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.HEATHER.get(), "heather_stage_", "heather_stage_");
+        simpleBlock(VHBlocks.WILD_HEATHER.get(), models().cross(VHBlocks.WILD_HEATHER.getId().getPath(),
+                wildPlantTexture("heather_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.IVY.get(), "ivy_stage_", "ivy_stage_");
+        simpleBlock(VHBlocks.WILD_IVY.get(), models().cross(VHBlocks.WILD_IVY.getId().getPath(),
+                wildPlantTexture("ivy_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

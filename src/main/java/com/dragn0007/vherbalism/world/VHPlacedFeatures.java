@@ -45,6 +45,11 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GOATWEED_PLACED = registerKey("goatweed_placed");
     public static final ResourceKey<PlacedFeature> GARLIC_PLACED = registerKey("garlic_placed");
     public static final ResourceKey<PlacedFeature> GOLDENROD_PLACED = registerKey("goldenrod_placed");
+    public static final ResourceKey<PlacedFeature> HAWKWEED_PLACED = registerKey("hawkweed_placed");
+    public static final ResourceKey<PlacedFeature> HORSETAIL_PLACED = registerKey("horsetail_placed");
+    public static final ResourceKey<PlacedFeature> HEATHER_PLACED = registerKey("heather_placed");
+    public static final ResourceKey<PlacedFeature> IVY_PLACED = registerKey("ivy_placed");
+    public static final ResourceKey<PlacedFeature> JUNIPER_PLACED = registerKey("juniper_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -146,6 +151,26 @@ public class VHPlacedFeatures {
 
         register(context, GOLDENROD_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.GOLDENROD),
                 List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, HAWKWEED_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.HAWKWEED),
+                List.of(RarityFilter.onAverageOnceEvery(64),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, HORSETAIL_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.HORSETAIL),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, HEATHER_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.HEATHER),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, IVY_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.IVY),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, JUNIPER_PLACED, configuredFeatures.getOrThrow(VHConfigFeatures.JUNIPER),
+                List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 

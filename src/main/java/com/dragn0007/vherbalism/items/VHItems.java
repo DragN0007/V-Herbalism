@@ -110,6 +110,25 @@ public class VHItems {
     public static final RegistryObject<Item> GOLDENROD_POULTICE = ITEMS.register("goldenrod_poultice",
             () -> new GoldenrodPoulticeItem(new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> HAWKWEED_BUNDLE = ITEMS.register("hawkweed_bundle",
+            () -> new HawkweedItem(VHBlocks.HAWKWEED.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> HEATHER_BUNDLE = ITEMS.register("heather_bundle",
+            () -> new HeatherItem(VHBlocks.HEATHER.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> HORSETAIL_BUNDLE = ITEMS.register("horsetail_bundle",
+            () -> new HorsetailItem(VHBlocks.HORSETAIL.get(), new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> HORSETAIL_POULTICE = ITEMS.register("horsetail_poultice",
+            () -> new HorsetailPoulticeItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> IVY_LEAF = ITEMS.register("ivy_leaf",
+            () -> new IvyItem(VHBlocks.IVY.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> JUNIPERBERRY = ITEMS.register("juniperberry",
+            () -> new JuniperItem(VHBlocks.JUNIPER_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+    public static final RegistryObject<Item> TOPICAL_POULTICE = ITEMS.register("topical_poultice",
+            () -> new TopicalPoulticeItem(new Item.Properties().stacksTo(64)));
+
 
 
 

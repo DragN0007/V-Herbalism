@@ -22,6 +22,24 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.TOPICAL_POULTICE.get())
+                .requires(VHItems.JUNIPERBERRY.get())
+                .requires(VHItems.JUNIPERBERRY.get())
+                .requires(VHItems.DAISY_LEAVES.get())
+                .unlockedBy("has_juniper", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.JUNIPERBERRY.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.HORSETAIL_POULTICE.get())
+                .requires(VHItems.HORSETAIL_BUNDLE.get())
+                .requires(VHItems.HORSETAIL_BUNDLE.get())
+                .requires(VHItems.COBWEB.get())
+                .unlockedBy("has_horsetail", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.HORSETAIL_BUNDLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.GOLDENROD_POULTICE.get())
                 .requires(VHItems.GOLDENROD_BUNDLE.get())
                 .requires(VHItems.GOLDENROD_BUNDLE.get())

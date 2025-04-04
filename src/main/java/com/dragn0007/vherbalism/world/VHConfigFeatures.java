@@ -52,6 +52,11 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOATWEED = registerKey("goatweed");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GARLIC = registerKey("garlic");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDENROD = registerKey("goldenrod");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HAWKWEED = registerKey("hawkweed");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HORSETAIL = registerKey("horsetail");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HEATHER = registerKey("heather");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> IVY = registerKey("ivy");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> JUNIPER = registerKey("juniper");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -163,6 +168,26 @@ public class VHConfigFeatures {
         register(context, GOLDENROD, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_GOLDENROD.get())))));
+
+        register(context, HAWKWEED, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 1, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_HAWKWEED.get())))));
+
+        register(context, HORSETAIL, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 2, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_HORSETAIL.get())))));
+
+        register(context, HEATHER, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_HEATHER.get())))));
+
+        register(context, IVY, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_IVY.get())))));
+
+        register(context, JUNIPER, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.JUNIPER_BUSH.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

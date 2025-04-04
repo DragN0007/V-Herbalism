@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:elderberry_leaves"
+    },
+    {
+      "item": "vherbalism:elderberry_leaves"
+    },
+    {
+      "item": "vherbalism:catchweed_bundle"
+    },
+    {
+      "item": "vherbalism:cobweb"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:elderberry_leaf_poultice"
+  }
+}

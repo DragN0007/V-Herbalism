@@ -235,6 +235,47 @@ public class VHBlockLoot extends BlockLootSubProvider {
                 (VHItems.GOLDENROD_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder22).add(LootItem.lootTableItem
                 (VHItems.GOLDENROD_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
+        this.dropOther(VHBlocks.WILD_HAWKWEED.get(), VHItems.HAWKWEED_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder23 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.HAWKWEED.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.HAWKWEED.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.HAWKWEED_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder23).add(LootItem.lootTableItem
+                (VHItems.HAWKWEED_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_HORSETAIL.get(), VHItems.HORSETAIL_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder24 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.HORSETAIL.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.HORSETAIL.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.HORSETAIL_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder24).add(LootItem.lootTableItem
+                (VHItems.HORSETAIL_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_IVY.get(), VHItems.IVY_LEAF.get());
+        LootItemCondition.Builder lootitemcondition$builder25 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.IVY.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.IVY.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.IVY_LEAF.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder25).add(LootItem.lootTableItem
+                (VHItems.IVY_LEAF.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        LootItemCondition.Builder lootitemcondition$builder26 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.JUNIPER_BUSH.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.JUNIPER_BUSH.get(),
+                LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                        (VHItems.JUNIPERBERRY.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder26).add(LootItem.lootTableItem
+                        (VHItems.JUNIPERBERRY.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_HEATHER.get(), VHItems.HEATHER_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder27 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.HEATHER.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.HEATHER.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.HEATHER_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder27).add(LootItem.lootTableItem
+                (VHItems.HEATHER_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+
     }
 
     public void ignore(Block block) {

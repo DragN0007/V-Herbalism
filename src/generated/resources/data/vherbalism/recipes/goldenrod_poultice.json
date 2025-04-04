@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:goldenrod_bundle"
+    },
+    {
+      "item": "vherbalism:goldenrod_bundle"
+    },
+    {
+      "item": "vherbalism:cobweb"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:goldenrod_poultice"
+  }
+}

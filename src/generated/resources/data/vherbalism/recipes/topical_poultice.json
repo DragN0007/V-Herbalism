@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:juniperberry"
+    },
+    {
+      "item": "vherbalism:juniperberry"
+    },
+    {
+      "item": "vherbalism:daisy_leaves"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:topical_poultice"
+  }
+}
