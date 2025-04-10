@@ -275,6 +275,37 @@ public class VHBlockLoot extends BlockLootSubProvider {
                 (VHItems.HEATHER_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder27).add(LootItem.lootTableItem
                 (VHItems.HEATHER_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
+        this.dropOther(VHBlocks.WILD_BAY_LAUREL.get(), VHItems.BAY_LAUREL_LEAF.get());
+        LootItemCondition.Builder lootitemcondition$builder28 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.BAY_LAUREL.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.BAY_LAUREL.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.BAY_LAUREL_LEAF.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder28).add(LootItem.lootTableItem
+                (VHItems.BAY_LAUREL_LEAF.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_LAVENDER.get(), VHItems.LAVENDER_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder29 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.LAVENDER.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.LAVENDER.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.LAVENDER_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder29).add(LootItem.lootTableItem
+                (VHItems.LAVENDER_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_BRIGHT_EYE.get(), VHItems.BRIGHT_EYE_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder30 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.BRIGHT_EYE.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.BRIGHT_EYE.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.BRIGHT_EYE_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder30).add(LootItem.lootTableItem
+                (VHItems.BRIGHT_EYE_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_LOVAGE.get(), VHItems.LOVAGE_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder31 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.LOVAGE.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.LOVAGE.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.LOVAGE_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder31).add(LootItem.lootTableItem
+                (VHItems.LOVAGE_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
     }
 

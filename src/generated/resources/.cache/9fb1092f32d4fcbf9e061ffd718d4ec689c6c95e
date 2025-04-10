@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-03T20:15:56.5560749	Recipes
+// 1.20.1	2025-04-10T05:11:11.5207732	Recipes
 4487211fd34bcfef990c2f6f8807db39fb73bc41 data/minecraft/advancements/recipes/misc/birch_planks.json
 f4b8c82c6f1a8e069785ad77244ffaddbc638cca data/minecraft/recipes/birch_planks.json
 9db65746eeace8ef4a0f0a13abe7cbba62d792ca data/vherbalism/advancements/recipes/misc/alder_fence.json
@@ -7,6 +7,7 @@ ce0c4e761e7be6a73ceae97385d1a1562c8b54bd data/vherbalism/advancements/recipes/mi
 0a476006ba424b196204eaaf4a766560d2229a80 data/vherbalism/advancements/recipes/misc/alder_slab.json
 d5e7293937fcfcffcd8cc3f04a41b56cb2cf31e9 data/vherbalism/advancements/recipes/misc/alder_stairs.json
 f4861171e88e87c6a894f7b1a0a00cea38dce5fb data/vherbalism/advancements/recipes/misc/blackberry_leaf_poultice.json
+45446e98fddc979e2198a942796227d6734c3891 data/vherbalism/advancements/recipes/misc/bright_eye_lovage_poultice.json
 6a40f31ed986d35ac2383f773f940a55994928ea data/vherbalism/advancements/recipes/misc/broom_poultice.json
 8be4036947ffd363543afd71b843de79be2ad7bc data/vherbalism/advancements/recipes/misc/celadine_juice.json
 400e579ddaa2f3ee15dbcd69cf279db36d5801b2 data/vherbalism/advancements/recipes/misc/cobweb_cobweb.json
@@ -24,6 +25,7 @@ e5260413bd877df31013b6aae979edd3aa152fbf data/vherbalism/recipes/alder_planks.js
 8e56a7c0265483c18ab0f92ccf86bcf056cf0800 data/vherbalism/recipes/alder_slab.json
 1cecb9c39d0caf2a4b2d75e8f660e073323cade9 data/vherbalism/recipes/alder_stairs.json
 75cbc3a7e848261b14aa10fdd6de593aac38d9d6 data/vherbalism/recipes/blackberry_leaf_poultice.json
+c592a327aa1a7d111fe0ffe8c93bc130b3f36e1b data/vherbalism/recipes/bright_eye_lovage_poultice.json
 dbf344b7904454ce4484e5ee56817bf7d3ddef9b data/vherbalism/recipes/broom_poultice.json
 40b6842eb32f64107995d2aaa360151283f43004 data/vherbalism/recipes/celadine_juice.json
 fbc1b59796e665d8b24ded66365b45c34dc7413b data/vherbalism/recipes/cobweb_cobweb.json

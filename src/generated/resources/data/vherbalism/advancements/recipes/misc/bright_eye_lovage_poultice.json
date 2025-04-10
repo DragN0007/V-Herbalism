@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bright_eye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vherbalism:bright_eye_bundle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vherbalism:bright_eye_lovage_poultice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bright_eye",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vherbalism:bright_eye_lovage_poultice"
+    ]
+  },
+  "sends_telemetry_event": false
+}

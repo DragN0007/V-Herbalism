@@ -1,13 +1,16 @@
-// 1.20.1	2025-04-03T20:15:56.5550773	Item Models: vherbalism
+// 1.20.1	2025-04-10T05:13:55.7118172	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
+e2bb9063fee386d50b7938bc1445ad9ad246f453 assets/vherbalism/models/item/bay_laurel_leaf.json
 d62ad3657b5648c435a9cc363b4ad536147aba14 assets/vherbalism/models/item/bindweed_bundle.json
 ae06c39f24041664f64cd2c3b4cfecdd8d371d62 assets/vherbalism/models/item/birch_sap.json
 2d63839e03006c6cc2bc09e5dbc4e9e9e3d72aab assets/vherbalism/models/item/blackberry.json
 2bc5e2e1681c1265e692c24346207b84bcb375b6 assets/vherbalism/models/item/blackberry_leaf_poultice.json
 d7c2e3f2d7edebf577ef762947a63d04d7ed746c assets/vherbalism/models/item/blackberry_leaves.json
 d899bc3f5b1a89979da396edf8d84cdcb87481f7 assets/vherbalism/models/item/borage.json
+504dedaa1893f8326a4206c74e12f9ce95ee42a8 assets/vherbalism/models/item/bright_eye_bundle.json
+2c88d4ead78c7b9a6db8a00c883d687203c0d30f assets/vherbalism/models/item/bright_eye_lovage_poultice.json
 7b3e9d0f4de30ac578dd7a8fe99d5b8bd064bf26 assets/vherbalism/models/item/broom_bundle.json
 f8d7f644446538934df340848bf7f81508fb9d34 assets/vherbalism/models/item/broom_poultice.json
 6424feb4953be3aeba3002462fb3c5278bdc95ae assets/vherbalism/models/item/burdock_root.json
@@ -42,6 +45,8 @@ e563e99eea968f8823815490e244f82f3cf77591 assets/vherbalism/models/item/heather_b
 d6f2aa3b4b8b6bb8346545f55c26170a0f1f312b assets/vherbalism/models/item/horsetail_poultice.json
 87e15097b7fd1e26ef4f542f0592d2ada76531ca assets/vherbalism/models/item/ivy_leaf.json
 a41cac0cdb8e3e7e32bd820bbe20e4b8fb583c22 assets/vherbalism/models/item/juniperberry.json
+af4b689d6d558ec17805efa125c8e83dd8099db5 assets/vherbalism/models/item/lavender_bundle.json
+ad8f955e8b90088316a24e8aff73d220b22aecd8 assets/vherbalism/models/item/lovage_bundle.json
 e3ff0b77422005725f67fffc4aebadffaf24fdd7 assets/vherbalism/models/item/sappy_birch_log.json
 58101560ef8f6cf48336c3957b9d134ea362f3c8 assets/vherbalism/models/item/sappy_birch_sapling.json
 5d65c3a25406aef603f48b1da598afae865ac45b assets/vherbalism/models/item/topical_poultice.json

@@ -22,6 +22,14 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.BRIGHT_EYE_LOVAGE_POULTICE.get())
+                .requires(VHItems.BRIGHT_EYE_BUNDLE.get())
+                .requires(VHItems.LOVAGE_BUNDLE.get())
+                .unlockedBy("has_bright_eye", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.BRIGHT_EYE_BUNDLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.TOPICAL_POULTICE.get())
                 .requires(VHItems.JUNIPERBERRY.get())
                 .requires(VHItems.JUNIPERBERRY.get())

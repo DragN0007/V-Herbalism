@@ -162,6 +162,29 @@
   "tooltip.vherbalism.juniperberry.tooltip": "Soothes bellyaches, coughs and shortness of breath. Can be used in Topical Poultice.",
   "tooltip.vherbalism.topical_poultice.tooltip": "Soothes aching joints.",
 
+  "item.vherbalism.bay_laurel_leaf": "Bay Laurel Leaf",
+  "block.vherbalism.bay_laurel": "Bay Laurel",
+  "block.vherbalism.wild_bay_laurel": "Wild Bay Laurel",
+  "tooltip.vherbalism.bay_laurel.tooltip": "Can bind herbs or be used to hold honey and other liquids.",
+
+  "item.vherbalism.lavender_bundle": "Lavender Bundle",
+  "block.vherbalism.lavender": "Lavender",
+  "block.vherbalism.wild_lavender": "Wild Lavender",
+  "tooltip.vherbalism.lavender_bundle.tooltip": "Hides the unforgiving scent of death when inhaled. Can be used to soothe wounds.",
+
+  "item.vherbalism.bright_eye_bundle": "Bright Eye Bundle",
+  "block.vherbalism.bright_eye": "Bright Eye",
+  "block.vherbalism.wild_bright_eye": "Wild Bright Eye",
+  "tooltip.vherbalism.bright_eye_bundle.tooltip": "Mixed into a poultice with Lovage.",
+
+  "item.vherbalism.lovage_bundle": "Lovage Bundle",
+  "block.vherbalism.lovage": "Lovage",
+  "block.vherbalism.wild_lovage": "Wild Lovage",
+  "tooltip.vherbalism.lovage_bundle.tooltip": "Mixed into a poultice with Bright Eye.",
+
+  "item.vherbalism.bright_eye_lovage_poultice": "Bright Eye-Lovage Poultice",
+  "tooltip.vherbalism.bright_eye_lovage_poultice.tooltip": "Helps cure nasty coughs.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-03T20:15:56.5520854	Loot Tables
+// 1.20.1	2025-04-10T05:11:11.5167836	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -6,9 +6,11 @@ caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alde
 7d9ef358dacfb1de7874431e549d8c5a42b1348a data/vherbalism/loot_tables/blocks/alder_sapling.json
 693b59ea07a5396baf3c2306a2d4d3c2bd3c8fd1 data/vherbalism/loot_tables/blocks/alder_slab.json
 567e677d8d92e1af357ef1484b64cfc64230dc96 data/vherbalism/loot_tables/blocks/alder_stairs.json
+ce264dda65497ff8354171335496b9b9624dc01f data/vherbalism/loot_tables/blocks/bay_laurel.json
 b857c9cfd21ea17556d9cdeb279e6bb3d615cd40 data/vherbalism/loot_tables/blocks/bindweed.json
 9a1dcab4254724054eb6311f0355ba46c3f21bda data/vherbalism/loot_tables/blocks/blackberry_bush.json
 0d2860d13efc02d96ae3520d56a1ffc8fde67bb3 data/vherbalism/loot_tables/blocks/borage.json
+d72e1c7d2430f5003e0f8e9da66b4a2dd362b918 data/vherbalism/loot_tables/blocks/bright_eye.json
 44bdb305663bdc6c3b3c89b8d38151d34da1f0e1 data/vherbalism/loot_tables/blocks/broom_shrub.json
 a509917b39d629b32110a1896a6418c825e8e4e3 data/vherbalism/loot_tables/blocks/burdock_root.json
 1e81d4d0142ac1d4575ef633be3b33eada1d523a data/vherbalism/loot_tables/blocks/burnet.json
@@ -36,9 +38,13 @@ ea615070a3eabf4108a3abe12326c0cb1139cf0f data/vherbalism/loot_tables/blocks/hawk
 68acd91417a2db23802c568601479d90c171e665 data/vherbalism/loot_tables/blocks/horsetail.json
 222c4577c35baa957298bf0f8d408aade0c889c2 data/vherbalism/loot_tables/blocks/ivy.json
 9aa4c1b11e7c00f0efe15da5e934874699f934fd data/vherbalism/loot_tables/blocks/juniper_bush.json
+23c5ed19327c798dcf078daea463a433300be353 data/vherbalism/loot_tables/blocks/lavender.json
+1399aea04bcef1159bb5523c83c5ac132a94eafb data/vherbalism/loot_tables/blocks/lovage.json
 e934f771185809702bb4c866c411db0caf494399 data/vherbalism/loot_tables/blocks/sappy_birch_sapling.json
+6d93af833bad1228e57fd8eb399eeec9a23cadb7 data/vherbalism/loot_tables/blocks/wild_bay_laurel.json
 6f960715cf523b4e3859b549291e125aea8e0197 data/vherbalism/loot_tables/blocks/wild_bindweed.json
 519b4ab5bee9bdf79de05d86fab595c9253329b8 data/vherbalism/loot_tables/blocks/wild_borage.json
+b6acf68971fec0bac8f57408716eacd72c61f0f4 data/vherbalism/loot_tables/blocks/wild_bright_eye.json
 5ce24d97f479a740e3e3e3a1c8a79c52b59f3729 data/vherbalism/loot_tables/blocks/wild_burnet.json
 97ff6c517cf62023c12b9725994c4e750f731d11 data/vherbalism/loot_tables/blocks/wild_camomile.json
 523dc313382a97e676b38b00fcedc186a0291304 data/vherbalism/loot_tables/blocks/wild_catchweed.json
@@ -58,3 +64,5 @@ c3532e4e3a7378ee1b45a27365f717eb677a1e2f data/vherbalism/loot_tables/blocks/wild
 c2a903437387380f97f8237ae14aa4fd3f5ae004 data/vherbalism/loot_tables/blocks/wild_heather.json
 b1d9cc78f3dca3e363932a09958cb5b71ad95299 data/vherbalism/loot_tables/blocks/wild_horsetail.json
 f9d387085ac20bebf506c058aab33e7c86397c69 data/vherbalism/loot_tables/blocks/wild_ivy.json
+0654aff45a330c33012122eb9579d5e17ca80230 data/vherbalism/loot_tables/blocks/wild_lavender.json
+71e3e694b850efe8c5de4f4bf3b837ef64f018e8 data/vherbalism/loot_tables/blocks/wild_loveage.json

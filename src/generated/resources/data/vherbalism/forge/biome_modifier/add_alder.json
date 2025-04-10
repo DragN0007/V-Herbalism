@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_forest",
-  "features": "vherbalism:alder_placed",
-  "step": "vegetal_decoration"
-}

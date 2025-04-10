@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#forge:is_cold/overworld",
-  "features": "vherbalism:comfrey_placed",
-  "step": "vegetal_decoration"
-}

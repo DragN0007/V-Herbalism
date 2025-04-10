@@ -57,6 +57,10 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> HEATHER = registerKey("heather");
     public static final ResourceKey<ConfiguredFeature<?, ?>> IVY = registerKey("ivy");
     public static final ResourceKey<ConfiguredFeature<?, ?>> JUNIPER = registerKey("juniper");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BAY_LAUREL = registerKey("bay_laurel");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LAVENDER = registerKey("lavender");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BRIGHT_EYE = registerKey("bright_eye");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LOVAGE = registerKey("lovage");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -188,6 +192,22 @@ public class VHConfigFeatures {
         register(context, JUNIPER, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.JUNIPER_BUSH.get())))));
+
+        register(context, BAY_LAUREL, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_BAY_LAUREL.get())))));
+
+        register(context, LAVENDER, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 6, 7, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_LAVENDER.get())))));
+
+        register(context, BRIGHT_EYE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_BRIGHT_EYE.get())))));
+
+        register(context, LOVAGE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 2, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_LOVAGE.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

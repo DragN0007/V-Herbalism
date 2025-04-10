@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "vherbalism:sappy_birch",
+  "step": "vegetal_decoration"
+}

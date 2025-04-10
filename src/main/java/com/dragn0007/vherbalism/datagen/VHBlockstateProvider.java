@@ -141,6 +141,22 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.IVY.get(), "ivy_stage_", "ivy_stage_");
         simpleBlock(VHBlocks.WILD_IVY.get(), models().cross(VHBlocks.WILD_IVY.getId().getPath(),
                 wildPlantTexture("ivy_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.BAY_LAUREL.get(), "bay_laurel_stage_", "bay_laurel_stage_");
+        simpleBlock(VHBlocks.WILD_BAY_LAUREL.get(), models().cross(VHBlocks.WILD_BAY_LAUREL.getId().getPath(),
+                wildPlantTexture("bay_laurel_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.LAVENDER.get(), "lavender_stage_", "lavender_stage_");
+        simpleBlock(VHBlocks.WILD_LAVENDER.get(), models().cross(VHBlocks.WILD_LAVENDER.getId().getPath(),
+                wildPlantTexture("lavender_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.BRIGHT_EYE.get(), "bright_eye_stage_", "bright_eye_stage_");
+        simpleBlock(VHBlocks.WILD_BRIGHT_EYE.get(), models().cross(VHBlocks.WILD_BRIGHT_EYE.getId().getPath(),
+                wildPlantTexture("bright_eye_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.LOVAGE.get(), "lovage_stage_", "lovage_stage_");
+        simpleBlock(VHBlocks.WILD_LOVAGE.get(), models().cross(VHBlocks.WILD_LOVAGE.getId().getPath(),
+                wildPlantTexture("lovage_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

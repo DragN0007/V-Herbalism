@@ -3,7 +3,6 @@ package com.dragn0007.vherbalism.items;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.items.custom.*;
-import io.netty.handler.codec.compression.FastLzFrameEncoder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -128,6 +127,21 @@ public class VHItems {
             () -> new JuniperItem(VHBlocks.JUNIPER_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
     public static final RegistryObject<Item> TOPICAL_POULTICE = ITEMS.register("topical_poultice",
             () -> new TopicalPoulticeItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> BAY_LAUREL_LEAF = ITEMS.register("bay_laurel_leaf",
+            () -> new BayLaurelItem(VHBlocks.BAY_LAUREL.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> LAVENDER_BUNDLE = ITEMS.register("lavender_bundle",
+            () -> new LavenderItem(VHBlocks.LAVENDER.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> BRIGHT_EYE_BUNDLE = ITEMS.register("bright_eye_bundle",
+            () -> new BrightEyeItem(VHBlocks.BRIGHT_EYE.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> LOVAGE_BUNDLE = ITEMS.register("lovage_bundle",
+            () -> new LovageItem(VHBlocks.LOVAGE.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> BRIGHT_EYE_LOVAGE_POULTICE = ITEMS.register("bright_eye_lovage_poultice",
+            () -> new BrightEyeLovagePoulticeItem(new Item.Properties().stacksTo(64)));
 
 
 

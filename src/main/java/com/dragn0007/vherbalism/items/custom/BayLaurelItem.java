@@ -19,7 +19,7 @@ public class BayLaurelItem extends HerbalNameBlockItem {
     }
 
     public UseAnim getUseAnimation(ItemStack p_42931_) {
-        return UseAnim.EAT;
+        return UseAnim.BOW;
     }
 
     @Override
