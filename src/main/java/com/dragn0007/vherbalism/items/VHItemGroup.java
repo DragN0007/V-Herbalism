@@ -43,6 +43,8 @@ public class VHItemGroup {
                         output.accept(VHItems.BROOM_BUNDLE.get());
                         output.accept(VHItems.BROOM_POULTICE.get());
                         output.accept(VHItems.BURDOCK_ROOT.get());
+                        output.accept(VHBlocks.BURDOCK_ROOT.get());
+                        output.accept(VHBlocks.HANGING_BURDOCK_ROOT.get());
                         output.accept(VHItems.BURNET_BUNDLE.get());
                         output.accept(VHItems.CATCHWEED_BUNDLE.get());
                         output.accept(VHItems.CATMINT_LEAVES.get());
@@ -80,6 +82,7 @@ public class VHItemGroup {
                         output.accept(VHItems.BRIGHT_EYE_BUNDLE.get());
                         output.accept(VHItems.LOVAGE_BUNDLE.get());
                         output.accept(VHItems.BRIGHT_EYE_LOVAGE_POULTICE.get());
+                        output.accept(VHItems.LUNGWORT_LEAF.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

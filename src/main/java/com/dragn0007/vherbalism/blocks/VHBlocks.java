@@ -183,11 +183,11 @@ public class VHBlocks {
             () -> new LovageCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
     public static final RegistryObject<Block> WILD_LOVAGE = registerBlockWithoutItem("wild_loveage",
             () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> LUNGWORT = registerBlockWithoutItem("lungwort",
-//            () -> new LungwortCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_LUNGWORT = registerBlockWithoutItem("wild_lungwort",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> LUNGWORT = registerBlockWithoutItem("lungwort",
+            () -> new LungwortCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_LUNGWORT = registerBlockWithoutItem("wild_lungwort",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 //
 //    public static final RegistryObject<Block> MALLOW = registerBlockWithoutItem("mallow",
 //            () -> new MallowCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));

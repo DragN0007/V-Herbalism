@@ -143,6 +143,10 @@ public class VHItems {
     public static final RegistryObject<Item> BRIGHT_EYE_LOVAGE_POULTICE = ITEMS.register("bright_eye_lovage_poultice",
             () -> new BrightEyeLovagePoulticeItem(new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> LUNGWORT_LEAF = ITEMS.register("lungwort_leaf",
+            () -> new LungwortItem(VHBlocks.LUNGWORT.get(), new Item.Properties().stacksTo(64)));
+
+
 
 
 

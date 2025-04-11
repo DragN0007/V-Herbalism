@@ -70,6 +70,7 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.BRIGHT_EYE_BUNDLE);
         simpleItem(VHItems.LOVAGE_BUNDLE);
         simpleItem(VHItems.BRIGHT_EYE_LOVAGE_POULTICE);
+        simpleItem(VHItems.LUNGWORT_LEAF);
 
         simpleItem(VHItems.BIRCH_SAP);
         simpleBlockItem(VHBlocks.SAPPY_BIRCH_SAPLING);

@@ -185,6 +185,11 @@
   "item.vherbalism.bright_eye_lovage_poultice": "Bright Eye-Lovage Poultice",
   "tooltip.vherbalism.bright_eye_lovage_poultice.tooltip": "Helps cure nasty coughs.",
 
+  "item.vherbalism.lungwort_leaf": "Lungwort Leaf",
+  "block.vherbalism.lungwort": "Lungwort",
+  "block.vherbalism.wild_lungwort": "Wild Lungwort",
+  "tooltip.vherbalism.lungwort.tooltip": "Treats Yellowcough.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

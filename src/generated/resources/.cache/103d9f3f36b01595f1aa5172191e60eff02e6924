@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-10T05:11:11.5207732	Registries
+// 1.20.1	2025-04-10T19:37:48.7138364	Registries
 d806fdff036efcfbb5f65eb67b7651e7fab1e396 data/vherbalism/forge/biome_modifier/alder.json
 a04408324516b4b2535f1301b560fa0e7d765830 data/vherbalism/forge/biome_modifier/bay_laurel.json
 174f6505147bd1f78ad2bbeec2b53b1be60dcfde data/vherbalism/forge/biome_modifier/bindweed_forest.json
@@ -43,6 +43,7 @@ faed8be1805e85de6f454cc553f6a52efae02ba2 data/vherbalism/forge/biome_modifier/ju
 2675c66edff71b7376eb8c839ac2472fbf082183 data/vherbalism/forge/biome_modifier/juniper_plains.json
 24b828116d071645878c13b36c3b657a323082f3 data/vherbalism/forge/biome_modifier/lavender.json
 2522e4f504f1dc9d9a2fe66ddd27af432a6c8f02 data/vherbalism/forge/biome_modifier/lovage.json
+93d2091789cefeb9f14805375fde1ff3a6da875d data/vherbalism/forge/biome_modifier/lungwort.json
 8f7e96e1f1a9b7498cbdad70be0e63124cfa64be data/vherbalism/forge/biome_modifier/sappy_birch.json
 4b1385d3b480b9ca643b09bb9e9726543a29362b data/vherbalism/worldgen/configured_feature/alder.json
 2f0ebb9f6dd7bf53f33baac189d3438c41b33df4 data/vherbalism/worldgen/configured_feature/bay_laurel.json
@@ -76,6 +77,7 @@ b5f07773b3ffe2f29d79197303823dd41b356fb9 data/vherbalism/worldgen/configured_fea
 8ba316ab1fcea61412f3506351e716834a0463fe data/vherbalism/worldgen/configured_feature/juniper.json
 0dc66d13b65752b5a275d94c632eee5acaea8590 data/vherbalism/worldgen/configured_feature/lavender.json
 68b3f757460d1067b255e8369dd31d0e86765987 data/vherbalism/worldgen/configured_feature/lovage.json
+7ca05fe423f3c12f671af13c57d5f4eb1adffcd9 data/vherbalism/worldgen/configured_feature/lungwort.json
 c22b966b833d70975ec2964a68db538b0b440ecc data/vherbalism/worldgen/configured_feature/sappy_birch.json
 3600b40bde28f95b7a48828a2b0b893587a5bf78 data/vherbalism/worldgen/placed_feature/alder.json
 4ed48772115a99730970cef02837a135f4659874 data/vherbalism/worldgen/placed_feature/bay_laurel.json
@@ -109,4 +111,5 @@ c63e2b709f6c19a86d53a7abb423ffa70faae3e4 data/vherbalism/worldgen/placed_feature
 91c71b94907f9e815101ae78a389f10deefc54d7 data/vherbalism/worldgen/placed_feature/juniper.json
 d0b53dfcc658b1965fe23d395f792227edbe927c data/vherbalism/worldgen/placed_feature/lavender.json
 06477b401a12037c01f023924f46c7b7303470e9 data/vherbalism/worldgen/placed_feature/lovage.json
+958899d998507ea083d8184a39d0c9a8d2e2673e data/vherbalism/worldgen/placed_feature/lungwort.json
 9002b5c091861f94bf81ef4ad11f61c0053cea12 data/vherbalism/worldgen/placed_feature/sappy_birch.json

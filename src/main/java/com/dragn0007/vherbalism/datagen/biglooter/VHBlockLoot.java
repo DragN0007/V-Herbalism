@@ -307,6 +307,14 @@ public class VHBlockLoot extends BlockLootSubProvider {
                 (VHItems.LOVAGE_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder31).add(LootItem.lootTableItem
                 (VHItems.LOVAGE_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
+        this.dropOther(VHBlocks.WILD_LUNGWORT.get(), VHItems.LUNGWORT_LEAF.get());
+        LootItemCondition.Builder lootitemcondition$builder32 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.LUNGWORT.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.LUNGWORT.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.LUNGWORT_LEAF.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder32).add(LootItem.lootTableItem
+                (VHItems.LUNGWORT_LEAF.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
     }
 
     public void ignore(Block block) {

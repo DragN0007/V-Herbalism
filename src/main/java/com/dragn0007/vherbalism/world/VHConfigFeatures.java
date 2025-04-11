@@ -61,6 +61,7 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LAVENDER = registerKey("lavender");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BRIGHT_EYE = registerKey("bright_eye");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOVAGE = registerKey("lovage");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LUNGWORT = registerKey("lungwort");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -208,6 +209,10 @@ public class VHConfigFeatures {
         register(context, LOVAGE, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 2, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_LOVAGE.get())))));
+
+        register(context, LUNGWORT, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 2, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_LUNGWORT.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

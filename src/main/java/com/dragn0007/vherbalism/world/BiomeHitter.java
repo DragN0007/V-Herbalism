@@ -61,6 +61,8 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> LAVENDER = registerKey("lavender");
     public static final ResourceKey<BiomeModifier> BRIGHT_EYE = registerKey("bright_eye");
     public static final ResourceKey<BiomeModifier> LOVAGE = registerKey("lovage");
+    public static final ResourceKey<BiomeModifier> LUNGWORT = registerKey("lungwort");
+
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -289,6 +291,11 @@ public class BiomeHitter {
         context.register(LOVAGE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_FOREST),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.LOVAGE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(LUNGWORT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.LUNGWORT)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

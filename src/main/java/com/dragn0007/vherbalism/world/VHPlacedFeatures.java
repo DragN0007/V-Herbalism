@@ -54,6 +54,7 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LAVENDER = registerKey("lavender");
     public static final ResourceKey<PlacedFeature> BRIGHT_EYE = registerKey("bright_eye");
     public static final ResourceKey<PlacedFeature> LOVAGE = registerKey("lovage");
+    public static final ResourceKey<PlacedFeature> LUNGWORT = registerKey("lungwort");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -191,6 +192,10 @@ public class VHPlacedFeatures {
 
         register(context, LOVAGE, configuredFeatures.getOrThrow(VHConfigFeatures.LOVAGE),
                 List.of(RarityFilter.onAverageOnceEvery(64),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, LUNGWORT, configuredFeatures.getOrThrow(VHConfigFeatures.LUNGWORT),
+                List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 

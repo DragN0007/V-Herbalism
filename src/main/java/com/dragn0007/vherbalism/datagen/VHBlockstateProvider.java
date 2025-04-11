@@ -157,6 +157,10 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.LOVAGE.get(), "lovage_stage_", "lovage_stage_");
         simpleBlock(VHBlocks.WILD_LOVAGE.get(), models().cross(VHBlocks.WILD_LOVAGE.getId().getPath(),
                 wildPlantTexture("lovage_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.LUNGWORT.get(), "lungwort_stage_", "lungwort_stage_");
+        simpleBlock(VHBlocks.WILD_LUNGWORT.get(), models().cross(VHBlocks.WILD_LUNGWORT.getId().getPath(),
+                wildPlantTexture("lungwort_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {
