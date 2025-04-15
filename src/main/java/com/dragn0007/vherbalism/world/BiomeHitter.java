@@ -62,6 +62,12 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> BRIGHT_EYE = registerKey("bright_eye");
     public static final ResourceKey<BiomeModifier> LOVAGE = registerKey("lovage");
     public static final ResourceKey<BiomeModifier> LUNGWORT = registerKey("lungwort");
+    public static final ResourceKey<BiomeModifier> MALLOW = registerKey("mallow");
+    public static final ResourceKey<BiomeModifier> MARIGOLD = registerKey("marigold");
+    public static final ResourceKey<BiomeModifier> MINT = registerKey("mint");
+    public static final ResourceKey<BiomeModifier> MOSS = registerKey("moss");
+    public static final ResourceKey<BiomeModifier> RASPBERRY = registerKey("raspberry");
+    public static final ResourceKey<BiomeModifier> PARSLEY = registerKey("parsley");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
@@ -296,6 +302,36 @@ public class BiomeHitter {
         context.register(LUNGWORT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_FOREST),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.LUNGWORT)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(MALLOW, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.MALLOW)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(MARIGOLD, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_BEACH),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.MARIGOLD)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(MINT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.MINT)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(MOSS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_RIVER),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.MOSS)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(RASPBERRY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.RASPBERRY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(PARSLEY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_JUNGLE),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.PARSLEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

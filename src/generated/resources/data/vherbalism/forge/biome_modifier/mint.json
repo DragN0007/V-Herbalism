@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_plains",
+  "features": "vherbalism:mint",
+  "step": "vegetal_decoration"
+}

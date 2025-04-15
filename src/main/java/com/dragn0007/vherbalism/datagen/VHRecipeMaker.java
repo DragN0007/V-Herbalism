@@ -22,6 +22,42 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.POPPY_SEEDS.get(), 3)
+                .requires(Blocks.POPPY)
+                .unlockedBy("has_poppy", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Blocks.POPPY)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHBlocks.PREPARED_OAK_LEAVES.get())
+                .requires(Blocks.OAK_LEAVES)
+                .unlockedBy("has_oak_leaves", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Blocks.OAK_LEAVES)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.MOSS_CLUMP.get(), 2)
+                .requires(Blocks.MOSS_CARPET)
+                .unlockedBy("has_moss", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Blocks.MOSS_CARPET)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "moss_clump_from_carpet"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.MOSS_CLUMP.get(), 3)
+                .requires(Blocks.MOSS_BLOCK)
+                .unlockedBy("has_moss", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Blocks.MOSS_BLOCK)
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "moss_clump_from_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.MARIGOLD_POULTICE.get())
+                .requires(VHItems.MARIGOLD_BUNDLE.get())
+                .requires(VHItems.MARIGOLD_BUNDLE.get())
+                .unlockedBy("has_marigold", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.MARIGOLD_BUNDLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.BRIGHT_EYE_LOVAGE_POULTICE.get())
                 .requires(VHItems.BRIGHT_EYE_BUNDLE.get())
                 .requires(VHItems.LOVAGE_BUNDLE.get())

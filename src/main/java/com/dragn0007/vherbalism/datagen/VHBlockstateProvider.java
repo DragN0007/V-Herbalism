@@ -47,6 +47,11 @@ public class VHBlockstateProvider extends BlockStateProvider {
         simpleBlock(VHBlocks.SAPPY_BIRCH_SAPLING.get(), models().cross(VHBlocks.SAPPY_BIRCH_SAPLING.getId().getPath(),
                 blockTexture(VHBlocks.SAPPY_BIRCH_SAPLING.get())).renderType("cutout"));
 
+        simpleBlockWithItem(VHBlocks.PREPARED_OAK_LEAVES.get(), models().cubeAll(VHBlocks.PREPARED_OAK_LEAVES.getId().getPath(),
+                blockTexture(VHBlocks.PREPARED_OAK_LEAVES.get())).renderType("cutout"));
+        simpleBlockWithItem(VHBlocks.DRIED_OAK_LEAVES.get(), models().cubeAll(VHBlocks.DRIED_OAK_LEAVES.getId().getPath(),
+                blockTexture(VHBlocks.DRIED_OAK_LEAVES.get())).renderType("cutout"));
+
         blockWithItem(VHBlocks.BURDOCK_ROOT);
         simpleBlock(VHBlocks.HANGING_BURDOCK_ROOT.get(), models().cross(VHBlocks.HANGING_BURDOCK_ROOT.getId().getPath(),
                 wildPlantTexture("hanging_burdock_root")).renderType("cutout"));
@@ -161,6 +166,22 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.LUNGWORT.get(), "lungwort_stage_", "lungwort_stage_");
         simpleBlock(VHBlocks.WILD_LUNGWORT.get(), models().cross(VHBlocks.WILD_LUNGWORT.getId().getPath(),
                 wildPlantTexture("lungwort_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.MALLOW.get(), "mallow_stage_", "mallow_stage_");
+        simpleBlock(VHBlocks.WILD_MALLOW.get(), models().cross(VHBlocks.WILD_MALLOW.getId().getPath(),
+                wildPlantTexture("mallow_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.MARIGOLD.get(), "marigold_stage_", "marigold_stage_");
+        simpleBlock(VHBlocks.WILD_MARIGOLD.get(), models().cross(VHBlocks.WILD_MARIGOLD.getId().getPath(),
+                wildPlantTexture("marigold_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.MINT.get(), "mint_stage_", "mint_stage_");
+        simpleBlock(VHBlocks.WILD_MINT.get(), models().cross(VHBlocks.WILD_MINT.getId().getPath(),
+                wildPlantTexture("mint_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.PARSLEY.get(), "parsley_stage_", "parsley_stage_");
+        simpleBlock(VHBlocks.WILD_PARSLEY.get(), models().cross(VHBlocks.WILD_PARSLEY.getId().getPath(),
+                wildPlantTexture("parsley_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

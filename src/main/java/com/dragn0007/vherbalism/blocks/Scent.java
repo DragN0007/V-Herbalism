@@ -1,4 +1,4 @@
-package com.dragn0007.vherbalism.blocks.crop;
+package com.dragn0007.vherbalism.blocks;
 
 import com.dragn0007.vherbalism.util.HerbalismCommonConfig;
 import net.minecraft.core.BlockPos;
@@ -27,14 +27,14 @@ public class Scent extends Block {
         return SHAPE;
     }
 
-    public static final IntegerProperty DISSIPATE_TIME = IntegerProperty.create("dissipate_time", 0, 13);
+    public static final IntegerProperty DISSIPATE_TIME = IntegerProperty.create("dissipate_time", 0, 17);
 
     protected IntegerProperty getDissipateTimeProperty() {
         return DISSIPATE_TIME;
     }
 
     public int getMaxDissipateTime() {
-        return 12;
+        return 16;
     }
 
     public int getDissipateTime(BlockState state) {

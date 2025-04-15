@@ -8,6 +8,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,7 +20,7 @@ public class VHItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Herbalism.MODID);
 
     public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
-            () -> new ItemNameBlockItem(VHBlocks.BLACKBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+            () -> new BlackberryItem(VHBlocks.BLACKBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
     public static final RegistryObject<Item> BLACKBERRY_LEAVES = ITEMS.register("blackberry_leaves",
             () -> new BlackberryLeavesItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> BLACKBERRY_LEAF_POULTICE = ITEMS.register("blackberry_leaf_poultice",
@@ -86,7 +87,7 @@ public class VHItems {
             () -> new DockItem(VHBlocks.DOCK.get(), (new Item.Properties())));
 
     public static final RegistryObject<Item> ELDERBERRY = ITEMS.register("elderberry",
-            () -> new ItemNameBlockItem(VHBlocks.ELDERBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+            () -> new ElderberryItem(VHBlocks.ELDERBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
     public static final RegistryObject<Item> ELDERBERRY_LEAVES = ITEMS.register("elderberry_leaves",
             () -> new ElderberryLeavesItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> ELDERBERRY_LEAF_POULTICE = ITEMS.register("elderberry_leaf_poultice",
@@ -146,7 +147,33 @@ public class VHItems {
     public static final RegistryObject<Item> LUNGWORT_LEAF = ITEMS.register("lungwort_leaf",
             () -> new LungwortItem(VHBlocks.LUNGWORT.get(), new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> MALLOW = ITEMS.register("mallow",
+            () -> new MallowItem(VHBlocks.MALLOW.get(), new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> MARIGOLD_BUNDLE = ITEMS.register("marigold_bundle",
+            () -> new MarigoldItem(VHBlocks.MARIGOLD.get(), new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> MARIGOLD_POULTICE = ITEMS.register("marigold_poultice",
+            () -> new MarigoldPoulticeItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> MINT_LEAVES = ITEMS.register("mint_leaves",
+            () -> new MintItem(VHBlocks.MINT.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> MOSS_CLUMP = ITEMS.register("moss_clump",
+            () -> new MossItem(Blocks.MOSS_CARPET, new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> DRIED_OAK_LEAVES = ITEMS.register("dried_oak_leaves",
+            () -> new DriedOakLeavesItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> POPPY_SEEDS = ITEMS.register("poppy_seeds",
+            () -> new PoppySeedsItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> RASPBERRY = ITEMS.register("raspberry",
+            () -> new RaspberryItem(VHBlocks.RASPBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+    public static final RegistryObject<Item> RASPBERRY_LEAVES = ITEMS.register("raspberry_leaves",
+            () -> new RaspberryLeavesItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> PARSLEY_LEAVES = ITEMS.register("parsley_leaves",
+            () -> new ParsleyItem(VHBlocks.PARSLEY.get(), new Item.Properties().stacksTo(64)));
 
 
 

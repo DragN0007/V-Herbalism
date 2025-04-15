@@ -35,6 +35,10 @@ public class VHItemGroup {
                         output.accept(VHBlocks.SAPPY_BIRCH_SAPLING.get());
                         output.accept(VHItems.BIRCH_SAP.get());
 
+                        output.accept(VHBlocks.PREPARED_OAK_LEAVES.get());
+                        output.accept(VHBlocks.DRIED_OAK_LEAVES.get());
+                        output.accept(VHItems.DRIED_OAK_LEAVES.get());
+
                         output.accept(VHItems.BINDWEED_BUNDLE.get());
                         output.accept(VHItems.BLACKBERRY.get());
                         output.accept(VHItems.BLACKBERRY_LEAVES.get());
@@ -43,8 +47,6 @@ public class VHItemGroup {
                         output.accept(VHItems.BROOM_BUNDLE.get());
                         output.accept(VHItems.BROOM_POULTICE.get());
                         output.accept(VHItems.BURDOCK_ROOT.get());
-                        output.accept(VHBlocks.BURDOCK_ROOT.get());
-                        output.accept(VHBlocks.HANGING_BURDOCK_ROOT.get());
                         output.accept(VHItems.BURNET_BUNDLE.get());
                         output.accept(VHItems.CATCHWEED_BUNDLE.get());
                         output.accept(VHItems.CATMINT_LEAVES.get());
@@ -83,6 +85,14 @@ public class VHItemGroup {
                         output.accept(VHItems.LOVAGE_BUNDLE.get());
                         output.accept(VHItems.BRIGHT_EYE_LOVAGE_POULTICE.get());
                         output.accept(VHItems.LUNGWORT_LEAF.get());
+                        output.accept(VHItems.MALLOW.get());
+                        output.accept(VHItems.MARIGOLD_BUNDLE.get());
+                        output.accept(VHItems.MARIGOLD_POULTICE.get());
+                        output.accept(VHItems.MINT_LEAVES.get());
+                        output.accept(VHItems.POPPY_SEEDS.get());
+                        output.accept(VHItems.RASPBERRY.get());
+                        output.accept(VHItems.RASPBERRY_LEAVES.get());
+                        output.accept(VHItems.PARSLEY_LEAVES.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-10T19:37:48.7088503	Loot Tables
+// 1.20.1	2025-04-14T23:22:50.6736217	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -41,6 +41,13 @@ ea615070a3eabf4108a3abe12326c0cb1139cf0f data/vherbalism/loot_tables/blocks/hawk
 23c5ed19327c798dcf078daea463a433300be353 data/vherbalism/loot_tables/blocks/lavender.json
 1399aea04bcef1159bb5523c83c5ac132a94eafb data/vherbalism/loot_tables/blocks/lovage.json
 9f7750781d12590d5e38673bf821a2e1d374bed8 data/vherbalism/loot_tables/blocks/lungwort.json
+4286fab13aaf09e013a2772a4305a089884d0303 data/vherbalism/loot_tables/blocks/mallow.json
+a0693a5ce480cfa5fd93a36fcb077dd4c5e1c997 data/vherbalism/loot_tables/blocks/marigold.json
+01bc25b00bc1844bbee99f0e2959110ff614bb23 data/vherbalism/loot_tables/blocks/mint.json
+70cd4a014f8e4750a0b68c7a36d1ce9a22c7fc64 data/vherbalism/loot_tables/blocks/parsley.json
+e0fcabbd4e715caafa54191af6fb230252c922aa data/vherbalism/loot_tables/blocks/placed_dried_oak_leaves.json
+1f6f9eca77cdf6ec33e362980286e9ac3357b5ae data/vherbalism/loot_tables/blocks/prepared_oak_leaves.json
+b97de1f27a7e9b12ffc241bda430956815a27dbe data/vherbalism/loot_tables/blocks/raspberry_bush.json
 e934f771185809702bb4c866c411db0caf494399 data/vherbalism/loot_tables/blocks/sappy_birch_sapling.json
 6d93af833bad1228e57fd8eb399eeec9a23cadb7 data/vherbalism/loot_tables/blocks/wild_bay_laurel.json
 6f960715cf523b4e3859b549291e125aea8e0197 data/vherbalism/loot_tables/blocks/wild_bindweed.json
@@ -68,3 +75,7 @@ f9d387085ac20bebf506c058aab33e7c86397c69 data/vherbalism/loot_tables/blocks/wild
 0654aff45a330c33012122eb9579d5e17ca80230 data/vherbalism/loot_tables/blocks/wild_lavender.json
 71e3e694b850efe8c5de4f4bf3b837ef64f018e8 data/vherbalism/loot_tables/blocks/wild_loveage.json
 b9084d3de0ce9660684e40ead5e49335d2bf1475 data/vherbalism/loot_tables/blocks/wild_lungwort.json
+13b93de3719e3d3439cc4d8b1be7ad085e71e486 data/vherbalism/loot_tables/blocks/wild_mallow.json
+4ead1f47ceaab4eb56095087e92ddff91610c6a3 data/vherbalism/loot_tables/blocks/wild_marigold.json
+b61f967ac73f22a900de3b6a6b50566a84834c25 data/vherbalism/loot_tables/blocks/wild_mint.json
+57aad66a2ff84646edd72181386a7350ab69e503 data/vherbalism/loot_tables/blocks/wild_parsley.json

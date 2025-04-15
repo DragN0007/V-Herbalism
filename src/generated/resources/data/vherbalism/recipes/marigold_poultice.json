@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:marigold_bundle"
+    },
+    {
+      "item": "vherbalism:marigold_bundle"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:marigold_poultice"
+  }
+}

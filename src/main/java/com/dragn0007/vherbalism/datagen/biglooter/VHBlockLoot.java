@@ -315,6 +315,51 @@ public class VHBlockLoot extends BlockLootSubProvider {
                 (VHItems.LUNGWORT_LEAF.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder32).add(LootItem.lootTableItem
                 (VHItems.LUNGWORT_LEAF.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
+        this.dropOther(VHBlocks.WILD_MALLOW.get(), VHItems.MALLOW.get());
+        LootItemCondition.Builder lootitemcondition$builder33 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.MALLOW.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.MALLOW.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.MALLOW.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder33).add(LootItem.lootTableItem
+                (VHItems.MALLOW.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_MARIGOLD.get(), VHItems.MARIGOLD_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder34 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.MARIGOLD.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.MARIGOLD.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.MARIGOLD_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder34).add(LootItem.lootTableItem
+                (VHItems.MARIGOLD_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_MINT.get(), VHItems.MINT_LEAVES.get());
+        LootItemCondition.Builder lootitemcondition$builder35 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.MINT.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.MINT.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.MINT_LEAVES.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder35).add(LootItem.lootTableItem
+                (VHItems.MINT_LEAVES.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropSelf(VHBlocks.PREPARED_OAK_LEAVES.get());
+        this.dropOther(VHBlocks.DRIED_OAK_LEAVES.get(), VHItems.DRIED_OAK_LEAVES.get());
+
+        LootItemCondition.Builder lootitemcondition$builder36 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.RASPBERRY_BUSH.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.RASPBERRY_BUSH.get(),
+                LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                        (VHItems.RASPBERRY.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder36).add(LootItem.lootTableItem
+                        (VHItems.RASPBERRY.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))).add(LootItem.lootTableItem
+                        (VHItems.RASPBERRY_LEAVES.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder2).add(LootItem.lootTableItem
+                        (VHItems.RASPBERRY_LEAVES.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_PARSLEY.get(), VHItems.PARSLEY_LEAVES.get());
+        LootItemCondition.Builder lootitemcondition$builder37 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.PARSLEY.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.PARSLEY.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.PARSLEY_LEAVES.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder37).add(LootItem.lootTableItem
+                (VHItems.PARSLEY_LEAVES.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
     }
 
     public void ignore(Block block) {

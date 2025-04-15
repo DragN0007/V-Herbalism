@@ -1,4 +1,4 @@
-package unused;
+package com.dragn0007.vherbalism.blocks.crop;
 
 import com.dragn0007.vherbalism.blocks.crop.base.HerbalismBushBlock;
 import com.dragn0007.vherbalism.items.VHItems;
