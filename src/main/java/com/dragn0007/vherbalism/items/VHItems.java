@@ -5,6 +5,7 @@ import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.items.custom.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -175,6 +176,31 @@ public class VHItems {
     public static final RegistryObject<Item> PARSLEY_LEAVES = ITEMS.register("parsley_leaves",
             () -> new ParsleyItem(VHBlocks.PARSLEY.get(), new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> RAGWEED_BUNDLE = ITEMS.register("ragweed_bundle",
+            () -> new RagweedItem(VHBlocks.RAGWEED.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build()))));
+
+    public static final RegistryObject<Item> RAGWORT_LEAVES = ITEMS.register("ragwort_leaves",
+            () -> new RagwortItem(VHBlocks.RAGWORT.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> RHUBARB = ITEMS.register("rhubarb",
+            () -> new RhubarbItem(VHBlocks.RHUBARB.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+    public static final RegistryObject<Item> RHUBARB_LEAF = ITEMS.register("rhubarb_leaf",
+            () -> new RhubarbLeafItem(VHBlocks.RHUBARB.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> ROSEMARY_BUNDLE = ITEMS.register("rosemary_bundle",
+            () -> new RosemaryItem(VHBlocks.ROSEMARY.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> RUSH_BUNDLE = ITEMS.register("rush_bundle",
+            () -> new RushItem(VHBlocks.RUSH.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> SHEEP_SORREL_BUNDLE = ITEMS.register("sheep_sorrel_bundle",
+            () -> new SheepSorrelItem(VHBlocks.SHEEP_SORREL.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> SORREL_LEAVES = ITEMS.register("sorrel_leaves",
+            () -> new SorrelItem(VHBlocks.SORREL.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> STINGING_NETTLE_LEAVES = ITEMS.register("stinging_nettle_leaves",
+            () -> new StingingNettleItem(VHBlocks.STINGING_NETTLE.get(), new Item.Properties().stacksTo(64)));
 
 
     public static final RegistryObject<Item> BIRCH_SAP = ITEMS.register("birch_sap",

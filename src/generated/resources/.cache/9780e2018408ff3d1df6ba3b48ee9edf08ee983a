@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-14T23:22:50.6776108	Item Models: vherbalism
+// 1.20.1	2025-04-17T02:21:36.4100873	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -56,8 +56,17 @@ e7d4b2d0251a4e33a8b716d8b242fe32545cdd78 assets/vherbalism/models/item/marigold_
 39e1e56f988fab7450ae20acf713869e3689f18f assets/vherbalism/models/item/moss_clump.json
 7634392f7e7dc337560bc78841b01c413d982eea assets/vherbalism/models/item/parsley_leaves.json
 4d9beafdfd178a01f09e22f8a20290d663b90df4 assets/vherbalism/models/item/poppy_seeds.json
+f7b7056afd7dac6028df9619744c205724e43415 assets/vherbalism/models/item/ragweed_bundle.json
+ce60dfe5f49da902d10e40386c20c4eac0152cc1 assets/vherbalism/models/item/ragwort_leaves.json
 11fa2ff728953d4414d528b8b954c87f617f4cd7 assets/vherbalism/models/item/raspberry.json
 da27c0eae9c4d19cbe4566431f6bf88b24c3cf7d assets/vherbalism/models/item/raspberry_leaves.json
+bebf60bc62b1f31d4230f76d4bbf4add377a8f6f assets/vherbalism/models/item/rhubarb.json
+4ceb3e9b9b98770397688b7295ba961f5f514b98 assets/vherbalism/models/item/rhubarb_leaf.json
+18bca224bf1368a650f83fdd9ed6635a46a64e7e assets/vherbalism/models/item/rosemary_bundle.json
+59f0c26cdd06a53232e59dfdc968db8656abf2db assets/vherbalism/models/item/rush_bundle.json
 e3ff0b77422005725f67fffc4aebadffaf24fdd7 assets/vherbalism/models/item/sappy_birch_log.json
 58101560ef8f6cf48336c3957b9d134ea362f3c8 assets/vherbalism/models/item/sappy_birch_sapling.json
+6366adbcdf1bab0aba53b1b597a03845869b290c assets/vherbalism/models/item/sheep_sorrel_bundle.json
+ce88e9af904cafee34738c205fa6c4442535f82c assets/vherbalism/models/item/sorrel_leaves.json
+d8789bf7fd438f860d7f67d539e960da4f1c0814 assets/vherbalism/models/item/stinging_nettle_leaves.json
 5d65c3a25406aef603f48b1da598afae865ac45b assets/vherbalism/models/item/topical_poultice.json

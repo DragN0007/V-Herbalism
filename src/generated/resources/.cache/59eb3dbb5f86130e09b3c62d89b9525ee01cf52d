@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-14T23:22:50.6736217	Loot Tables
+// 1.20.1	2025-04-17T02:21:36.4059465	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -47,8 +47,16 @@ a0693a5ce480cfa5fd93a36fcb077dd4c5e1c997 data/vherbalism/loot_tables/blocks/mari
 70cd4a014f8e4750a0b68c7a36d1ce9a22c7fc64 data/vherbalism/loot_tables/blocks/parsley.json
 e0fcabbd4e715caafa54191af6fb230252c922aa data/vherbalism/loot_tables/blocks/placed_dried_oak_leaves.json
 1f6f9eca77cdf6ec33e362980286e9ac3357b5ae data/vherbalism/loot_tables/blocks/prepared_oak_leaves.json
+f0e3cc6c529d366a0b90e2412f3b52a3799fb14d data/vherbalism/loot_tables/blocks/ragweed.json
+282b6c995b1e613b6e4c7ae7dddfd261d631e6d8 data/vherbalism/loot_tables/blocks/ragwort.json
 b97de1f27a7e9b12ffc241bda430956815a27dbe data/vherbalism/loot_tables/blocks/raspberry_bush.json
+5ecf9a344f49fa5d2b64d9783970650d7ed465a5 data/vherbalism/loot_tables/blocks/rhubarb.json
+087e13e1f7b477781d694f1711ac0c53c3c04cbd data/vherbalism/loot_tables/blocks/rosemary.json
+7c1e227da4d16074d67e20af8e4ad87a1c12b168 data/vherbalism/loot_tables/blocks/rush.json
 e934f771185809702bb4c866c411db0caf494399 data/vherbalism/loot_tables/blocks/sappy_birch_sapling.json
+f38aa7168d5b59954a2f2c1b83dfea5d297ba79f data/vherbalism/loot_tables/blocks/sheep_sorrel.json
+18918d45299bfe65fb979b8d3cc7100236d42fc1 data/vherbalism/loot_tables/blocks/sorrel.json
+5e901c211b0497f52516b71add8f738804a1ba60 data/vherbalism/loot_tables/blocks/stinging_nettle.json
 6d93af833bad1228e57fd8eb399eeec9a23cadb7 data/vherbalism/loot_tables/blocks/wild_bay_laurel.json
 6f960715cf523b4e3859b549291e125aea8e0197 data/vherbalism/loot_tables/blocks/wild_bindweed.json
 519b4ab5bee9bdf79de05d86fab595c9253329b8 data/vherbalism/loot_tables/blocks/wild_borage.json
@@ -79,3 +87,11 @@ b9084d3de0ce9660684e40ead5e49335d2bf1475 data/vherbalism/loot_tables/blocks/wild
 4ead1f47ceaab4eb56095087e92ddff91610c6a3 data/vherbalism/loot_tables/blocks/wild_marigold.json
 b61f967ac73f22a900de3b6a6b50566a84834c25 data/vherbalism/loot_tables/blocks/wild_mint.json
 57aad66a2ff84646edd72181386a7350ab69e503 data/vherbalism/loot_tables/blocks/wild_parsley.json
+fd12ca42102bc8dfc51c7712c3610b4c623fe3eb data/vherbalism/loot_tables/blocks/wild_ragweed.json
+23489d5ac7bd9b3310667dd21cf4e403d53b705a data/vherbalism/loot_tables/blocks/wild_ragwort.json
+b7ad7c6cd767bd97cd25d934dc5ff353a9b7124d data/vherbalism/loot_tables/blocks/wild_rhubarb.json
+d8070e9d696148238b1595275e0e39bab7a85bf0 data/vherbalism/loot_tables/blocks/wild_rosemary.json
+41f071bd9cebdce14575c9bcb5bb0b0054d4e191 data/vherbalism/loot_tables/blocks/wild_rush.json
+936664ad9f7b3c1af5b0309f4a1b083e2da75a92 data/vherbalism/loot_tables/blocks/wild_sheep_sorrel.json
+f44ff1142ceed8c7830ebda8725173c0a2cf0a85 data/vherbalism/loot_tables/blocks/wild_sorrel.json
+7f63728dd7bfe0dd961d03c6a9a2f172a4717625 data/vherbalism/loot_tables/blocks/wild_stinging_nettle.json

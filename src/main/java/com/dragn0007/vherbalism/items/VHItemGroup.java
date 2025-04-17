@@ -93,6 +93,15 @@ public class VHItemGroup {
                         output.accept(VHItems.RASPBERRY.get());
                         output.accept(VHItems.RASPBERRY_LEAVES.get());
                         output.accept(VHItems.PARSLEY_LEAVES.get());
+                        output.accept(VHItems.RAGWEED_BUNDLE.get());
+                        output.accept(VHItems.RAGWORT_LEAVES.get());
+                        output.accept(VHItems.RHUBARB.get());
+                        output.accept(VHItems.RHUBARB_LEAF.get());
+                        output.accept(VHItems.ROSEMARY_BUNDLE.get());
+                        output.accept(VHItems.RUSH_BUNDLE.get());
+                        output.accept(VHItems.SHEEP_SORREL_BUNDLE.get());
+                        output.accept(VHItems.SORREL_LEAVES.get());
+                        output.accept(VHItems.STINGING_NETTLE_LEAVES.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

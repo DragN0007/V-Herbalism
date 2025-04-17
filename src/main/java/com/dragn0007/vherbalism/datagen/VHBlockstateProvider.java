@@ -182,6 +182,38 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.PARSLEY.get(), "parsley_stage_", "parsley_stage_");
         simpleBlock(VHBlocks.WILD_PARSLEY.get(), models().cross(VHBlocks.WILD_PARSLEY.getId().getPath(),
                 wildPlantTexture("parsley_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.RAGWEED.get(), "ragweed_stage_", "ragweed_stage_");
+        simpleBlock(VHBlocks.WILD_RAGWEED.get(), models().cross(VHBlocks.WILD_RAGWEED.getId().getPath(),
+                wildPlantTexture("ragweed_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.RAGWORT.get(), "ragwort_stage_", "ragwort_stage_");
+        simpleBlock(VHBlocks.WILD_RAGWORT.get(), models().cross(VHBlocks.WILD_RAGWORT.getId().getPath(),
+                wildPlantTexture("ragwort_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.RHUBARB.get(), "rhubarb_stage_", "rhubarb_stage_");
+        simpleBlock(VHBlocks.WILD_RHUBARB.get(), models().cross(VHBlocks.WILD_RHUBARB.getId().getPath(),
+                wildPlantTexture("rhubarb_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.ROSEMARY.get(), "rosemary_stage_", "rosemary_stage_");
+        simpleBlock(VHBlocks.WILD_ROSEMARY.get(), models().cross(VHBlocks.WILD_ROSEMARY.getId().getPath(),
+                wildPlantTexture("rosemary_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.RUSH.get(), "rush_stage_", "rush_stage_");
+        simpleBlock(VHBlocks.WILD_RUSH.get(), models().cross(VHBlocks.WILD_RUSH.getId().getPath(),
+                wildPlantTexture("rush_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.SHEEP_SORREL.get(), "sheep_sorrel_stage_", "sheep_sorrel_stage_");
+        simpleBlock(VHBlocks.WILD_SHEEP_SORREL.get(), models().cross(VHBlocks.WILD_SHEEP_SORREL.getId().getPath(),
+                wildPlantTexture("sheep_sorrel_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.SORREL.get(), "sorrel_stage_", "sorrel_stage_");
+        simpleBlock(VHBlocks.WILD_SORREL.get(), models().cross(VHBlocks.WILD_SORREL.getId().getPath(),
+                wildPlantTexture("sorrel_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.STINGING_NETTLE.get(), "stinging_nettle_stage_", "stinging_nettle_stage_");
+        simpleBlock(VHBlocks.WILD_STINGING_NETTLE.get(), models().cross(VHBlocks.WILD_STINGING_NETTLE.getId().getPath(),
+                wildPlantTexture("stinging_nettle_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

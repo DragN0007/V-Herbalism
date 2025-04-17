@@ -68,6 +68,14 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS = registerKey("moss");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RASPBERRY_BUSH = registerKey("raspberry_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PARSLEY = registerKey("parsley");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RAGWEED = registerKey("ragweed");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RAGWORT = registerKey("ragwort");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RHUBARB = registerKey("rhubarb");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ROSEMARY = registerKey("rosemary");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RUSH = registerKey("rush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SHEEP_SORREL = registerKey("sheep_sorrel");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SORREL = registerKey("sorrel");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> STINGING_NETTLE = registerKey("stinging_nettle");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -243,6 +251,38 @@ public class VHConfigFeatures {
         register(context, PARSLEY, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_PARSLEY.get())))));
+
+        register(context, RAGWEED, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_RAGWEED.get())))));
+
+        register(context, RAGWORT, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_RAGWORT.get())))));
+
+        register(context, RHUBARB, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_RHUBARB.get())))));
+
+        register(context, ROSEMARY, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_ROSEMARY.get())))));
+
+        register(context, RUSH, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_RUSH.get())))));
+
+        register(context, SHEEP_SORREL, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_SHEEP_SORREL.get())))));
+
+        register(context, SORREL, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_SORREL.get())))));
+
+        register(context, STINGING_NETTLE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_STINGING_NETTLE.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

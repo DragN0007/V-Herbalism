@@ -231,6 +231,48 @@
   "block.vherbalism.wild_parsley": "Wild Parsley",
   "tooltip.vherbalism.parsley_leaves.tooltip": "Can be eaten to prevent milk production or help with belly aches. Plants Parsley.",
 
+  "item.vherbalism.ragweed_bundle": "Ragweed Bundle",
+  "block.vherbalism.ragweed": "Ragweed",
+  "block.vherbalism.wild_ragweed": "Wild Ragweed",
+  "tooltip.vherbalism.ragweed_bundle.tooltip": "Can be chewed for strength when traveling. Plants Ragweed.",
+
+  "item.vherbalism.ragwort_leaves": "Ragwort Leaves",
+  "block.vherbalism.ragwort": "Ragwort",
+  "block.vherbalism.wild_ragwort": "Wild Ragwort",
+  "tooltip.vherbalism.ragwort_leaves.tooltip": "Can be chewed to help with mild pain. Plants Ragwort.",
+
+  "item.vherbalism.rhubarb_leaf": "Rhubarb Leaf",
+  "item.vherbalism.rhubarb": "Rhubarb",
+  "block.vherbalism.rhubarb": "Rhubarb",
+  "block.vherbalism.wild_rhubarb": "Wild Rhubarb",
+  "tooltip.vherbalism.rhubarb_leaf.tooltip": "Can be used to wrap items. Plants Rhubarb.",
+  "tooltip.vherbalism.rhubarb.tooltip": "Plants Rhubarb.",
+
+  "item.vherbalism.rosemary_bundle": "Rosemary Bundle",
+  "block.vherbalism.rosemary": "Rosemary",
+  "block.vherbalism.wild_rosemary": "Wild Rosemary",
+  "tooltip.vherbalism.rosemary_bundle.tooltip": "Can be placed on a dead cat to prepare it for a funeral. Plants Rosemary.",
+
+  "item.vherbalism.rush_bundle": "Rush Bundle",
+  "block.vherbalism.rush": "Rush",
+  "block.vherbalism.wild_rush": "Wild Rush",
+  "tooltip.vherbalism.rush_bundle.tooltip": "Can help bind broken or fractured bones. Plants Rush.",
+
+  "item.vherbalism.sheep_sorrel_bundle": "Sheep Sorrel Bundle",
+  "block.vherbalism.sheep_sorrel": "Sheep Sorrel",
+  "block.vherbalism.wild_sheep_sorrel": "Wild Sheep Sorrel",
+  "tooltip.vherbalism.sheep_sorrel_bundle.tooltip": "Soothes fevers. Plants Sheep Sorrel.",
+
+  "item.vherbalism.sorrel_leaves": "Sorrel Leaves",
+  "block.vherbalism.sorrel": "Sorrel",
+  "block.vherbalism.wild_sorrel": "Wild Sorrel",
+  "tooltip.vherbalism.sorrel_leaves.tooltip": "Quenches thirst and builds up appetites. Plants Sorrel.",
+
+  "item.vherbalism.stinging_nettle_leaves": "Stinging Nettle Leaves",
+  "block.vherbalism.stinging_nettle": "Stinging Nettle",
+  "block.vherbalism.wild_stinging_nettle": "Wild Stinging Nettle",
+  "tooltip.vherbalism.stinging_nettle_leaves.tooltip": "Can treat infection when chewed. Rinse with water first. Plants Stinging Nettle.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

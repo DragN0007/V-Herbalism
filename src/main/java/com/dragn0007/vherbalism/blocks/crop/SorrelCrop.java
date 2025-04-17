@@ -1,4 +1,4 @@
-package unused;
+package com.dragn0007.vherbalism.blocks.crop;
 
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.crop.base.HerbalismCropBlock;
@@ -8,8 +8,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class RagweedCrop extends HerbalismCropBlock {
-    public RagweedCrop(Properties properties) {
+public class SorrelCrop extends HerbalismCropBlock {
+    public SorrelCrop(Properties properties) {
         super(properties);
     }
 
@@ -20,11 +20,11 @@ public class RagweedCrop extends HerbalismCropBlock {
 
     @Override
     public BlockState getPlant(BlockGetter level, BlockPos pos) {
-        return VHBlocks.RAGWEED.get().defaultBlockState();
+        return VHBlocks.SHEEP_SORREL.get().defaultBlockState();
     }
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.SORREL_LEAVES.get();
     }
 }

@@ -61,6 +61,14 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MOSS = registerKey("moss");
     public static final ResourceKey<PlacedFeature> RASPBERRY = registerKey("raspberry");
     public static final ResourceKey<PlacedFeature> PARSLEY = registerKey("parsley");
+    public static final ResourceKey<PlacedFeature> RAGWEED = registerKey("ragweed");
+    public static final ResourceKey<PlacedFeature> RAGWORT = registerKey("ragwort");
+    public static final ResourceKey<PlacedFeature> RHUBARB = registerKey("rhubarb");
+    public static final ResourceKey<PlacedFeature> ROSEMARY = registerKey("rosemary");
+    public static final ResourceKey<PlacedFeature> RUSH = registerKey("rush");
+    public static final ResourceKey<PlacedFeature> SHEEP_SORREL = registerKey("sheep_sorrel");
+    public static final ResourceKey<PlacedFeature> SORREL = registerKey("sorrel");
+    public static final ResourceKey<PlacedFeature> STINGING_NETTLE = registerKey("stinging_nettle");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -229,6 +237,38 @@ public class VHPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, PARSLEY, configuredFeatures.getOrThrow(VHConfigFeatures.PARSLEY),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, RAGWEED, configuredFeatures.getOrThrow(VHConfigFeatures.RAGWEED),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, RAGWORT, configuredFeatures.getOrThrow(VHConfigFeatures.RAGWORT),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, RHUBARB, configuredFeatures.getOrThrow(VHConfigFeatures.RHUBARB),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, ROSEMARY, configuredFeatures.getOrThrow(VHConfigFeatures.ROSEMARY),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, RUSH, configuredFeatures.getOrThrow(VHConfigFeatures.RUSH),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, SHEEP_SORREL, configuredFeatures.getOrThrow(VHConfigFeatures.SHEEP_SORREL),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, SORREL, configuredFeatures.getOrThrow(VHConfigFeatures.SORREL),
+                List.of(RarityFilter.onAverageOnceEvery(64),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, STINGING_NETTLE, configuredFeatures.getOrThrow(VHConfigFeatures.STINGING_NETTLE),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }

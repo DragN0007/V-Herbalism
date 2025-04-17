@@ -8,10 +8,13 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.StringJoiner;
 
 public class BiomeHitter {
 
@@ -68,6 +71,16 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> MOSS = registerKey("moss");
     public static final ResourceKey<BiomeModifier> RASPBERRY = registerKey("raspberry");
     public static final ResourceKey<BiomeModifier> PARSLEY = registerKey("parsley");
+    public static final ResourceKey<BiomeModifier> RAGWEED = registerKey("ragweed");
+    public static final ResourceKey<BiomeModifier> RAGWORT = registerKey("ragwort");
+    public static final ResourceKey<BiomeModifier> RHUBARB = registerKey("rhubarb");
+    public static final ResourceKey<BiomeModifier> ROSEMARY = registerKey("rosemary");
+    public static final ResourceKey<BiomeModifier> ROSEMARY_PLAINS = registerKey("rosemary_plains");
+    public static final ResourceKey<BiomeModifier> RUSH = registerKey("rush");
+    public static final ResourceKey<BiomeModifier> SHEEP_SORREL = registerKey("sheep_sorrel");
+    public static final ResourceKey<BiomeModifier> SORREL = registerKey("sorrel");
+    public static final ResourceKey<BiomeModifier> STINGING_NETTLE = registerKey("stinging_nettle");
+    public static final ResourceKey<BiomeModifier> STINGING_NETTLE_PLAINS = registerKey("stinging_nettle_plains");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
@@ -333,6 +346,57 @@ public class BiomeHitter {
                 biomes.getOrThrow(BiomeTags.IS_JUNGLE),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.PARSLEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(RAGWEED, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.RAGWEED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(RAGWORT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.RAGWORT)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(RHUBARB, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_COLD_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.RHUBARB)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ROSEMARY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.ROSEMARY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ROSEMARY_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.ROSEMARY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(RUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.RUSH)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(SHEEP_SORREL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_SWAMP),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.SHEEP_SORREL)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(SORREL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.SORREL)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(STINGING_NETTLE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.STINGING_NETTLE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(STINGING_NETTLE_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.STINGING_NETTLE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
     }
 
     public static ResourceKey<BiomeModifier> registerKey(String name) {

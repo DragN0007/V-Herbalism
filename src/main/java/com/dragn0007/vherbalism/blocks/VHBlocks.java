@@ -209,44 +209,49 @@ public class VHBlocks {
             () -> new ParsleyCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
     public static final RegistryObject<Block> WILD_PARSLEY = registerBlockWithoutItem("wild_parsley",
             () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> RAGWEED = registerBlockWithoutItem("ragweed",
-//            () -> new RagweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_RAGWEED = registerBlockWithoutItem("wild_ragweed",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> RAGWORT = registerBlockWithoutItem("ragwort",
-//            () -> new RagwortCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_RAGWORT = registerBlockWithoutItem("wild_ragwort",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> RAGWEED = registerBlockWithoutItem("ragweed",
+            () -> new RagweedCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_RAGWEED = registerBlockWithoutItem("wild_ragweed",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> RAGWORT = registerBlockWithoutItem("ragwort",
+            () -> new RagwortCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_RAGWORT = registerBlockWithoutItem("wild_ragwort",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
     public static final RegistryObject<Block> RASPBERRY_BUSH = registerBlockWithoutItem("raspberry_bush",
             () -> new RaspberryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH)));
-//
-//    public static final RegistryObject<Block> RHUBARB = registerBlockWithoutItem("rhubarb",
-//            () -> new RhubarbCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_RHUBARB = registerBlockWithoutItem("wild_rhubarb",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> ROSEMARY = registerBlockWithoutItem("rosemary",
-//            () -> new RosemaryCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_ROSEMARY = registerBlockWithoutItem("wild_rosemary",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> RUSH = registerBlockWithoutItem("rush",
-//            () -> new RosemaryCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_RUSH = registerBlockWithoutItem("wild_rush",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> SHEEP_SORREL = registerBlockWithoutItem("sheep_sorrel",
-//            () -> new SheepSorrelCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_SHEEP_SORREL = registerBlockWithoutItem("wild_sheep_sorrel",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
-//
-//    public static final RegistryObject<Block> STINGING_NETTLE = registerBlockWithoutItem("stinging_nettle",
-//            () -> new StingingNettleCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
-//    public static final RegistryObject<Block> WILD_STINGING_NETTLE = registerBlockWithoutItem("wild_stinging_nettle",
-//            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> RHUBARB = registerBlockWithoutItem("rhubarb",
+            () -> new RhubarbCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_RHUBARB = registerBlockWithoutItem("wild_rhubarb",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> ROSEMARY = registerBlockWithoutItem("rosemary",
+            () -> new RosemaryCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_ROSEMARY = registerBlockWithoutItem("wild_rosemary",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> RUSH = registerBlockWithoutItem("rush",
+            () -> new RosemaryCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_RUSH = registerBlockWithoutItem("wild_rush",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> SHEEP_SORREL = registerBlockWithoutItem("sheep_sorrel",
+            () -> new SheepSorrelCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_SHEEP_SORREL = registerBlockWithoutItem("wild_sheep_sorrel",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> SORREL = registerBlockWithoutItem("sorrel",
+            () -> new SorrelCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_SORREL = registerBlockWithoutItem("wild_sorrel",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> STINGING_NETTLE = registerBlockWithoutItem("stinging_nettle",
+            () -> new StingingNettleCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
+    public static final RegistryObject<Block> WILD_STINGING_NETTLE = registerBlockWithoutItem("wild_stinging_nettle",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 7, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 //
 //    public static final RegistryObject<Block> SWEET_SEDGE = registerBlockWithoutItem("sweet_sedge",
 //            () -> new SweetSedgeCrop(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
