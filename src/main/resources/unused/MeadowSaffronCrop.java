@@ -8,8 +8,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class TormentilCrop extends HerbalismCropBlock {
-    public TormentilCrop(Properties properties) {
+public class YarrowCrop extends HerbalismCropBlock {
+    public YarrowCrop(Properties properties) {
         super(properties);
     }
 
@@ -20,7 +20,7 @@ public class TormentilCrop extends HerbalismCropBlock {
 
     @Override
     public BlockState getPlant(BlockGetter level, BlockPos pos) {
-        return VHBlocks.TORMENTIL.get().defaultBlockState();
+        return VHBlocks.MEADOW_SAFFRON.get().defaultBlockState();
     }
 
     @Override

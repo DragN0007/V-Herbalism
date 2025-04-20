@@ -40,6 +40,15 @@ public class VHBlockLoot extends BlockLootSubProvider {
         this.ignore(VHBlocksNoDatagenLoot.SAPPY_BIRCH_LOG.get());
         this.dropSelf(VHBlocks.SAPPY_BIRCH_SAPLING.get());
 
+        this.ignore(VHBlocksNoDatagenLoot.WILLOW_LOG.get());
+        this.dropSelf(VHBlocks.WILLOW_PLANKS.get());
+        this.dropSelf(VHBlocks.WILLOW_SLAB.get());
+        this.dropSelf(VHBlocks.WILLOW_STAIRS.get());
+        this.dropSelf(VHBlocks.WILLOW_SAPLING.get());
+        this.dropSelf(VHBlocks.WILLOW_FENCE.get());
+        this.dropSelf(VHBlocks.WILLOW_FENCE_GATE.get());
+        this.add(VHBlocks.WILLOW_LEAVES.get(), (block) -> this.createLeavesDrops(block, VHBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
         this.dropOther(VHBlocks.HANGING_BURDOCK_ROOT.get(), VHItems.BURDOCK_ROOT.get());
         LootItemCondition.Builder lootitemcondition$builder0 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
                 (VHBlocks.BURDOCK_ROOT.get());
@@ -426,6 +435,46 @@ public class VHBlockLoot extends BlockLootSubProvider {
         this.add(VHBlocks.STINGING_NETTLE.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
                 (VHItems.STINGING_NETTLE_LEAVES.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder45).add(LootItem.lootTableItem
                 (VHItems.STINGING_NETTLE_LEAVES.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_SWEET_SEDGE.get(), VHItems.SWEET_SEDGE_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder46 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.SWEET_SEDGE.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.SWEET_SEDGE.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.SWEET_SEDGE_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder46).add(LootItem.lootTableItem
+                (VHItems.SWEET_SEDGE_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_TANSY.get(), VHItems.TANSY_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder47 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.TANSY.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.TANSY.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.TANSY_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder47).add(LootItem.lootTableItem
+                (VHItems.TANSY_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_THYME.get(), VHItems.THYME_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder48 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.THYME.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.THYME.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.THYME_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder48).add(LootItem.lootTableItem
+                (VHItems.THYME_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_TORMENTIL.get(), VHItems.TORMENTIL_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder49 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.TORMENTIL.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.TORMENTIL.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.TORMENTIL_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder49).add(LootItem.lootTableItem
+                (VHItems.TORMENTIL_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
+
+        this.dropOther(VHBlocks.WILD_WATERMINT.get(), VHItems.WATERMINT_BUNDLE.get());
+        LootItemCondition.Builder lootitemcondition$builder50 = LootItemBlockStatePropertyCondition.hasBlockStateProperties
+                (VHBlocks.WATERMINT.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty
+                (HerbalismCropBlock.AGE, 3));
+        this.add(VHBlocks.WATERMINT.get(), LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem
+                (VHItems.WATERMINT_BUNDLE.get()))).withPool(LootPool.lootPool().when(lootitemcondition$builder50).add(LootItem.lootTableItem
+                (VHItems.WATERMINT_BUNDLE.get()).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
 
     }
 

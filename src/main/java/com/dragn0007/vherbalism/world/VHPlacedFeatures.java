@@ -69,6 +69,22 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SHEEP_SORREL = registerKey("sheep_sorrel");
     public static final ResourceKey<PlacedFeature> SORREL = registerKey("sorrel");
     public static final ResourceKey<PlacedFeature> STINGING_NETTLE = registerKey("stinging_nettle");
+    public static final ResourceKey<PlacedFeature> SWEET_SEDGE = registerKey("sweet_sedge");
+    public static final ResourceKey<PlacedFeature> TANSY = registerKey("tansy");
+    public static final ResourceKey<PlacedFeature> TORMENTIL = registerKey("tormentil");
+    public static final ResourceKey<PlacedFeature> THYME = registerKey("thyme");
+    public static final ResourceKey<PlacedFeature> WATERMINT = registerKey("watermint");
+    public static final ResourceKey<PlacedFeature> WILLOW_TREE = registerKey("willow_tree");
+    public static final ResourceKey<PlacedFeature> WILLOW = registerKey("willow");
+    public static final ResourceKey<PlacedFeature> WINTERGREEN_BUSH = registerKey("wintergreen_bush");
+    public static final ResourceKey<PlacedFeature> WOOD_SORREL = registerKey("wood_sorrel");
+    public static final ResourceKey<PlacedFeature> YARROW = registerKey("yarrow");
+    public static final ResourceKey<PlacedFeature> DEATHBERRY_BUSH = registerKey("deathberry_bush");
+    public static final ResourceKey<PlacedFeature> FOXGLOVE = registerKey("foxglove");
+    public static final ResourceKey<PlacedFeature> HOLLYBERRY_BUSH = registerKey("hollyberry_bush");
+    public static final ResourceKey<PlacedFeature> MEADOW_SAFFRON = registerKey("meadow_saffron");
+    public static final ResourceKey<PlacedFeature> HEMLOCK = registerKey("hemlock");
+    public static final ResourceKey<PlacedFeature> SNAKEROOT = registerKey("snakeroot");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -269,6 +285,26 @@ public class VHPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
         register(context, STINGING_NETTLE, configuredFeatures.getOrThrow(VHConfigFeatures.STINGING_NETTLE),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, SWEET_SEDGE, configuredFeatures.getOrThrow(VHConfigFeatures.SWEET_SEDGE),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, TANSY, configuredFeatures.getOrThrow(VHConfigFeatures.TANSY),
+                List.of(RarityFilter.onAverageOnceEvery(64),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, THYME, configuredFeatures.getOrThrow(VHConfigFeatures.THYME),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, TORMENTIL, configuredFeatures.getOrThrow(VHConfigFeatures.TORMENTIL),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, WATERMINT, configuredFeatures.getOrThrow(VHConfigFeatures.WATERMINT),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }

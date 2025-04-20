@@ -8,8 +8,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class ThymeCrop extends HerbalismCropBlock {
-    public ThymeCrop(Properties properties) {
+public class YarrowCrop extends HerbalismCropBlock {
+    public YarrowCrop(Properties properties) {
         super(properties);
     }
 
@@ -20,7 +20,7 @@ public class ThymeCrop extends HerbalismCropBlock {
 
     @Override
     public BlockState getPlant(BlockGetter level, BlockPos pos) {
-        return VHBlocks.THYME.get().defaultBlockState();
+        return VHBlocks.SNAKEROOT.get().defaultBlockState();
     }
 
     @Override

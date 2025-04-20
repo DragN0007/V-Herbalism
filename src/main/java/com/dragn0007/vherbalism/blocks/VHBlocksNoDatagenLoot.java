@@ -23,6 +23,8 @@ public class VHBlocksNoDatagenLoot {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LOG)));
     public static final RegistryObject<RotatedPillarBlock> ALDER_LOG = registerBlock("alder_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<RotatedPillarBlock> WILLOW_LOG = registerBlock("willow_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
 
     public static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

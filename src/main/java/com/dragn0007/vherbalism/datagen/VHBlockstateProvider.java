@@ -214,6 +214,26 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.STINGING_NETTLE.get(), "stinging_nettle_stage_", "stinging_nettle_stage_");
         simpleBlock(VHBlocks.WILD_STINGING_NETTLE.get(), models().cross(VHBlocks.WILD_STINGING_NETTLE.getId().getPath(),
                 wildPlantTexture("stinging_nettle_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.SWEET_SEDGE.get(), "sweet_sedge_stage_", "sweet_sedge_stage_");
+        simpleBlock(VHBlocks.WILD_SWEET_SEDGE.get(), models().cross(VHBlocks.WILD_SWEET_SEDGE.getId().getPath(),
+                wildPlantTexture("sweet_sedge_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.TANSY.get(), "tansy_stage_", "tansy_stage_");
+        simpleBlock(VHBlocks.WILD_TANSY.get(), models().cross(VHBlocks.WILD_TANSY.getId().getPath(),
+                wildPlantTexture("tansy_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.THYME.get(), "thyme_stage_", "thyme_stage_");
+        simpleBlock(VHBlocks.WILD_THYME.get(), models().cross(VHBlocks.WILD_THYME.getId().getPath(),
+                wildPlantTexture("thyme_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.TORMENTIL.get(), "tormentil_stage_", "tormentil_stage_");
+        simpleBlock(VHBlocks.WILD_TORMENTIL.get(), models().cross(VHBlocks.WILD_TORMENTIL.getId().getPath(),
+                wildPlantTexture("tormentil_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.WATERMINT.get(), "watermint_stage_", "watermint_stage_");
+        simpleBlock(VHBlocks.WILD_WATERMINT.get(), models().cross(VHBlocks.WILD_WATERMINT.getId().getPath(),
+                wildPlantTexture("watermint_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

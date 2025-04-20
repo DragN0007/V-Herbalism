@@ -81,6 +81,23 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> SORREL = registerKey("sorrel");
     public static final ResourceKey<BiomeModifier> STINGING_NETTLE = registerKey("stinging_nettle");
     public static final ResourceKey<BiomeModifier> STINGING_NETTLE_PLAINS = registerKey("stinging_nettle_plains");
+    public static final ResourceKey<BiomeModifier> SWEET_SEDGE = registerKey("sweet_sedge");
+    public static final ResourceKey<BiomeModifier> TANSY = registerKey("tansy");
+    public static final ResourceKey<BiomeModifier> TORMENTIL = registerKey("tormentil");
+    public static final ResourceKey<BiomeModifier> THYME = registerKey("thyme");
+    public static final ResourceKey<BiomeModifier> THYME_RIVER = registerKey("thyme_river");
+    public static final ResourceKey<BiomeModifier> WATERMINT = registerKey("watermint");
+    public static final ResourceKey<BiomeModifier> WILLOW_TREE = registerKey("willow_tree");
+    public static final ResourceKey<BiomeModifier> WILLOW = registerKey("willow");
+    public static final ResourceKey<BiomeModifier> WINTERGREEN_BUSH = registerKey("wintergreen_bush");
+    public static final ResourceKey<BiomeModifier> WOOD_SORREL = registerKey("wood_sorrel");
+    public static final ResourceKey<BiomeModifier> YARROW = registerKey("yarrow");
+    public static final ResourceKey<BiomeModifier> DEATHBERRY_BUSH = registerKey("deathberry_bush");
+    public static final ResourceKey<BiomeModifier> FOXGLOVE = registerKey("foxglove");
+    public static final ResourceKey<BiomeModifier> HOLLYBERRY_BUSH = registerKey("hollyberry_bush");
+    public static final ResourceKey<BiomeModifier> MEADOW_SAFFRON = registerKey("meadow_saffron");
+    public static final ResourceKey<BiomeModifier> HEMLOCK = registerKey("hemlock");
+    public static final ResourceKey<BiomeModifier> SNAKEROOT = registerKey("snakeroot");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
@@ -395,6 +412,36 @@ public class BiomeHitter {
         context.register(STINGING_NETTLE_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.STINGING_NETTLE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(SWEET_SEDGE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_SWAMP),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.SWEET_SEDGE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(TANSY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.TANSY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(THYME, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.THYME)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(THYME_RIVER, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_RIVER),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.THYME)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(TORMENTIL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_MOUNTAIN),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.TORMENTIL)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(WATERMINT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.WATERMINT)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }

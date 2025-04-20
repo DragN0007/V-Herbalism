@@ -273,6 +273,36 @@
   "block.vherbalism.wild_stinging_nettle": "Wild Stinging Nettle",
   "tooltip.vherbalism.stinging_nettle_leaves.tooltip": "Can treat infection when chewed. Rinse with water first. Plants Stinging Nettle.",
 
+  "item.vherbalism.sweet_sedge_bundle": "Sweet Sedge Bundle",
+  "block.vherbalism.sweet_sedge": "Sweet Sedge",
+  "block.vherbalism.wild_sweet_sedge": "Wild Sweet Sedge",
+  "tooltip.vherbalism.sweet_sedge_bundle.tooltip": "Helps fight infections. Plants Sweet Sedge.",
+
+  "item.vherbalism.tansy_bundle": "Tansy Bundle",
+  "block.vherbalism.tansy": "Tansy",
+  "block.vherbalism.wild_tansy": "Wild Tansy",
+  "tooltip.vherbalism.tansy_bundle.tooltip": "Treats Greencough and can help heal minor wounds. Plants Tansy.",
+
+  "item.vherbalism.thyme_bundle": "Thyme Bundle",
+  "block.vherbalism.thyme": "Thyme",
+  "block.vherbalism.wild_thyme": "Wild Thyme",
+  "tooltip.vherbalism.thyme_bundle.tooltip": "Soothes anxiety when the scent is gently inhaled. Plants Thyme.",
+
+  "item.vherbalism.tormentil_bundle": "Tormentil Bundle",
+  "item.vherbalism.tormentil_poultice": "Tormentil Poultice",
+  "block.vherbalism.tormentil": "Tormentil",
+  "block.vherbalism.wild_tormentil": "Wild Tormentil",
+  "tooltip.vherbalism.tormentil_bundle.tooltip": "Can be mashed into Tormentil Poultice. Plants Tormentil.",
+  "tooltip.vherbalism.tormentil_poultice.tooltip": "Treats wounds and poison.",
+
+  "item.vherbalism.watermint_bundle": "Watermint Bundle",
+  "block.vherbalism.watermint": "Watermint",
+  "block.vherbalism.wild_watermint": "Wild Watermint",
+  "tooltip.vherbalism.watermint_bundle.tooltip": "Soothes bellyaches and smells delightful. Plants Watermint.",
+
+  "item.vherbalism.tree_sap": "Tree Sap",
+  "tooltip.vherbalism.tree_sap.tooltip": "Can treat nasty coughs.",
+
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 

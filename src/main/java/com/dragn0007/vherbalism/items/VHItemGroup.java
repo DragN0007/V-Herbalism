@@ -39,6 +39,8 @@ public class VHItemGroup {
                         output.accept(VHBlocks.DRIED_OAK_LEAVES.get());
                         output.accept(VHItems.DRIED_OAK_LEAVES.get());
 
+                        output.accept(VHItems.TREE_SAP.get());
+
                         output.accept(VHItems.BINDWEED_BUNDLE.get());
                         output.accept(VHItems.BLACKBERRY.get());
                         output.accept(VHItems.BLACKBERRY_LEAVES.get());
@@ -102,6 +104,12 @@ public class VHItemGroup {
                         output.accept(VHItems.SHEEP_SORREL_BUNDLE.get());
                         output.accept(VHItems.SORREL_LEAVES.get());
                         output.accept(VHItems.STINGING_NETTLE_LEAVES.get());
+                        output.accept(VHItems.SWEET_SEDGE_BUNDLE.get());
+                        output.accept(VHItems.TANSY_BUNDLE.get());
+                        output.accept(VHItems.THYME_BUNDLE.get());
+                        output.accept(VHItems.TORMENTIL_BUNDLE.get());
+                        output.accept(VHItems.TORMENTIL_POULTICE.get());
+                        output.accept(VHItems.WATERMINT_BUNDLE.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

@@ -202,6 +202,27 @@ public class VHItems {
     public static final RegistryObject<Item> STINGING_NETTLE_LEAVES = ITEMS.register("stinging_nettle_leaves",
             () -> new StingingNettleItem(VHBlocks.STINGING_NETTLE.get(), new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> TREE_SAP = ITEMS.register("tree_sap",
+            () -> new TreeSapItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> SWEET_SEDGE_BUNDLE = ITEMS.register("sweet_sedge_bundle",
+            () -> new SweetSedgeItem(VHBlocks.SWEET_SEDGE.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> TANSY_BUNDLE = ITEMS.register("tansy_bundle",
+            () -> new TansyItem(VHBlocks.TANSY.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> THYME_BUNDLE = ITEMS.register("thyme_bundle",
+            () -> new ThymeItem(VHBlocks.THYME.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> TORMENTIL_BUNDLE = ITEMS.register("tormentil_bundle",
+            () -> new TormentilItem(VHBlocks.TORMENTIL.get(), new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> TORMENTIL_POULTICE = ITEMS.register("tormentil_poultice",
+            () -> new TormentilPoulticeItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> WATERMINT_BUNDLE = ITEMS.register("watermint_bundle",
+            () -> new WatermintItem(VHBlocks.WATERMINT.get(), new Item.Properties().stacksTo(64)));
+
+
 
     public static final RegistryObject<Item> BIRCH_SAP = ITEMS.register("birch_sap",
             () -> new BirchSapItem(new Item.Properties().stacksTo(64)));

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_swamp",
+  "features": "vherbalism:sheep_sorrel",
+  "step": "vegetal_decoration"
+}

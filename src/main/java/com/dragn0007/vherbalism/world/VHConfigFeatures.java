@@ -76,6 +76,22 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SHEEP_SORREL = registerKey("sheep_sorrel");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SORREL = registerKey("sorrel");
     public static final ResourceKey<ConfiguredFeature<?, ?>> STINGING_NETTLE = registerKey("stinging_nettle");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SWEET_SEDGE = registerKey("sweet_sedge");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TANSY = registerKey("tansy");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TORMENTIL = registerKey("tormentil");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> THYME = registerKey("thyme");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WATERMINT = registerKey("watermint");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WILLOW_TREE = registerKey("willow_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WILLOW = registerKey("willow");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WINTERGREEN_BUSH = registerKey("wintergreen_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WOOD_SORREL = registerKey("wood_sorrel");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> YARROW = registerKey("yarrow");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DEATHBERRY_BUSH = registerKey("deathberry_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FOXGLOVE = registerKey("foxglove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HOLLYBERRY_BUSH = registerKey("hollyberry_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MEADOW_SAFFRON = registerKey("meadow_saffron");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HEMLOCK = registerKey("hemlock");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SNAKEROOT = registerKey("snakeroot");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -283,6 +299,26 @@ public class VHConfigFeatures {
         register(context, STINGING_NETTLE, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_STINGING_NETTLE.get())))));
+
+        register(context, SWEET_SEDGE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_SWEET_SEDGE.get())))));
+
+        register(context, TANSY, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_TANSY.get())))));
+
+        register(context, THYME, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_THYME.get())))));
+
+        register(context, TORMENTIL, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_TORMENTIL.get())))));
+
+        register(context, WATERMINT, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_WATERMINT.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
