@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:wintergreen_leaves"
+    },
+    {
+      "item": "vherbalism:wintergreen_leaves"
+    },
+    {
+      "item": "vherbalism:catchweed_bundle"
+    },
+    {
+      "item": "vherbalism:cobweb"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:wintergreen_leaf_poultice"
+  }
+}

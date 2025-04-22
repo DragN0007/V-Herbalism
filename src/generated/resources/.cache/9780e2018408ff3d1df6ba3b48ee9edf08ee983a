@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-20T01:01:03.1820008	Item Models: vherbalism
+// 1.20.1	2025-04-21T23:49:07.5353243	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -26,6 +26,7 @@ ca5e51bb4e2fb537cbe6b2c4095546f8a51061ce assets/vherbalism/models/item/cobweb.js
 0d43314239f1bdcbad3499ae3adb079285ed0c3c assets/vherbalism/models/item/coltsfoot_bundle.json
 e95bb299acdc13b923e0537f41c103c8fd99a781 assets/vherbalism/models/item/comfrey_leaf.json
 aeacfba139c2e56c5e3bbc43cab267f3a6fde91d assets/vherbalism/models/item/comfrey_root.json
+e1bf15b97e0d0489339163b981a94b127e9cc5aa assets/vherbalism/models/item/cooked_willow.json
 2ff22d8a84559d80c3060b76e940feec3805b12b assets/vherbalism/models/item/daisy_leaves.json
 4f7c8e20f0a62a7585fedd6a7296a725eb586772 assets/vherbalism/models/item/dandelion_leaves.json
 35fc48a9549f3fa162d391d0931b1380acf3452d assets/vherbalism/models/item/dandelion_root.json
@@ -77,3 +78,10 @@ d8789bf7fd438f860d7f67d539e960da4f1c0814 assets/vherbalism/models/item/stinging_
 2d1707b503759ab6124ced6d41535ecf3189f31c assets/vherbalism/models/item/tormentil_poultice.json
 13f0dd7cfb677a5126a5ecef3cdc5f5b3401a70f assets/vherbalism/models/item/tree_sap.json
 68ff585b0b57ff56fb475559c5cda75dc3704c26 assets/vherbalism/models/item/watermint_bundle.json
+60ff73edb6157767b151c9445ae126219dffd95a assets/vherbalism/models/item/willow_bundle.json
+db738e3fa0ad60241fb36335eea99e80d5a1b728 assets/vherbalism/models/item/wintergreen_berry.json
+eb9df8da4ac74597381b894cf4e48c9f5f62ddb2 assets/vherbalism/models/item/wintergreen_leaf_poultice.json
+a8235107e9c5de83605952b6bed1fd75c00c450c assets/vherbalism/models/item/wintergreen_leaves.json
+e7372fe9742441ad361398ef042aa42566ca0ca5 assets/vherbalism/models/item/wood_sorrel_leaf.json
+af7a1968e728c414d9c19f7af47ac3d343989bd6 assets/vherbalism/models/item/wood_sorrel_poultice.json
+f241309a20323e6067608eca4f078921dc396c3e assets/vherbalism/models/item/yarrow_bundle.json

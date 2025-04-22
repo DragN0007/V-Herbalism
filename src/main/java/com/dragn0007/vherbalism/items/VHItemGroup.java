@@ -110,6 +110,14 @@ public class VHItemGroup {
                         output.accept(VHItems.TORMENTIL_BUNDLE.get());
                         output.accept(VHItems.TORMENTIL_POULTICE.get());
                         output.accept(VHItems.WATERMINT_BUNDLE.get());
+                        output.accept(VHItems.WILLOW_BUNDLE.get());
+                        output.accept(VHItems.COOKED_WILLOW.get());
+                        output.accept(VHItems.WINTERGREEN_BERRY.get());
+                        output.accept(VHItems.WINTERGREEN_LEAVES.get());
+                        output.accept(VHItems.WINTERGREEN_LEAF_POULTICE.get());
+                        output.accept(VHItems.WOOD_SORREL_LEAF.get());
+                        output.accept(VHItems.WOOD_SORREL_POULTICE.get());
+                        output.accept(VHItems.YARROW_BUNDLE.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());

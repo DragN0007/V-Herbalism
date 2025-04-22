@@ -9,6 +9,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -21,6 +22,39 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
 
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
+
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(VHItems.WILLOW_BUNDLE.get()), RecipeCategory.MISC, VHItems.COOKED_WILLOW.get(), 0.35F, 100)
+                .unlockedBy("has_willow", has(VHItems.WILLOW_BUNDLE.get())).save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "cooked_willow_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(VHItems.WILLOW_BUNDLE.get()), RecipeCategory.MISC, VHItems.COOKED_WILLOW.get(), 0.35F, 200)
+                .unlockedBy("has_willow", has(VHItems.WILLOW_BUNDLE.get())).save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "cooked_willow_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(VHItems.WILLOW_BUNDLE.get()), RecipeCategory.MISC, VHItems.COOKED_WILLOW.get(), 0.35F, 600)
+                .unlockedBy("has_willow", has(VHItems.WILLOW_BUNDLE.get())).save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "cooked_willow_campfire_cooking"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.SUGAR, 2)
+                .requires(VHItems.COOKED_WILLOW.get())
+                .unlockedBy("has_willow", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.COOKED_WILLOW.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "sugar_from_willow"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.WINTERGREEN_LEAF_POULTICE.get())
+                .requires(VHItems.WINTERGREEN_LEAVES.get())
+                .requires(VHItems.WINTERGREEN_LEAVES.get())
+                .requires(VHItems.CATCHWEED_BUNDLE.get())
+                .requires(VHItems.COBWEB.get())
+                .unlockedBy("has_wintergreen_leaves", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.WINTERGREEN_LEAVES.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.WOOD_SORREL_POULTICE.get())
+                .requires(VHItems.WOOD_SORREL_LEAF.get())
+                .requires(VHItems.WOOD_SORREL_LEAF.get())
+                .requires(VHItems.COBWEB.get())
+                .unlockedBy("has_wood_sorrel", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.WOOD_SORREL_LEAF.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.POPPY_SEEDS.get(), 3)
                 .requires(Blocks.POPPY)

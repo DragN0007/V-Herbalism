@@ -300,6 +300,32 @@
   "block.vherbalism.wild_watermint": "Wild Watermint",
   "tooltip.vherbalism.watermint_bundle.tooltip": "Soothes bellyaches and smells delightful. Plants Watermint.",
 
+  "item.vherbalism.willow_bundle": "Willow Bundle",
+  "item.vherbalism.cooked_willow": "Cooked Willow",
+  "block.vherbalism.willow": "Willow",
+  "block.vherbalism.wild_willow": "Wild Willow",
+  "tooltip.vherbalism.willow_bundle.tooltip": "Soothes inflamed wounds and tastes sweet when cooked. Plants Willow.",
+
+  "item.vherbalism.wintergreen_berry": "Wintergreen Berry",
+  "item.vherbalism.wintergreen_leaves": "Wintergreen Leaves",
+  "item.vherbalism.wintergreen_leaf_poultice": "Wintergreen Leaf Poultice",
+  "block.vherbalism.wintergreen_bush": "Wintergreen Bush",
+  "tooltip.vherbalism.wintergreen_leaves.tooltip": "Can be mashed into Wintergreen Leaf Poultice.",
+  "tooltip.vherbalism.wintergreen_poultice.tooltip": "Helps heal wounds and dampen poisons.",
+  "tooltip.vherbalism.wintergreen_berry.tooltip": "Plants Wintergreen Bush.",
+
+  "item.vherbalism.wood_sorrel_leaf": "Wood Sorrel Leaf",
+  "item.vherbalism.wood_sorrel_poultice": "Wood Sorrel Poultice",
+  "block.vherbalism.wood_sorrel": "Wood Sorrel",
+  "block.vherbalism.wild_wood_sorrel": "Wild Wood Sorrel",
+  "tooltip.vherbalism.wood_sorrel_leaf.tooltip": "Can be mashed into Wood Sorrel Poultice. Plants Wood Sorrel.",
+  "tooltip.vherbalism.wood_sorrel_poultice.tooltip": "Treats wounds and poison.",
+
+  "item.vherbalism.yarrow_bundle": "Yarrow Bundle",
+  "block.vherbalism.yarrow": "Yarrow",
+  "block.vherbalism.wild_yarrow": "Wild Yarrow",
+  "tooltip.vherbalism.yarrow_bundle.tooltip": "Induces vomiting to expel poisons and toxins. Plants Yarrow.",
+
   "item.vherbalism.tree_sap": "Tree Sap",
   "tooltip.vherbalism.tree_sap.tooltip": "Can treat nasty coughs.",
 

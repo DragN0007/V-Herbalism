@@ -444,6 +444,26 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.WATERMINT)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(WILLOW, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_SPARSE_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.WILLOW)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(WINTERGREEN_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_MOUNTAIN),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.WINTERGREEN_BUSH)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(WOOD_SORREL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.WOOD_SORREL)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(YARROW, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_MOUNTAIN),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.YARROW)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
     }
 
     public static ResourceKey<BiomeModifier> registerKey(String name) {

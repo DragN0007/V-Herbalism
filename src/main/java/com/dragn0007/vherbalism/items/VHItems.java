@@ -222,6 +222,26 @@ public class VHItems {
     public static final RegistryObject<Item> WATERMINT_BUNDLE = ITEMS.register("watermint_bundle",
             () -> new WatermintItem(VHBlocks.WATERMINT.get(), new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> WILLOW_BUNDLE = ITEMS.register("willow_bundle",
+            () -> new WillowItem(VHBlocks.WILLOW.get(), new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> COOKED_WILLOW = ITEMS.register("cooked_willow",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).build())));
+
+    public static final RegistryObject<Item> WINTERGREEN_BERRY = ITEMS.register("wintergreen_berry",
+            () -> new WintergreenBerryItem(VHBlocks.WINTERGREEN_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+    public static final RegistryObject<Item> WINTERGREEN_LEAVES = ITEMS.register("wintergreen_leaves",
+            () -> new WintergreenLeavesItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> WINTERGREEN_LEAF_POULTICE = ITEMS.register("wintergreen_leaf_poultice",
+            () -> new WintergreenLeafPoulticeItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> WOOD_SORREL_LEAF = ITEMS.register("wood_sorrel_leaf",
+            () -> new WoodSorrelLeafItem(VHBlocks.WOOD_SORREL.get(), (new Item.Properties().stacksTo(64))));
+    public static final RegistryObject<Item> WOOD_SORREL_POULTICE = ITEMS.register("wood_sorrel_poultice",
+            () -> new WoodSorrelLeafPoulticeItem(new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> YARROW_BUNDLE = ITEMS.register("yarrow_bundle",
+            () -> new YarrowItem(VHBlocks.YARROW.get(), new Item.Properties().stacksTo(64)));
+
 
 
     public static final RegistryObject<Item> BIRCH_SAP = ITEMS.register("birch_sap",

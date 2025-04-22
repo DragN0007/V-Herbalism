@@ -307,6 +307,22 @@ public class VHPlacedFeatures {
         register(context, WATERMINT, configuredFeatures.getOrThrow(VHConfigFeatures.WATERMINT),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, WILLOW, configuredFeatures.getOrThrow(VHConfigFeatures.WILLOW),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, WINTERGREEN_BUSH, configuredFeatures.getOrThrow(VHConfigFeatures.WINTERGREEN_BUSH),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, WOOD_SORREL, configuredFeatures.getOrThrow(VHConfigFeatures.WOOD_SORREL),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, YARROW, configuredFeatures.getOrThrow(VHConfigFeatures.YARROW),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 
     public static ResourceKey<PlacedFeature> registerKey (String name){

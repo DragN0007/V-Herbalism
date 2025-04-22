@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "vherbalism:wood_sorrel",
+  "step": "vegetal_decoration"
+}

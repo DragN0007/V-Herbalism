@@ -49,7 +49,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "vherbalism:blackberry_bush",
+          "block": "vherbalism:raspberry_bush",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "3"

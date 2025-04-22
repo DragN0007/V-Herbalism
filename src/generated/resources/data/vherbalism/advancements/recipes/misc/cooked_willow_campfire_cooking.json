@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vherbalism:cooked_willow_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vherbalism:willow_bundle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_willow",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vherbalism:cooked_willow_campfire_cooking"
+    ]
+  },
+  "sends_telemetry_event": false
+}

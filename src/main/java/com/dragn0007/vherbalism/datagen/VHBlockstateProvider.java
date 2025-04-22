@@ -234,6 +234,18 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.WATERMINT.get(), "watermint_stage_", "watermint_stage_");
         simpleBlock(VHBlocks.WILD_WATERMINT.get(), models().cross(VHBlocks.WILD_WATERMINT.getId().getPath(),
                 wildPlantTexture("watermint_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.WILLOW.get(), "willow_stage_", "willow_stage_");
+        simpleBlock(VHBlocks.WILD_WILLOW.get(), models().cross(VHBlocks.WILD_WILLOW.getId().getPath(),
+                wildPlantTexture("willow_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.WOOD_SORREL.get(), "wood_sorrel_stage_", "wood_sorrel_stage_");
+        simpleBlock(VHBlocks.WILD_WOOD_SORREL.get(), models().cross(VHBlocks.WILD_WOOD_SORREL.getId().getPath(),
+                wildPlantTexture("wood_sorrel_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.YARROW.get(), "yarrow_stage_", "yarrow_stage_");
+        simpleBlock(VHBlocks.WILD_YARROW.get(), models().cross(VHBlocks.WILD_YARROW.getId().getPath(),
+                wildPlantTexture("yarrow_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

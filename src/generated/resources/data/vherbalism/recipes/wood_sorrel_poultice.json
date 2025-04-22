@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:wood_sorrel_leaf"
+    },
+    {
+      "item": "vherbalism:wood_sorrel_leaf"
+    },
+    {
+      "item": "vherbalism:cobweb"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:wood_sorrel_poultice"
+  }
+}
