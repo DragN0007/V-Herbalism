@@ -12,6 +12,6 @@ public class WillowTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     public ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return VHConfigFeatures.ALDER;
+        return VHConfigFeatures.WILLOW_TREE;
     }
 }

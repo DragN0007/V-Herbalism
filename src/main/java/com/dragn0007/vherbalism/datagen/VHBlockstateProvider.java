@@ -47,6 +47,25 @@ public class VHBlockstateProvider extends BlockStateProvider {
         simpleBlock(VHBlocks.SAPPY_BIRCH_SAPLING.get(), models().cross(VHBlocks.SAPPY_BIRCH_SAPLING.getId().getPath(),
                 blockTexture(VHBlocks.SAPPY_BIRCH_SAPLING.get())).renderType("cutout"));
 
+        logBlock(VHBlocksNoDatagenLoot.WILLOW_LOG.get());
+        blockWithItem(VHBlocks.WILLOW_PLANKS);
+        simpleBlockWithItem(VHBlocks.WILLOW_LEAVES.get(), models().cubeAll(VHBlocks.WILLOW_LEAVES.getId().getPath(),
+                blockTexture(VHBlocks.WILLOW_LEAVES.get())).renderType("cutout"));
+        stairsBlock((StairBlock) VHBlocks.WILLOW_STAIRS.get(), blockTexture(VHBlocks.WILLOW_PLANKS.get()));
+        simpleBlockItem(VHBlocks.WILLOW_STAIRS.get(), models().stairs(VHBlocks.WILLOW_STAIRS.getId().getPath(),
+                blockTexture(VHBlocks.WILLOW_PLANKS.get()), blockTexture(VHBlocks.WILLOW_PLANKS.get()), blockTexture(VHBlocks.WILLOW_PLANKS.get())));
+        slabBlock((SlabBlock) VHBlocks.WILLOW_SLAB.get(), blockTexture(VHBlocks.WILLOW_PLANKS.get()), blockTexture(VHBlocks.WILLOW_PLANKS.get()));
+        simpleBlockItem(VHBlocks.WILLOW_SLAB.get(), models().slab(VHBlocks.WILLOW_SLAB.getId().getPath(),
+                blockTexture(VHBlocks.WILLOW_PLANKS.get()), blockTexture(VHBlocks.WILLOW_PLANKS.get()), blockTexture(VHBlocks.WILLOW_PLANKS.get())));
+        simpleBlock(VHBlocks.WILLOW_SAPLING.get(), models().cross(VHBlocks.WILLOW_SAPLING.getId().getPath(),
+                blockTexture(VHBlocks.WILLOW_SAPLING.get())).renderType("cutout"));
+        fenceBlock((FenceBlock) VHBlocks.WILLOW_FENCE.get(), blockTexture(VHBlocks.WILLOW_PLANKS.get()));
+        simpleBlockItem(VHBlocks.WILLOW_FENCE.get(), models().fenceInventory(VHBlocks.WILLOW_FENCE.getId().getPath(),
+                blockTexture(VHBlocks.WILLOW_PLANKS.get())));
+        fenceGateBlock((FenceGateBlock) VHBlocks.WILLOW_FENCE_GATE.get(), blockTexture(VHBlocks.WILLOW_PLANKS.get()));
+        simpleBlockItem(VHBlocks.WILLOW_FENCE_GATE.get(), models().fenceGate(VHBlocks.WILLOW_FENCE_GATE.getId().getPath(),
+                blockTexture(VHBlocks.WILLOW_PLANKS.get())));
+
         simpleBlockWithItem(VHBlocks.PREPARED_OAK_LEAVES.get(), models().cubeAll(VHBlocks.PREPARED_OAK_LEAVES.getId().getPath(),
                 blockTexture(VHBlocks.PREPARED_OAK_LEAVES.get())).renderType("cutout"));
         simpleBlockWithItem(VHBlocks.DRIED_OAK_LEAVES.get(), models().cubeAll(VHBlocks.DRIED_OAK_LEAVES.getId().getPath(),

@@ -116,6 +116,11 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BINDWEED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(WILLOW_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.WILLOW_TREE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
         context.register(BINDWEED_PLAINS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.BINDWEED)),

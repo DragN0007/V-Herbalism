@@ -368,6 +368,12 @@
   "item.vherbalism.alder_bark": "Alder Bark",
   "tooltip.vherbalism.alder_bark.tooltip": "Soothes toothaches when chewed.",
 
+  "item.vherbalism.willow_bark": "Weeping Willow Bark",
+  "tooltip.vherbalism.willow_bark.tooltip": "Eases pain when chewed.",
+
+  "item.vherbalism.willow_leaves_bundle": "Weeping Willow Leaves",
+  "tooltip.vherbalism.willow_leaves.tooltip": "Soothes vomiting and nausea when chewed.",
+
   "block.vherbalism.alder_log": "Alder Log",
   "block.vherbalism.alder_leaves": "Alder Leaves",
   "block.vherbalism.alder_planks": "Alder Planks",
@@ -379,6 +385,16 @@
 
   "block.vherbalism.sappy_birch_log": "Sappy Birch Log",
   "block.vherbalism.sappy_birch_sapling": "Sappy Birch Sapling",
+
+  "block.vherbalism.willow_log": "Weeping Willow Log",
+  "block.vherbalism.willow_leaves": "Weeping Willow Leaves",
+  "block.vherbalism.hanging_willow_leaves": "Weeping Willow Leaves",
+  "block.vherbalism.willow_planks": "Weeping Willow Planks",
+  "block.vherbalism.willow_sapling": "Weeping Willow Sapling",
+  "block.vherbalism.willow_stairs": "Weeping Willow Stairs",
+  "block.vherbalism.willow_slab": "Weeping Willow Slab",
+  "block.vherbalism.willow_fence": "Weeping Willow Fence",
+  "block.vherbalism.willow_fence_gate": "Weeping Willow Fence Gate",
 
   "block.vherbalism.kittypet_scent": "Kittypet Scent",
   "block.vherbalism.loner_scent": "Loner Scent",

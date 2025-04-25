@@ -20,8 +20,6 @@ public class VHItemGroup {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(VHItems.BROOM_BUNDLE.get())).title(Component.translatable("itemGroup.vherbalism"))
                     .displayItems((displayParameters, output) -> {
 
-                        output.accept(VHItems.ALDER_BARK.get());
-
                         output.accept(VHBlocksNoDatagenLoot.ALDER_LOG.get());
                         output.accept(VHBlocks.ALDER_LEAVES.get());
                         output.accept(VHBlocks.ALDER_PLANKS.get());
@@ -30,6 +28,18 @@ public class VHItemGroup {
                         output.accept(VHBlocks.ALDER_STAIRS.get());
                         output.accept(VHBlocks.ALDER_FENCE.get());
                         output.accept(VHBlocks.ALDER_FENCE_GATE.get());
+                        output.accept(VHItems.ALDER_BARK.get());
+
+                        output.accept(VHBlocksNoDatagenLoot.WILLOW_LOG.get());
+                        output.accept(VHBlocks.WILLOW_LEAVES.get());
+                        output.accept(VHBlocks.WILLOW_PLANKS.get());
+                        output.accept(VHBlocks.WILLOW_SAPLING.get());
+                        output.accept(VHBlocks.WILLOW_SLAB.get());
+                        output.accept(VHBlocks.WILLOW_STAIRS.get());
+                        output.accept(VHBlocks.WILLOW_FENCE.get());
+                        output.accept(VHBlocks.WILLOW_FENCE_GATE.get());
+                        output.accept(VHItems.WILLOW_BARK.get());
+                        output.accept(VHItems.WILLOW_LEAVES_BUNDLE.get());
 
                         output.accept(VHBlocksNoDatagenLoot.SAPPY_BIRCH_LOG.get());
                         output.accept(VHBlocks.SAPPY_BIRCH_SAPLING.get());

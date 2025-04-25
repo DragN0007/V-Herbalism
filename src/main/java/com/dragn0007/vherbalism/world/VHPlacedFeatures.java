@@ -98,6 +98,10 @@ public class VHPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
                         VHBlocks.SAPPY_BIRCH_SAPLING.get()));
 
+        register(context, WILLOW_TREE, configuredFeatures.getOrThrow(VHConfigFeatures.WILLOW_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        VHBlocks.WILLOW_SAPLING.get()));
+
         register(context, BINDWEED, configuredFeatures.getOrThrow(VHConfigFeatures.BINDWEED),
                 List.of(RarityFilter.onAverageOnceEvery(16),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));

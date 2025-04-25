@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "vherbalism:block/willow_planks",
+    "side": "vherbalism:block/willow_planks",
+    "top": "vherbalism:block/willow_planks"
+  }
+}

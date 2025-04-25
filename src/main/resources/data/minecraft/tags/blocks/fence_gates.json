@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "vherbalism:alder_fence_gate"
+    "vherbalism:alder_fence_gate",
+    "vherbalism:willow_fence_gate"
   ]
 }

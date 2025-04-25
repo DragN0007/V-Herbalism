@@ -1,5 +1,16 @@
 {
   "type": "minecraft:block",
+  "functions": [
+    {
+      "enchantment": "minecraft:fortune",
+      "formula": "minecraft:binomial_with_bonus_count",
+      "function": "minecraft:apply_bonus",
+      "parameters": {
+        "extra": 3,
+        "probability": 0.5714286
+      }
+    }
+  ],
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -127,6 +138,22 @@
             }
           ],
           "name": "minecraft:stick"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.25,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "vherbalism:willow_leaves_bundle"
         }
       ],
       "rolls": 1.0

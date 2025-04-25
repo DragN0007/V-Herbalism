@@ -272,6 +272,10 @@ public class VHItems {
             () -> new BirchSapItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> ALDER_BARK = ITEMS.register("alder_bark",
             () -> new AlderTreeBarkItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> WILLOW_BARK = ITEMS.register("willow_bark",
+            () -> new WillowBarkItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> WILLOW_LEAVES_BUNDLE = ITEMS.register("willow_leaves_bundle",
+            () -> new WillowLeavesItem(new Item.Properties().stacksTo(64)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

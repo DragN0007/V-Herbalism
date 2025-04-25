@@ -114,11 +114,16 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.MEADOW_SAFFRON_BUNDLE);
         simpleItem(VHItems.SNAKEROOT_BUNDLE);
         simpleItem(VHItems.SNAKEROOT_PETALS);
+        simpleItem(VHItems.WILLOW_LEAVES_BUNDLE);
 
 
         simpleItem(VHItems.BIRCH_SAP);
         simpleBlockItem(VHBlocks.SAPPY_BIRCH_SAPLING);
         parentRotatedBlockItem(VHBlocksNoDatagenLoot.SAPPY_BIRCH_LOG);
+
+        simpleBlockItem(VHBlocks.WILLOW_SAPLING);
+        parentRotatedBlockItem(VHBlocksNoDatagenLoot.WILLOW_LOG);
+        simpleItem(VHItems.WILLOW_BARK);
     }
 
     public ItemModelBuilder simpleItem(RegistryObject<Item> item) {

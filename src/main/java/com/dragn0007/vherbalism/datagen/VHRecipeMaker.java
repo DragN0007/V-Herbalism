@@ -284,5 +284,47 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .build()))
                 .save(pFinishedRecipeConsumer);
 
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHBlocks.WILLOW_PLANKS.get(), 4)
+                .requires(VHBlocksNoDatagenLoot.WILLOW_LOG.get())
+                .unlockedBy("has_log", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHBlocksNoDatagenLoot.WILLOW_LOG.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VHBlocks.WILLOW_STAIRS.get())
+                .define('A', VHBlocks.WILLOW_PLANKS.get())
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHBlocks.WILLOW_PLANKS.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VHBlocks.WILLOW_SLAB.get(), 6)
+                .define('A', VHBlocks.WILLOW_PLANKS.get())
+                .pattern("AAA")
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHBlocks.WILLOW_PLANKS.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VHBlocks.WILLOW_FENCE.get(), 3)
+                .define('A', VHBlocks.WILLOW_PLANKS.get())
+                .define('B', Items.STICK)
+                .pattern("ABA")
+                .pattern("ABA")
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHBlocks.WILLOW_PLANKS.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VHBlocks.WILLOW_FENCE_GATE.get())
+                .define('A', VHBlocks.WILLOW_PLANKS.get())
+                .define('B', Items.STICK)
+                .pattern("BAB")
+                .pattern("BAB")
+                .unlockedBy("has_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHBlocks.WILLOW_PLANKS.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
     }
 }

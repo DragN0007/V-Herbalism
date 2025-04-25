@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-25T02:01:30.600928	Item Models: vherbalism
+// 1.20.1	2025-04-25T02:37:18.712456	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -87,7 +87,11 @@ d8789bf7fd438f860d7f67d539e960da4f1c0814 assets/vherbalism/models/item/stinging_
 2d1707b503759ab6124ced6d41535ecf3189f31c assets/vherbalism/models/item/tormentil_poultice.json
 13f0dd7cfb677a5126a5ecef3cdc5f5b3401a70f assets/vherbalism/models/item/tree_sap.json
 68ff585b0b57ff56fb475559c5cda75dc3704c26 assets/vherbalism/models/item/watermint_bundle.json
+47c055f395831f0dae6fb491733091f401b27432 assets/vherbalism/models/item/willow_bark.json
 60ff73edb6157767b151c9445ae126219dffd95a assets/vherbalism/models/item/willow_bundle.json
+16ed30ca438fbd330068e9bfe5ebc38e88abd92c assets/vherbalism/models/item/willow_leaves_bundle.json
+a6b4fa6635b72da144b0337babeece9dcd470d72 assets/vherbalism/models/item/willow_log.json
+dc09ee36aab083aa41f1d61ddd43f93d17c22aa6 assets/vherbalism/models/item/willow_sapling.json
 db738e3fa0ad60241fb36335eea99e80d5a1b728 assets/vherbalism/models/item/wintergreen_berry.json
 eb9df8da4ac74597381b894cf4e48c9f5f62ddb2 assets/vherbalism/models/item/wintergreen_leaf_poultice.json
 a8235107e9c5de83605952b6bed1fd75c00c450c assets/vherbalism/models/item/wintergreen_leaves.json

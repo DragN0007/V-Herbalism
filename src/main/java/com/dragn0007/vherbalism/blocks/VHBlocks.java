@@ -353,6 +353,8 @@ public class VHBlocks {
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> WILLOW_FENCE_GATE = registerBlock("willow_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(OAK_PLANKS), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> HANGING_WILLOW_LEAVES = registerBlock("hanging_willow_leaves",
+            () -> new VineBlock(BlockBehaviour.Properties.copy(Blocks.VINE)));
 
     public static final RegistryObject<Block> PREPARED_OAK_LEAVES = registerBlock("prepared_oak_leaves", PreparedOakLeaves::new);
     public static final RegistryObject<Block> DRIED_OAK_LEAVES = registerBlock("placed_dried_oak_leaves",

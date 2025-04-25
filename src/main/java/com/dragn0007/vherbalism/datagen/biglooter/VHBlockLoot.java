@@ -7,6 +7,7 @@ import com.dragn0007.vherbalism.items.VHItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -16,6 +17,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -47,7 +49,9 @@ public class VHBlockLoot extends BlockLootSubProvider {
         this.dropSelf(VHBlocks.WILLOW_SAPLING.get());
         this.dropSelf(VHBlocks.WILLOW_FENCE.get());
         this.dropSelf(VHBlocks.WILLOW_FENCE_GATE.get());
-        this.add(VHBlocks.WILLOW_LEAVES.get(), (block) -> this.createLeavesDrops(block, VHBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(VHBlocks.WILLOW_LEAVES.get(), (block) -> this.createLeavesDrops(block, VHBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3)).withPool(LootPool.lootPool().add(LootItem.lootTableItem(VHItems.WILLOW_LEAVES_BUNDLE.get()).when(LootItemRandomChanceCondition.randomChance(0.25F)))));
+
+        this.dropOther(VHBlocks.HANGING_WILLOW_LEAVES.get(), VHItems.WILLOW_LEAVES_BUNDLE.get());
 
         this.dropOther(VHBlocks.HANGING_BURDOCK_ROOT.get(), VHItems.BURDOCK_ROOT.get());
         LootItemCondition.Builder lootitemcondition$builder0 = LootItemBlockStatePropertyCondition.hasBlockStateProperties

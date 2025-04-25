@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-25T02:01:30.6019256	Recipes
+// 1.20.1	2025-04-25T02:44:09.6021522	Recipes
 4487211fd34bcfef990c2f6f8807db39fb73bc41 data/minecraft/advancements/recipes/misc/birch_planks.json
 f4b8c82c6f1a8e069785ad77244ffaddbc638cca data/minecraft/recipes/birch_planks.json
 9db65746eeace8ef4a0f0a13abe7cbba62d792ca data/vherbalism/advancements/recipes/misc/alder_fence.json
@@ -32,6 +32,11 @@ be48007246f79f0a199ee7b125320d03ce9c528b data/vherbalism/advancements/recipes/mi
 087f795d5e3292d5ccc6a76dd56849e59dd61c25 data/vherbalism/advancements/recipes/misc/snakeroot_petals_from_willow.json
 86109f215b090a9c8afb9d81b93d6fd554479b4b data/vherbalism/advancements/recipes/misc/sugar_from_willow.json
 7b079028d3a982f196ea25298f333e9ade398fd7 data/vherbalism/advancements/recipes/misc/topical_poultice.json
+eaff694e0ab243a6942b7eaffa7cf1ce1fcb4146 data/vherbalism/advancements/recipes/misc/willow_fence.json
+5772dae7134b5be37cadfddd9d8424d3b2ea686d data/vherbalism/advancements/recipes/misc/willow_fence_gate.json
+3afae10562be515b01060441012e44f1d9bec9fc data/vherbalism/advancements/recipes/misc/willow_planks.json
+2f52114766bc18b0f3f68d173115e99eef652e92 data/vherbalism/advancements/recipes/misc/willow_slab.json
+a189d9595ce34463a9089cfcd1d345237586fd1f data/vherbalism/advancements/recipes/misc/willow_stairs.json
 8603e09a9fd0b7077568a0982b804082c6741e15 data/vherbalism/advancements/recipes/misc/wintergreen_leaf_poultice.json
 75adbb89dc29262cb8bd6187c1d2c3cf689c1551 data/vherbalism/advancements/recipes/misc/wood_sorrel_poultice.json
 da6c49e7f7f45d887515a3d3c8fd858dcafc3f88 data/vherbalism/recipes/alder_fence.json
@@ -65,5 +70,10 @@ e76944ae40fb22b60d8ef6cfd247eaf7c9822ba2 data/vherbalism/recipes/prepared_oak_le
 cf23d6126a2f8896337a5f74fc9168a684bcffe6 data/vherbalism/recipes/snakeroot_petals_from_willow.json
 238adb2def5d62f8db9a8d52e387c1a73a796555 data/vherbalism/recipes/sugar_from_willow.json
 41d2abbcbcdd2bf615f18df5ce7053c0d4279937 data/vherbalism/recipes/topical_poultice.json
+71f5c8a9516f5e58e81c396099b3ff04ea93bc61 data/vherbalism/recipes/willow_fence.json
+67babe64bab41dd3fa01a0f35644366797014452 data/vherbalism/recipes/willow_fence_gate.json
+51a3c51f9a652408b0ab37d4674618b19f8543f8 data/vherbalism/recipes/willow_planks.json
+667708558e30dba545a899a1dce288280f992c71 data/vherbalism/recipes/willow_slab.json
+360b7275084c82053fdaaa29607673ccb856ea60 data/vherbalism/recipes/willow_stairs.json
 a523a381ff37ed810422bb1a66f47ad5ccfac7f2 data/vherbalism/recipes/wintergreen_leaf_poultice.json
 3a9bf8c1ccf0129ba7294674272b60939ad950f0 data/vherbalism/recipes/wood_sorrel_poultice.json

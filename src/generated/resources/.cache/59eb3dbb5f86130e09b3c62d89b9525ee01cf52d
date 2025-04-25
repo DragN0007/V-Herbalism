@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-25T02:01:30.5969393	Loot Tables
+// 1.20.1	2025-04-25T02:53:18.5451038	Loot Tables
 2406d54a249e7ea79b846bc1992d5e24c275defc data/vherbalism/loot_tables/blocks/alder_fence.json
 3e9d93cf0367b9ec86cd216de8ef73cece6e9b0b data/vherbalism/loot_tables/blocks/alder_fence_gate.json
 caa6e96257a400d2d5b2b70c238b64f95e38b8e5 data/vherbalism/loot_tables/blocks/alder_leaves.json
@@ -35,6 +35,7 @@ ea09552589ec81c715f2bf9e72e1f3844adaee58 data/vherbalism/loot_tables/blocks/foxg
 f65671306fab0a4675c36c01ba02b1c2e06d49ec data/vherbalism/loot_tables/blocks/goatweed.json
 d9f740cfd81fb27b45a41bb3c8d7c787f9d09269 data/vherbalism/loot_tables/blocks/goldenrod.json
 bf04d4800d69731cf3780ee275ac129462c9908a data/vherbalism/loot_tables/blocks/hanging_burdock_root.json
+c0aeddadc1002e9ccd27f9917b5f972a5e444f12 data/vherbalism/loot_tables/blocks/hanging_willow_leaves.json
 ea615070a3eabf4108a3abe12326c0cb1139cf0f data/vherbalism/loot_tables/blocks/hawkweed.json
 9d97b46f2567fe40417b5cab35130a34978a20de data/vherbalism/loot_tables/blocks/heather.json
 4fd1059ef4bc3a0e23d0cec4feda539a065acab6 data/vherbalism/loot_tables/blocks/hemlock.json
@@ -122,7 +123,7 @@ c6eb516de22cfe8e5bffd58810b3247f886936dd data/vherbalism/loot_tables/blocks/wild
 78c6811fc8a90c160f0a7729b73d2cee252e8eec data/vherbalism/loot_tables/blocks/willow.json
 707cebce1e7c4afe1c5cec5b49d28fee01ec191b data/vherbalism/loot_tables/blocks/willow_fence.json
 eae7f1abe39c40f0102ccd7ccbcfb3792c177b8c data/vherbalism/loot_tables/blocks/willow_fence_gate.json
-abfdf1daa715f60f3b64065a496fdf8dac973686 data/vherbalism/loot_tables/blocks/willow_leaves.json
+0c815cb2c5bd54c0a54a929110519359bab6ce0f data/vherbalism/loot_tables/blocks/willow_leaves.json
 a14284f49e31896f64b6bf0aae96701a217ea3a0 data/vherbalism/loot_tables/blocks/willow_planks.json
 9684566df0d3ee08972430af161a90c6f8d3ed98 data/vherbalism/loot_tables/blocks/willow_sapling.json
 ae8431bf2c034e2906038b415699d3fb1dbb972d data/vherbalism/loot_tables/blocks/willow_slab.json

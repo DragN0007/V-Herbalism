@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vherbalism:block/willow_slab"
+    },
+    "type=double": {
+      "model": "vherbalism:block/willow_planks"
+    },
+    "type=top": {
+      "model": "vherbalism:block/willow_slab_top"
+    }
+  }
+}

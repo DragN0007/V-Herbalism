@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_wet/overworld",
+  "features": "vherbalism:willow_tree",
+  "step": "vegetal_decoration"
+}
