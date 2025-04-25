@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:deathberry"
+    },
+    {
+      "item": "vherbalism:deathberry"
+    }
+  ],
+  "result": {
+    "item": "vherbalism:deathberry_seeds"
+  }
+}

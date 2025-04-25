@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_snakeroot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vherbalism:snakeroot_bundle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vherbalism:snakeroot_petals_from_willow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_snakeroot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vherbalism:snakeroot_petals_from_willow"
+    ]
+  },
+  "sends_telemetry_event": false
+}

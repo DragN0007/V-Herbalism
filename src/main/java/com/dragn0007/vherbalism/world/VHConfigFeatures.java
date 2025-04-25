@@ -89,6 +89,7 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEATHBERRY_BUSH = registerKey("deathberry_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOXGLOVE = registerKey("foxglove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HOLLYBERRY_BUSH = registerKey("hollyberry_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NIGHTSHADE = registerKey("nightshade");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MEADOW_SAFFRON = registerKey("meadow_saffron");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HEMLOCK = registerKey("hemlock");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SNAKEROOT = registerKey("snakeroot");
@@ -335,6 +336,34 @@ public class VHConfigFeatures {
         register(context, YARROW, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_YARROW.get())))));
+
+        register(context, DEATHBERRY_BUSH, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.DEATHBERRY_BUSH.get())))));
+
+        register(context, FOXGLOVE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_FOXGLOVE.get())))));
+
+        register(context, HOLLYBERRY_BUSH, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.HOLLYBERRY_BUSH.get())))));
+
+        register(context, HEMLOCK, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_HEMLOCK.get())))));
+
+        register(context, NIGHTSHADE, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.NIGHTSHADE_BUSH.get())))));
+
+        register(context, MEADOW_SAFFRON, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_MEADOW_SAFFRON.get())))));
+
+        register(context, SNAKEROOT, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_SNAKEROOT.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

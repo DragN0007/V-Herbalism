@@ -242,6 +242,30 @@ public class VHItems {
     public static final RegistryObject<Item> YARROW_BUNDLE = ITEMS.register("yarrow_bundle",
             () -> new YarrowItem(VHBlocks.YARROW.get(), new Item.Properties().stacksTo(64)));
 
+    public static final RegistryObject<Item> DEATHBERRY = ITEMS.register("deathberry",
+            () -> new DeathberryItem(VHBlocks.DEATHBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.WITHER, 600, 0), 1F).build()))));
+    public static final RegistryObject<Item> DEATHBERRY_SEEDS = ITEMS.register("deathberry_seeds",
+            () -> new DeathberrySeedsItem(VHBlocks.DEATHBERRY_BUSH.get(), new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> FOXGLOVE_SEEDS = ITEMS.register("foxglove_seeds",
+            () -> new FoxgloveSeedsItem(VHBlocks.FOXGLOVE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.WITHER, 800, 3), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 800, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 0), 1F).build()))));
+
+    public static final RegistryObject<Item> HOLLYBERRY = ITEMS.register("hollyberry",
+            () -> new HollyberryItem(VHBlocks.HOLLYBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.POISON, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 800, 0), 1F).build()))));
+
+    public static final RegistryObject<Item> HEMLOCK_BUNDLE = ITEMS.register("hemlock_bundle",
+            () -> new HemlockItem(VHBlocks.HEMLOCK.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.WITHER, 1200, 4), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 2), 1F).effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 1200, 2), 1F).build()))));
+
+    public static final RegistryObject<Item> NIGHTSHADE_BERRY = ITEMS.register("nightshade_berry",
+            () -> new NightshadeBerryItem(VHBlocks.NIGHTSHADE_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.POISON, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 800, 0), 1F).build()))));
+
+    public static final RegistryObject<Item> MEADOW_SAFFRON_BUNDLE = ITEMS.register("meadow_saffron_bundle",
+            () -> new SaffronItem(VHBlocks.MEADOW_SAFFRON.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.POISON, 1200, 1), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 0), 1F).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1200, 2), 1F).build()))));
+
+    public static final RegistryObject<Item> SNAKEROOT_BUNDLE = ITEMS.register("snakeroot_bundle",
+            () -> new SnakerootItem(VHBlocks.SNAKEROOT.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.WITHER, 1200, 4), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 2), 1F).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1200, 2), 1F).effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 1200, 2), 1F).build()))));
+    public static final RegistryObject<Item> SNAKEROOT_PETALS = ITEMS.register("snakeroot_petals",
+            () -> new SnakerootPetalsItem(VHBlocks.SNAKEROOT.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 3), 1F).build()))));
 
 
     public static final RegistryObject<Item> BIRCH_SAP = ITEMS.register("birch_sap",

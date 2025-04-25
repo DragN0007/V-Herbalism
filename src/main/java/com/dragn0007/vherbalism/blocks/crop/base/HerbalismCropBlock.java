@@ -1,10 +1,12 @@
 package com.dragn0007.vherbalism.blocks.crop.base;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -18,6 +20,10 @@ public class HerbalismCropBlock extends CropBlock {
 
     public HerbalismCropBlock(Properties properties) {
         super(properties);
+    }
+
+    public boolean mayPlaceOn(BlockState state, BlockGetter getter, BlockPos pos) {
+        return state.is(BlockTags.DIRT) || state.is(Blocks.FARMLAND);
     }
 
     @Override

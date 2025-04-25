@@ -6,6 +6,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.Nullable;
@@ -16,6 +17,10 @@ public class BlackberryItem extends HerbalNameBlockItem {
 
     public BlackberryItem(Block block, Item.Properties properties) {
         super(block, properties);
+    }
+
+    public UseAnim getUseAnimation(ItemStack p_42931_) {
+        return UseAnim.EAT;
     }
 
     @Override

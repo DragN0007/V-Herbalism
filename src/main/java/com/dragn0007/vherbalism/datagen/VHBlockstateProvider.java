@@ -246,6 +246,22 @@ public class VHBlockstateProvider extends BlockStateProvider {
         createCrop((CropBlock) VHBlocks.YARROW.get(), "yarrow_stage_", "yarrow_stage_");
         simpleBlock(VHBlocks.WILD_YARROW.get(), models().cross(VHBlocks.WILD_YARROW.getId().getPath(),
                 wildPlantTexture("yarrow_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.FOXGLOVE.get(), "foxglove_stage_", "foxglove_stage_");
+        simpleBlock(VHBlocks.WILD_FOXGLOVE.get(), models().cross(VHBlocks.WILD_FOXGLOVE.getId().getPath(),
+                wildPlantTexture("foxglove_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.HEMLOCK.get(), "hemlock_stage_", "hemlock_stage_");
+        simpleBlock(VHBlocks.WILD_HEMLOCK.get(), models().cross(VHBlocks.WILD_HEMLOCK.getId().getPath(),
+                wildPlantTexture("hemlock_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.MEADOW_SAFFRON.get(), "meadow_saffron_stage_", "meadow_saffron_stage_");
+        simpleBlock(VHBlocks.WILD_MEADOW_SAFFRON.get(), models().cross(VHBlocks.WILD_MEADOW_SAFFRON.getId().getPath(),
+                wildPlantTexture("meadow_saffron_stage_3")).renderType("cutout"));
+
+        createCrop((CropBlock) VHBlocks.SNAKEROOT.get(), "snakeroot_stage_", "snakeroot_stage_");
+        simpleBlock(VHBlocks.WILD_SNAKEROOT.get(), models().cross(VHBlocks.WILD_SNAKEROOT.getId().getPath(),
+                wildPlantTexture("snakeroot_stage_3")).renderType("cutout"));
     }
 
     public void blockItem(RegistryObject<Block> blockRegistryObject) {

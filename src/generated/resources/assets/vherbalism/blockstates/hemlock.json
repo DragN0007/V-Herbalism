@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "vherbalism:block/hemlock_stage_0"
+    },
+    "age=1": {
+      "model": "vherbalism:block/hemlock_stage_1"
+    },
+    "age=2": {
+      "model": "vherbalism:block/hemlock_stage_2"
+    },
+    "age=3": {
+      "model": "vherbalism:block/hemlock_stage_3"
+    }
+  }
+}

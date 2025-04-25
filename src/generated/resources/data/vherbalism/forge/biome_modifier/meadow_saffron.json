@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_dense",
+  "features": "vherbalism:meadow_saffron",
+  "step": "vegetal_decoration"
+}

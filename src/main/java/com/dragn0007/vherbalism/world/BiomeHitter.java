@@ -93,8 +93,10 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> WOOD_SORREL = registerKey("wood_sorrel");
     public static final ResourceKey<BiomeModifier> YARROW = registerKey("yarrow");
     public static final ResourceKey<BiomeModifier> DEATHBERRY_BUSH = registerKey("deathberry_bush");
+    public static final ResourceKey<BiomeModifier> DEATHBERRY_BUSH_MOUNTAIN = registerKey("deathberry_bush_mountain");
     public static final ResourceKey<BiomeModifier> FOXGLOVE = registerKey("foxglove");
     public static final ResourceKey<BiomeModifier> HOLLYBERRY_BUSH = registerKey("hollyberry_bush");
+    public static final ResourceKey<BiomeModifier> NIGHTSHADE = registerKey("nightshade");
     public static final ResourceKey<BiomeModifier> MEADOW_SAFFRON = registerKey("meadow_saffron");
     public static final ResourceKey<BiomeModifier> HEMLOCK = registerKey("hemlock");
     public static final ResourceKey<BiomeModifier> SNAKEROOT = registerKey("snakeroot");
@@ -462,6 +464,46 @@ public class BiomeHitter {
         context.register(YARROW, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_MOUNTAIN),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.YARROW)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(DEATHBERRY_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.DEATHBERRY_BUSH)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(DEATHBERRY_BUSH_MOUNTAIN, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_MOUNTAIN),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.DEATHBERRY_BUSH)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(FOXGLOVE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.FOXGLOVE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(HOLLYBERRY_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.HOLLYBERRY_BUSH)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(HEMLOCK, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_SWAMP),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.HEMLOCK)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(NIGHTSHADE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_SPARSE_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.NIGHTSHADE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(MEADOW_SAFFRON, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_DENSE),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.MEADOW_SAFFRON)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(SNAKEROOT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_DENSE),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.SNAKEROOT)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }

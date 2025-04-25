@@ -105,6 +105,16 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.WOOD_SORREL_LEAF);
         simpleItem(VHItems.WOOD_SORREL_POULTICE);
         simpleItem(VHItems.YARROW_BUNDLE);
+        simpleItem(VHItems.DEATHBERRY);
+        simpleItem(VHItems.DEATHBERRY_SEEDS);
+        simpleItem(VHItems.FOXGLOVE_SEEDS);
+        simpleItem(VHItems.HOLLYBERRY);
+        simpleItem(VHItems.HEMLOCK_BUNDLE);
+        simpleItem(VHItems.NIGHTSHADE_BERRY);
+        simpleItem(VHItems.MEADOW_SAFFRON_BUNDLE);
+        simpleItem(VHItems.SNAKEROOT_BUNDLE);
+        simpleItem(VHItems.SNAKEROOT_PETALS);
+
 
         simpleItem(VHItems.BIRCH_SAP);
         simpleBlockItem(VHBlocks.SAPPY_BIRCH_SAPLING);

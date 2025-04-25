@@ -319,12 +319,48 @@
   "block.vherbalism.wood_sorrel": "Wood Sorrel",
   "block.vherbalism.wild_wood_sorrel": "Wild Wood Sorrel",
   "tooltip.vherbalism.wood_sorrel_leaf.tooltip": "Can be mashed into Wood Sorrel Poultice. Plants Wood Sorrel.",
-  "tooltip.vherbalism.wood_sorrel_poultice.tooltip": "Treats wounds and poison.",
 
   "item.vherbalism.yarrow_bundle": "Yarrow Bundle",
   "block.vherbalism.yarrow": "Yarrow",
   "block.vherbalism.wild_yarrow": "Wild Yarrow",
   "tooltip.vherbalism.yarrow_bundle.tooltip": "Induces vomiting to expel poisons and toxins. Plants Yarrow.",
+  "tooltip.vherbalism.wood_sorrel_poultice.tooltip": "Treats wounds and poison.",
+
+  "item.vherbalism.deathberry": "Deathberry",
+  "item.vherbalism.deathberry_seeds": "Deathberry Seeds",
+  "block.vherbalism.deathberry_bush": "Deathberry Bush",
+  "tooltip.vherbalism.deathberry.tooltip": "Toxic, will poison and may even kill the consumer if ingested. Plants Deathberry Bush.",
+  "tooltip.vherbalism.deathberry_seeds.tooltip": "Can treat or even cure infection if eaten moderately. Plants Deathberry Bush.",
+
+  "item.vherbalism.foxglove_seeds": "Foxglove Seeds",
+  "block.vherbalism.foxglove": "Foxglove",
+  "block.vherbalism.wild_foxglove": "Wild Foxglove",
+  "tooltip.vherbalism.foxglove_seeds.tooltip": "Toxic, and will kill the consumer quickly if ingested. Plants Foxglove.",
+
+  "item.vherbalism.hollyberry": "Hollyberry",
+  "block.vherbalism.hollyberry_bush": "Hollyberry Bush",
+  "tooltip.vherbalism.hollyberry.tooltip": "Toxic, and will poison the consumer if ingested, causing weakness and nausea. Plants Hollyberry Bush.",
+
+  "item.vherbalism.hemlock_bundle": "Water Hemlock Bundle",
+  "block.vherbalism.hemlock": "Water Hemlock",
+  "block.vherbalism.wild_hemlock": "Wild Water Hemlock",
+  "tooltip.vherbalism.hemlock_bundle.tooltip": "Toxic, and will kill the consumer quickly if ingested. Plants Water Hemlock.",
+
+  "item.vherbalism.nightshade_berry": "Nightshade Berry",
+  "block.vherbalism.nightshade_bush": "Nightshade Bush",
+  "tooltip.vherbalism.nightshade_berry.tooltip": "Toxic, and will poison the consumer if ingested. Plants Nightshade Bush.",
+
+  "item.vherbalism.meadow_saffron_bundle": "Meadow Saffron Bundle",
+  "block.vherbalism.meadow_saffron": "Meadow Saffron",
+  "block.vherbalism.wild_meadow_saffron": "Wild Meadow Saffron",
+  "tooltip.vherbalism.meadow_saffron_bundle.tooltip": "Toxic, and will poison the consumer if ingested, causing lethargy, nausea and weakness. Plants Meadow Saffron.",
+
+  "item.vherbalism.snakeroot_bundle": "Snakeroot Bundle",
+  "item.vherbalism.snakeroot_petals": "Prepared Snakeroot Petals",
+  "block.vherbalism.snakeroot": "Snakeroot",
+  "block.vherbalism.wild_snakeroot": "Wild Snakeroot",
+  "tooltip.vherbalism.snakeroot_bundle.tooltip": "Toxic, and will kill the consumer quickly if ingested. Plants Snakeroot.",
+  "tooltip.vherbalism.snakeroot_petals.tooltip": "Acts as a general anaesthetic, calming down the consumer and making them sluggish.",
 
   "item.vherbalism.tree_sap": "Tree Sap",
   "tooltip.vherbalism.tree_sap.tooltip": "Can treat nasty coughs.",

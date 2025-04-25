@@ -82,6 +82,7 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DEATHBERRY_BUSH = registerKey("deathberry_bush");
     public static final ResourceKey<PlacedFeature> FOXGLOVE = registerKey("foxglove");
     public static final ResourceKey<PlacedFeature> HOLLYBERRY_BUSH = registerKey("hollyberry_bush");
+    public static final ResourceKey<PlacedFeature> NIGHTSHADE = registerKey("nightshade");
     public static final ResourceKey<PlacedFeature> MEADOW_SAFFRON = registerKey("meadow_saffron");
     public static final ResourceKey<PlacedFeature> HEMLOCK = registerKey("hemlock");
     public static final ResourceKey<PlacedFeature> SNAKEROOT = registerKey("snakeroot");
@@ -322,6 +323,34 @@ public class VHPlacedFeatures {
 
         register(context, YARROW, configuredFeatures.getOrThrow(VHConfigFeatures.YARROW),
                 List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, DEATHBERRY_BUSH, configuredFeatures.getOrThrow(VHConfigFeatures.DEATHBERRY_BUSH),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, FOXGLOVE, configuredFeatures.getOrThrow(VHConfigFeatures.FOXGLOVE),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, HOLLYBERRY_BUSH, configuredFeatures.getOrThrow(VHConfigFeatures.HOLLYBERRY_BUSH),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, HEMLOCK, configuredFeatures.getOrThrow(VHConfigFeatures.HEMLOCK),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, NIGHTSHADE, configuredFeatures.getOrThrow(VHConfigFeatures.NIGHTSHADE),
+                List.of(RarityFilter.onAverageOnceEvery(64),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, MEADOW_SAFFRON, configuredFeatures.getOrThrow(VHConfigFeatures.MEADOW_SAFFRON),
+                List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, SNAKEROOT, configuredFeatures.getOrThrow(VHConfigFeatures.SNAKEROOT),
+                List.of(RarityFilter.onAverageOnceEvery(48),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 

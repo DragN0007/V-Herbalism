@@ -23,6 +23,39 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.SNAKEROOT_PETALS.get())
+                .requires(VHItems.SNAKEROOT_BUNDLE.get())
+                .requires(Items.SUGAR)
+                .requires(Items.SUGAR)
+                .unlockedBy("has_snakeroot", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.SNAKEROOT_BUNDLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "snakeroot_petals_from_sugar"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.SNAKEROOT_PETALS.get())
+                .requires(VHItems.SNAKEROOT_BUNDLE.get())
+                .requires(Items.HONEY_BOTTLE)
+                .unlockedBy("has_snakeroot", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.SNAKEROOT_BUNDLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "snakeroot_petals_from_honey"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.SNAKEROOT_PETALS.get())
+                .requires(VHItems.SNAKEROOT_BUNDLE.get())
+                .requires(VHItems.COOKED_WILLOW.get())
+                .unlockedBy("has_snakeroot", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.SNAKEROOT_BUNDLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "snakeroot_petals_from_willow"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.DEATHBERRY_SEEDS.get())
+                .requires(VHItems.DEATHBERRY.get())
+                .requires(VHItems.DEATHBERRY.get())
+                .unlockedBy("has_deathberry", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHItems.DEATHBERRY.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(VHItems.WILLOW_BUNDLE.get()), RecipeCategory.MISC, VHItems.COOKED_WILLOW.get(), 0.35F, 100)
                 .unlockedBy("has_willow", has(VHItems.WILLOW_BUNDLE.get())).save(pFinishedRecipeConsumer, new ResourceLocation(Herbalism.MODID, "cooked_willow_smoking"));
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(VHItems.WILLOW_BUNDLE.get()), RecipeCategory.MISC, VHItems.COOKED_WILLOW.get(), 0.35F, 200)

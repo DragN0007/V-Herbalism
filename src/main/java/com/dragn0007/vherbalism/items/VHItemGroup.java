@@ -118,6 +118,15 @@ public class VHItemGroup {
                         output.accept(VHItems.WOOD_SORREL_LEAF.get());
                         output.accept(VHItems.WOOD_SORREL_POULTICE.get());
                         output.accept(VHItems.YARROW_BUNDLE.get());
+                        output.accept(VHItems.DEATHBERRY.get());
+                        output.accept(VHItems.DEATHBERRY_SEEDS.get());
+                        output.accept(VHItems.FOXGLOVE_SEEDS.get());
+                        output.accept(VHItems.HOLLYBERRY.get());
+                        output.accept(VHItems.HEMLOCK_BUNDLE.get());
+                        output.accept(VHItems.NIGHTSHADE_BERRY.get());
+                        output.accept(VHItems.MEADOW_SAFFRON_BUNDLE.get());
+                        output.accept(VHItems.SNAKEROOT_BUNDLE.get());
+                        output.accept(VHItems.SNAKEROOT_PETALS.get());
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());
