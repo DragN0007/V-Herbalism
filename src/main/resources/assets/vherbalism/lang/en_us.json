@@ -165,6 +165,8 @@
   "tooltip.vherbalism.topical_poultice.tooltip": "Soothes aching joints.",
 
   "item.vherbalism.bay_laurel_leaf": "Bay Laurel Leaf",
+  "item.vherbalism.water_bay_laurel_leaf": "Water-Filled Bay Laurel Leaf",
+  "item.vherbalism.honey_bay_laurel_leaf": "Honey-Filled Bay Laurel Leaf",
   "block.vherbalism.bay_laurel": "Bay Laurel",
   "block.vherbalism.wild_bay_laurel": "Wild Bay Laurel",
   "tooltip.vherbalism.bay_laurel.tooltip": "Can bind herbs or be used to hold honey and other liquids. Plants Bay Laurel.",

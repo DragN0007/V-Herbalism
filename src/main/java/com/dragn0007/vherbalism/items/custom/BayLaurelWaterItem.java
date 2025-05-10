@@ -1,37 +1,40 @@
 package com.dragn0007.vherbalism.items.custom;
 
+import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.items.custom.base.HerbalItem;
-import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
-import net.minecraft.util.RandomSource;
+import net.minecraft.tags.FluidTags;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 
 import java.util.List;
 
-public class BroomPoulticeItem extends HerbalItem {
+public class BayLaurelWaterItem extends HerbalItem {
 
-    public BroomPoulticeItem(Properties properties) {
+    public BayLaurelWaterItem(Properties properties) {
         super(properties);
     }
 
     public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity entity) {
 
-        RandomSource random = RandomSource.create();
-
-        if (random.nextDouble() < 0.40) {
-            if (!level.isClientSide) entity.heal(2F);
-        } else if (random.nextDouble() > 0.40) {
-            if (!level.isClientSide) entity.heal(1F);
-        }
+        if (!level.isClientSide) entity.eat(level, PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.WATER));
 
         if (entity instanceof ServerPlayer serverplayer) {
             CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, itemStack);
@@ -46,11 +49,6 @@ public class BroomPoulticeItem extends HerbalItem {
     }
 
     public UseAnim getUseAnimation(ItemStack p_42931_) {
-        return UseAnim.BRUSH;
-    }
-
-    @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.broom_poultice.tooltip").withStyle(ChatFormatting.GOLD));
+        return UseAnim.DRINK;
     }
 }

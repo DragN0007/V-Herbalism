@@ -47,9 +47,4 @@ public class HerbalItem extends Item {
         ItemUtils.startUsingInstantly(level, player, hand);
         return super.use(level, player, hand);
     }
-
-    @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.generic.tooltip").withStyle(ChatFormatting.GOLD));
-    }
 }

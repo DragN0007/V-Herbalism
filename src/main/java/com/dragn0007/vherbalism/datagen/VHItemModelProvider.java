@@ -66,6 +66,8 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.JUNIPERBERRY);
         simpleItem(VHItems.TOPICAL_POULTICE);
         simpleItem(VHItems.BAY_LAUREL_LEAF);
+        simpleItem(VHItems.WATER_BAY_LAUREL_LEAF);
+        simpleItem(VHItems.HONEY_BAY_LAUREL_LEAF);
         simpleItem(VHItems.LAVENDER_BUNDLE);
         simpleItem(VHItems.BRIGHT_EYE_BUNDLE);
         simpleItem(VHItems.LOVAGE_BUNDLE);

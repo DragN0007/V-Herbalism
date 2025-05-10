@@ -23,3 +23,9 @@ mandatory = true
 versionRange = "[1.20.1]"
 ordering = "NONE"
 side = "BOTH"
+[[dependencies.vherbalism]]
+modId = "thirst"
+mandatory = true
+versionRange = "[1.3.8,]"
+ordering = "NONE"
+side = "BOTH"

@@ -92,6 +92,8 @@ public class VHItemGroup {
                         output.accept(VHItems.JUNIPERBERRY.get());
                         output.accept(VHItems.TOPICAL_POULTICE.get());
                         output.accept(VHItems.BAY_LAUREL_LEAF.get());
+                        output.accept(VHItems.WATER_BAY_LAUREL_LEAF.get());
+                        output.accept(VHItems.HONEY_BAY_LAUREL_LEAF.get());
                         output.accept(VHItems.LAVENDER_BUNDLE.get());
                         output.accept(VHItems.BRIGHT_EYE_BUNDLE.get());
                         output.accept(VHItems.LOVAGE_BUNDLE.get());

@@ -107,7 +107,7 @@ public class VHItems {
             () -> new GarlicItem(VHBlocks.GARLIC.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
 
     public static final RegistryObject<Item> GOLDENROD_BUNDLE = ITEMS.register("goldenrod_bundle",
-            () -> new GoldenrodItem(VHBlocks.GOLDENROD.get(), new Item.Properties().stacksTo(64)));
+            () -> new GoldenrodItem(VHBlocks.GOLDENROD.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build()))));
     public static final RegistryObject<Item> GOLDENROD_POULTICE = ITEMS.register("goldenrod_poultice",
             () -> new GoldenrodPoulticeItem(new Item.Properties().stacksTo(64)));
 
@@ -132,6 +132,10 @@ public class VHItems {
 
     public static final RegistryObject<Item> BAY_LAUREL_LEAF = ITEMS.register("bay_laurel_leaf",
             () -> new BayLaurelItem(VHBlocks.BAY_LAUREL.get(), new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> WATER_BAY_LAUREL_LEAF = ITEMS.register("water_bay_laurel_leaf",
+            () -> new BayLaurelWaterItem(new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> HONEY_BAY_LAUREL_LEAF = ITEMS.register("honey_bay_laurel_leaf",
+            () -> new BayLaurelWaterItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.1F).build())));
 
     public static final RegistryObject<Item> LAVENDER_BUNDLE = ITEMS.register("lavender_bundle",
             () -> new LavenderItem(VHBlocks.LAVENDER.get(), new Item.Properties().stacksTo(64)));
@@ -166,7 +170,7 @@ public class VHItems {
             () -> new DriedOakLeavesItem(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> POPPY_SEEDS = ITEMS.register("poppy_seeds",
-            () -> new PoppySeedsItem(new Item.Properties().stacksTo(64)));
+            () -> new PoppySeedsItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.DARKNESS, 500, 2), 1F).saturationMod(0).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 500, 3), 1F).saturationMod(0).build())));
 
     public static final RegistryObject<Item> RASPBERRY = ITEMS.register("raspberry",
             () -> new RaspberryItem(VHBlocks.RASPBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
@@ -197,7 +201,7 @@ public class VHItems {
             () -> new SheepSorrelItem(VHBlocks.SHEEP_SORREL.get(), new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> SORREL_LEAVES = ITEMS.register("sorrel_leaves",
-            () -> new SorrelItem(VHBlocks.SORREL.get(), new Item.Properties().stacksTo(64)));
+            () -> new SorrelItem(VHBlocks.SORREL.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.HUNGER, 300, 0), 1F).saturationMod(0).build()))));
 
     public static final RegistryObject<Item> STINGING_NETTLE_LEAVES = ITEMS.register("stinging_nettle_leaves",
             () -> new StingingNettleItem(VHBlocks.STINGING_NETTLE.get(), new Item.Properties().stacksTo(64)));
@@ -240,7 +244,7 @@ public class VHItems {
             () -> new WoodSorrelLeafPoulticeItem(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> YARROW_BUNDLE = ITEMS.register("yarrow_bundle",
-            () -> new YarrowItem(VHBlocks.YARROW.get(), new Item.Properties().stacksTo(64)));
+            () -> new YarrowItem(VHBlocks.YARROW.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1F).saturationMod(0).build()))));
 
     public static final RegistryObject<Item> DEATHBERRY = ITEMS.register("deathberry",
             () -> new DeathberryItem(VHBlocks.DEATHBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.WITHER, 600, 0), 1F).build()))));

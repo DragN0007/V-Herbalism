@@ -84,6 +84,10 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:1.20.1-47.3.0" // 47.2.0 is Recommended
+    implementation fg.deobf("curse.maven:thirst-was-taken-679270:6328470")
+
+    //nbtenks made by gotenks
+    implementation fg.deobf("curse.maven:nbtenks-1255827:6482486")
 
     //Compat
 //    implementation fg.deobf("curse.maven:jade-324717:5876199")

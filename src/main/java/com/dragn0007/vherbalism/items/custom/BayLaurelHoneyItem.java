@@ -1,33 +1,25 @@
 package com.dragn0007.vherbalism.items.custom;
 
-import com.dragn0007.vherbalism.items.custom.base.HerbalNameBlockItem;
-import net.minecraft.ChatFormatting;
+import com.dragn0007.vherbalism.items.custom.base.HerbalItem;
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
+public class BayLaurelHoneyItem extends HerbalItem {
 
-public class ParsleyItem extends HerbalNameBlockItem {
-
-    public ParsleyItem(Block block, Properties properties) {
-        super(block, properties);
+    public BayLaurelHoneyItem(Properties properties) {
+        super(properties);
     }
 
     public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity entity) {
-
-        if (!level.isClientSide) entity.removeEffect(MobEffects.CONFUSION);
 
         if (entity instanceof ServerPlayer serverplayer) {
             CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, itemStack);
@@ -42,11 +34,6 @@ public class ParsleyItem extends HerbalNameBlockItem {
     }
 
     public UseAnim getUseAnimation(ItemStack p_42931_) {
-        return UseAnim.EAT;
-    }
-
-    @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.parsley_leaves.tooltip").withStyle(ChatFormatting.GOLD));
+        return UseAnim.DRINK;
     }
 }

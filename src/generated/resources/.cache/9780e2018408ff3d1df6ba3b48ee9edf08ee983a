@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-25T02:37:18.712456	Item Models: vherbalism
+// 1.20.1	2025-05-09T17:30:45.3296009	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -48,6 +48,7 @@ adacbd91d72c49521867b509a7f0c5482f4fc76b assets/vherbalism/models/item/hawkweed_
 e563e99eea968f8823815490e244f82f3cf77591 assets/vherbalism/models/item/heather_bundle.json
 b438426d67497dc5189ed57e08933c2d6068d9b4 assets/vherbalism/models/item/hemlock_bundle.json
 5a312df9cc149a72e3087f5beeafb116fca535bd assets/vherbalism/models/item/hollyberry.json
+515089b2d89e2af8c4cc76f66be5f74d1859dcb6 assets/vherbalism/models/item/honey_bay_laurel_leaf.json
 11d8cf015f40ea40c7c4fa2d6391f223f42be96f assets/vherbalism/models/item/horsetail_bundle.json
 d6f2aa3b4b8b6bb8346545f55c26170a0f1f312b assets/vherbalism/models/item/horsetail_poultice.json
 87e15097b7fd1e26ef4f542f0592d2ada76531ca assets/vherbalism/models/item/ivy_leaf.json
@@ -87,6 +88,7 @@ d8789bf7fd438f860d7f67d539e960da4f1c0814 assets/vherbalism/models/item/stinging_
 2d1707b503759ab6124ced6d41535ecf3189f31c assets/vherbalism/models/item/tormentil_poultice.json
 13f0dd7cfb677a5126a5ecef3cdc5f5b3401a70f assets/vherbalism/models/item/tree_sap.json
 68ff585b0b57ff56fb475559c5cda75dc3704c26 assets/vherbalism/models/item/watermint_bundle.json
+3e01b85efbfdf498272023728df744b18f4ff8f5 assets/vherbalism/models/item/water_bay_laurel_leaf.json
 47c055f395831f0dae6fb491733091f401b27432 assets/vherbalism/models/item/willow_bark.json
 60ff73edb6157767b151c9445ae126219dffd95a assets/vherbalism/models/item/willow_bundle.json
 16ed30ca438fbd330068e9bfe5ebc38e88abd92c assets/vherbalism/models/item/willow_leaves_bundle.json
