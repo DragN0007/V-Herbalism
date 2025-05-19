@@ -2,14 +2,14 @@ package com.dragn0007.vherbalism.items;
 
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
+import com.dragn0007.vherbalism.entities.EntityTypes;
 import com.dragn0007.vherbalism.items.custom.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,6 +19,9 @@ public class VHItems {
 
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Herbalism.MODID);
+
+    public static final RegistryObject<Item> MOSS_BALL = ITEMS.register("moss_ball",
+            () -> new ForgeSpawnEggItem(EntityTypes.MOSS_BALL, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
             () -> new BlackberryItem(VHBlocks.BLACKBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
@@ -49,7 +52,7 @@ public class VHItems {
 
 
     public static final RegistryObject<Item> CATMINT_LEAVES = ITEMS.register("catmint_leaves",
-            () -> new CatchweedItem(VHBlocks.CATMINT.get(), (new Item.Properties())));
+            () -> new CatmintItem(VHBlocks.CATMINT.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).build()))));
 
     public static final RegistryObject<Item> CELADINE_BUNDLE = ITEMS.register("celadine_bundle",
             () -> new CeladineItem(VHBlocks.CELADINE.get(), (new Item.Properties())));
@@ -80,9 +83,9 @@ public class VHItems {
             () -> new DaisyItem(VHBlocks.DAISY.get(), (new Item.Properties())));
 
     public static final RegistryObject<Item> DANDELION_LEAVES = ITEMS.register("dandelion_leaves",
-            () -> new DandelionItem(VHBlocks.DANDELION.get(), (new Item.Properties())));
+            () -> new DandelionItem(VHBlocks.DANDELION.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).build()))));
     public static final RegistryObject<Item> DANDELION_ROOT = ITEMS.register("dandelion_root",
-            () -> new DandelionRootItem(VHBlocks.DANDELION.get(), (new Item.Properties())));
+            () -> new DandelionRootItem(VHBlocks.DANDELION.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).build()))));
 
     public static final RegistryObject<Item> DOCK_LEAF = ITEMS.register("dock_leaf",
             () -> new DockItem(VHBlocks.DOCK.get(), (new Item.Properties())));
@@ -107,9 +110,9 @@ public class VHItems {
             () -> new GarlicItem(VHBlocks.GARLIC.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
 
     public static final RegistryObject<Item> GOLDENROD_BUNDLE = ITEMS.register("goldenrod_bundle",
-            () -> new GoldenrodItem(VHBlocks.GOLDENROD.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build()))));
+            () -> new GoldenrodItem(VHBlocks.GOLDENROD.get(), (new Item.Properties())));
     public static final RegistryObject<Item> GOLDENROD_POULTICE = ITEMS.register("goldenrod_poultice",
-            () -> new GoldenrodPoulticeItem(new Item.Properties().stacksTo(64)));
+            () -> new GoldenrodPoulticeItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build())));
 
     public static final RegistryObject<Item> HAWKWEED_BUNDLE = ITEMS.register("hawkweed_bundle",
             () -> new HawkweedItem(VHBlocks.HAWKWEED.get(), new Item.Properties().stacksTo(64)));

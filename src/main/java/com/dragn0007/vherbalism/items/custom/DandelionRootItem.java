@@ -25,7 +25,10 @@ public class DandelionRootItem extends ItemNameBlockItem {
     }
 
     public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity entity) {
-        if (!level.isClientSide) entity.removeEffect(MobEffects.POISON);
+        if (!level.isClientSide) {
+            entity.removeEffect(MobEffects.POISON);
+            entity.removeEffect(MobEffects.WEAKNESS);
+        }
         if (entity instanceof ServerPlayer serverplayer) {
             CriteriaTriggers.CONSUME_ITEM.trigger(serverplayer, itemStack);
             serverplayer.awardStat(Stats.ITEM_USED.get(this));

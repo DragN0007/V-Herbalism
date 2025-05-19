@@ -2,6 +2,7 @@ package com.dragn0007.vherbalism;
 
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.blocks.VHBlocksNoDatagenLoot;
+import com.dragn0007.vherbalism.entities.EntityTypes;
 import com.dragn0007.vherbalism.items.VHItemGroup;
 import com.dragn0007.vherbalism.items.VHItems;
 import com.dragn0007.vherbalism.util.HerbalismCommonConfig;
@@ -11,6 +12,7 @@ import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import software.bernie.geckolib.GeckoLib;
 
 @Mod(Herbalism.MODID)
 public class Herbalism
@@ -25,6 +27,9 @@ public class Herbalism
         VHItemGroup.register(eventBus);
         VHBlocks.register(eventBus);
         VHBlocksNoDatagenLoot.register(eventBus);
+        EntityTypes.ENTITY_TYPES.register(eventBus);
+
+        GeckoLib.initialize();
 
         MinecraftForge.EVENT_BUS.register(this);
 

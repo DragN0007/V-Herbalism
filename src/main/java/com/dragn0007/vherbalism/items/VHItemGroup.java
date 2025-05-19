@@ -20,6 +20,8 @@ public class VHItemGroup {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(VHItems.BROOM_BUNDLE.get())).title(Component.translatable("itemGroup.vherbalism"))
                     .displayItems((displayParameters, output) -> {
 
+                        output.accept(VHItems.MOSS_BALL.get());
+
                         output.accept(VHBlocksNoDatagenLoot.ALDER_LOG.get());
                         output.accept(VHBlocks.ALDER_LEAVES.get());
                         output.accept(VHBlocks.ALDER_PLANKS.get());

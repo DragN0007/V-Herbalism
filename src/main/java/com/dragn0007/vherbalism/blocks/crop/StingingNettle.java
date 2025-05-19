@@ -1,22 +1,14 @@
 package com.dragn0007.vherbalism.blocks.crop;
 
-import com.dragn0007.vherbalism.blocks.VHBlocks;
-import com.dragn0007.vherbalism.blocks.crop.base.HerbalismCropBlock;
-import com.dragn0007.vherbalism.items.VHItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-
-import java.util.function.Supplier;
 
 public class StingingNettle extends FlowerBlock {
 
