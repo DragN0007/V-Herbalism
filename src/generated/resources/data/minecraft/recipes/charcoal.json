@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vherbalism:charcoal_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:charcoal"
+  }
+}

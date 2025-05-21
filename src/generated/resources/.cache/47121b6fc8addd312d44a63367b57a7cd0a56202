@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-25T02:34:12.0710583	Block States: vherbalism
+// 1.20.1	2025-05-21T15:45:23.0167727	Block States: vherbalism
 ff2a98483594ac56b3b253870cb9440db2e0215e assets/vherbalism/blockstates/alder_fence.json
 091021aa238b3c92292593f4f904f3c5f7866da6 assets/vherbalism/blockstates/alder_fence_gate.json
 0ea8ae8af491bc81a1e6faf82a00de8579ae1765 assets/vherbalism/blockstates/alder_leaves.json
@@ -17,6 +17,7 @@ edb290a69450262fb3cad1f81f152b05f566a8bc assets/vherbalism/blockstates/burdock_r
 6aad020c20d571cf26854adbacf63a5315342f7e assets/vherbalism/blockstates/catchweed.json
 b263b003320b1aae239d5e2845848fa32780af5b assets/vherbalism/blockstates/catmint.json
 847e1ddc47e22f19fe296bfc5063581cb88615a7 assets/vherbalism/blockstates/celadine.json
+a92bf7440ff84b852f3a74ff7201c3a955eb582c assets/vherbalism/blockstates/charcoal_log.json
 3fc8b04e4d0398999adbfb5bc61b03cf269c30ea assets/vherbalism/blockstates/chervil.json
 25fd81f97f3eda0b46bbc288682a761382934625 assets/vherbalism/blockstates/chickweed.json
 8dc2ee3b08db678a3871d252106441ea6f2f1b3d assets/vherbalism/blockstates/cobweb.json
@@ -178,6 +179,8 @@ a287fd4671f40bda0d8005f0bb94536361d31d77 assets/vherbalism/models/block/catmint_
 aed10793eec2bc67ec4a93910b0143c9d93ef42d assets/vherbalism/models/block/celadine_stage_1.json
 55b6239034ef8a473149f239e7bbb944c34e4cde assets/vherbalism/models/block/celadine_stage_2.json
 698debfb5d584283978a320ab3d00299101352d8 assets/vherbalism/models/block/celadine_stage_3.json
+934ef87e593124371d1217b5f82ec3a652a7aa10 assets/vherbalism/models/block/charcoal_log.json
+6dabfbc5bb3def4495a2d7f77ff985868da36365 assets/vherbalism/models/block/charcoal_log_horizontal.json
 9f47d1dba3f97d66d246ecac5c98902f81cd3b39 assets/vherbalism/models/block/chervil_stage_0.json
 a9006a8910f3d4384968bfbb92abc189b6122146 assets/vherbalism/models/block/chervil_stage_1.json
 c8ca7bfc9638a62429223c63339153f2c0a78c1e assets/vherbalism/models/block/chervil_stage_2.json

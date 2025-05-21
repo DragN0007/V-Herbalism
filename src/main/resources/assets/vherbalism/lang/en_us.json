@@ -5,6 +5,17 @@
   "entity.vherbalism.moss_ball": "Moss Ball",
   "item.vherbalism.mudball": "Mudball",
   "entity.vherbalism.mudball": "Mudball",
+  "item.vherbalism.sand_clump": "Sand Clump",
+  "entity.vherbalism.sand_clump": "Sand Clump",
+
+  "item.vherbalism.grass_clump": "Grass Clump",
+  "tooltip.vherbalism.grass_clump.tooltip": "Can help a cat throw up to relieve poison occasionally.",
+  "item.vherbalism.charcoal_chunk.tooltip": "Charcoal Chunk",
+  "item.vherbalism.coal_chunk.tooltip": "Coal Chunk",
+  "tooltip.vherbalism.charcoal.tooltip": "Can relieve poison, weakness and nausea.",
+  "tooltip.vherbalism.coal.tooltip": "Makes a cat ill when consumed.",
+
+  "block.vherbalism.charcoal_log": "Charcoal Log",
 
   "item.vherbalism.birch_sap": "Birch Sap",
   "tooltip.vherbalism.birch_sap.tooltip": "Helps soothe and treat Yellowcough when eaten.",

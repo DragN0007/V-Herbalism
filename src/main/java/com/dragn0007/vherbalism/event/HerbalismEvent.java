@@ -24,6 +24,7 @@ public class HerbalismEvent {
     public static void clientSetupEvent(FMLClientSetupEvent event) {
         EntityRenderers.register(EntityTypes.MOSS_BALL.get(), MossBallRender::new);
         EntityRenderers.register(EntityTypes.MUDBALL.get(), ThrownItemRenderer::new);
+        EntityRenderers.register(EntityTypes.SAND_CLUMP.get(), ThrownItemRenderer::new);
     }
 
 }

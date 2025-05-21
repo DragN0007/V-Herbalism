@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-25T03:04:26.3254222	Registries
+// 1.20.1	2025-05-21T15:45:23.0217341	Registries
 d806fdff036efcfbb5f65eb67b7651e7fab1e396 data/vherbalism/forge/biome_modifier/alder.json
 a04408324516b4b2535f1301b560fa0e7d765830 data/vherbalism/forge/biome_modifier/bay_laurel.json
 174f6505147bd1f78ad2bbeec2b53b1be60dcfde data/vherbalism/forge/biome_modifier/bindweed_forest.json
@@ -16,6 +16,7 @@ b35c4fd54de95b9793af8f907a74ff9b82b82c7c data/vherbalism/forge/biome_modifier/br
 3a51765beec3cf2b5303a06c75b82c34c6e11caa data/vherbalism/forge/biome_modifier/catchweed_wet.json
 c67e54e32b2f21f4e03c5295c6e5eb567ee5af37 data/vherbalism/forge/biome_modifier/catmint_overworld.json
 0ca96cc354a4fad6ccca5db4e05a51a0c54a8120 data/vherbalism/forge/biome_modifier/celadine_wet.json
+2185277dc75574335fb436067f5a4ee2bcb83a78 data/vherbalism/forge/biome_modifier/charcoal_log.json
 416dce7446a08e769e3e0d82704847561647ee73 data/vherbalism/forge/biome_modifier/chervil_hills.json
 7db5d01e0c14888a3346083f564e7803b5ef34b2 data/vherbalism/forge/biome_modifier/chervil_mountains.json
 8facfc6d78cb8d29f48f5980b7ebe2c20d3295d8 data/vherbalism/forge/biome_modifier/chickweed_plains.json
@@ -93,6 +94,7 @@ b05bd799e14d0346c8c05f1618f146eda302f6a8 data/vherbalism/worldgen/configured_fea
 b998de7afa3b9b95887de2d6874f08910da478b9 data/vherbalism/worldgen/configured_feature/catchweed.json
 11fe2b756685a0d67af95b1b2c282960d29f616a data/vherbalism/worldgen/configured_feature/catmint.json
 beab434dfcf536d01da34d436bb60128eccfe4b4 data/vherbalism/worldgen/configured_feature/celadine.json
+8cf9e310358304d2860a9bda15e5434d4a720ba6 data/vherbalism/worldgen/configured_feature/charcoal_log.json
 860f1763baef0bbff36e229b3223448cbbb47a1b data/vherbalism/worldgen/configured_feature/chervil.json
 8cd2bd4227ab05e4f3392f7de489635415395919 data/vherbalism/worldgen/configured_feature/chickweed.json
 32b98ecd3df0c7f76fc7f68bf36292a5b68b114e data/vherbalism/worldgen/configured_feature/cobweb.json
@@ -158,6 +160,7 @@ d2eac2c07913726c7b38e9cd4174648590e6973f data/vherbalism/worldgen/placed_feature
 17c676847c98696503a81b0884178c0095cd870c data/vherbalism/worldgen/placed_feature/catchweed.json
 5f2a48b023956973a74d528ca6d7493f1745daae data/vherbalism/worldgen/placed_feature/catmint.json
 a769a1f44e0c8fd07b5d2a4941e567a9dc915d2f data/vherbalism/worldgen/placed_feature/celadine.json
+7bc5ea4b7dcee533514cb3afe835918ee5ab5c9a data/vherbalism/worldgen/placed_feature/charcoal_log.json
 03f00a685b5a28e6aefabd83f4fd2e4c4db56893 data/vherbalism/worldgen/placed_feature/chervil.json
 a0de8e96617fa09b2bbb65e45ace97d907bc824c data/vherbalism/worldgen/placed_feature/chickweed.json
 1eb2cb5fb1ba6a514380fcec8c4203da82b53746 data/vherbalism/worldgen/placed_feature/cobweb.json

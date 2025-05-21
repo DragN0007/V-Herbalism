@@ -23,6 +23,12 @@ public class VHItemGroup {
                         output.accept(VHItems.MOSS_BALL.get());
 
                         output.accept(VHItems.MUDBALL.get());
+                        output.accept(VHItems.SAND_CLUMP.get());
+                        output.accept(VHItems.GRASS_CLUMP.get());
+                        output.accept(VHItems.COAL_CHUNK.get());
+                        output.accept(VHItems.CHARCOAL_CHUNK.get());
+
+                        output.accept(VHBlocksNoDatagenLoot.CHARCOAL_LOG.get());
 
                         output.accept(VHBlocksNoDatagenLoot.ALDER_LOG.get());
                         output.accept(VHBlocks.ALDER_LEAVES.get());

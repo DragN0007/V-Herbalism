@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "vherbalism:charcoal_log",
+  "step": "vegetal_decoration"
+}

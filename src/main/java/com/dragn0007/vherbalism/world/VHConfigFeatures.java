@@ -95,6 +95,7 @@ public class VHConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MEADOW_SAFFRON = registerKey("meadow_saffron");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HEMLOCK = registerKey("hemlock");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SNAKEROOT = registerKey("snakeroot");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHARCOAL_LOG = registerKey("charcoal_log");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -373,6 +374,10 @@ public class VHConfigFeatures {
         register(context, SNAKEROOT, Feature.FLOWER,
                 new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocks.WILD_SNAKEROOT.get())))));
+
+        register(context, CHARCOAL_LOG, Feature.FLOWER,
+                new RandomPatchConfiguration(10, 1, 1, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(VHBlocksNoDatagenLoot.CHARCOAL_LOG.get())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

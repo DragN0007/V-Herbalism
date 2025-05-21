@@ -23,6 +23,41 @@ public class VHRecipeMaker extends RecipeProvider implements IConditionBuilder {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CHARCOAL, 4)
+                .requires(VHBlocksNoDatagenLoot.CHARCOAL_LOG.get())
+                .unlockedBy("has_charcoal_log", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(VHBlocksNoDatagenLoot.CHARCOAL_LOG.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.CHARCOAL_CHUNK.get(), 3)
+                .requires(Items.CHARCOAL)
+                .unlockedBy("has_charcoal", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.CHARCOAL)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.COAL_CHUNK.get(), 3)
+                .requires(Items.COAL)
+                .unlockedBy("has_coal", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.COAL)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.MUDBALL.get(), 4)
+                .requires(Items.MUD)
+                .unlockedBy("has_mud", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.MUD)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.SAND_CLUMP.get(), 4)
+                .requires(Items.SAND)
+                .unlockedBy("has_sand", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.SAND)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VHItems.SNAKEROOT_PETALS.get())
                 .requires(VHItems.SNAKEROOT_BUNDLE.get())
                 .requires(Items.SUGAR)

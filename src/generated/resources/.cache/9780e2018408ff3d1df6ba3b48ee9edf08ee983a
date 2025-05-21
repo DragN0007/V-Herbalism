@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-21T00:02:20.6946103	Item Models: vherbalism
+// 1.20.1	2025-05-21T15:45:23.0207359	Item Models: vherbalism
 4e4d8791c526437fa3c6a9e61469f128aa917ff0 assets/vherbalism/models/item/alder_bark.json
 7577df54ec3b25f438c94097fde6c9b3cc5a3410 assets/vherbalism/models/item/alder_log.json
 463350dee2961775d729c78269ca0d4556e66435 assets/vherbalism/models/item/alder_sapling.json
@@ -20,8 +20,11 @@ f79ec85ddbe27e9a2f398132631d4ce6c47844e6 assets/vherbalism/models/item/catchweed
 7655e716dcbe9608fef6ae88d303b39dbd13df84 assets/vherbalism/models/item/catmint_leaves.json
 1a24ce9083d78420dc4407a42dee9e74432661d7 assets/vherbalism/models/item/celadine_bundle.json
 7e22f5165876b13c45572f4cbd74ac69cd2ed794 assets/vherbalism/models/item/celadine_juice.json
+16dd1e106aa03b92b0439990b561e1eb0164dae4 assets/vherbalism/models/item/charcoal_chunk.json
+5207924a536dfc234e5e82dde71a106199b42ee3 assets/vherbalism/models/item/charcoal_log.json
 b6278b358f3941ae5c6803e1b2ca31870dc680b8 assets/vherbalism/models/item/chervil.json
 b941cd394e9933cb211bbab48f0555b6a8f0c204 assets/vherbalism/models/item/chickweed.json
+d5f8922852bc631420794db819634df4c8197d40 assets/vherbalism/models/item/coal_chunk.json
 ca5e51bb4e2fb537cbe6b2c4095546f8a51061ce assets/vherbalism/models/item/cobweb.json
 0d43314239f1bdcbad3499ae3adb079285ed0c3c assets/vherbalism/models/item/coltsfoot_bundle.json
 e95bb299acdc13b923e0537f41c103c8fd99a781 assets/vherbalism/models/item/comfrey_leaf.json
@@ -44,6 +47,7 @@ dc9f60a502d8584cf8e4e6072d3f86a390393c58 assets/vherbalism/models/item/foxglove_
 2e86bdd35d95c4df7c37fcf46f00a339e16168db assets/vherbalism/models/item/goatweed_bundle.json
 fecca6408d9ee92690940fbe314800b9bfeb6e6a assets/vherbalism/models/item/goldenrod_bundle.json
 699ff839aca441969703fb7ebc93e2d823f2ddef assets/vherbalism/models/item/goldenrod_poultice.json
+005387068350de9a91dc94a1ad09e59e6b886b7b assets/vherbalism/models/item/grass_clump.json
 adacbd91d72c49521867b509a7f0c5482f4fc76b assets/vherbalism/models/item/hawkweed_bundle.json
 e563e99eea968f8823815490e244f82f3cf77591 assets/vherbalism/models/item/heather_bundle.json
 b438426d67497dc5189ed57e08933c2d6068d9b4 assets/vherbalism/models/item/hemlock_bundle.json
@@ -75,6 +79,7 @@ bebf60bc62b1f31d4230f76d4bbf4add377a8f6f assets/vherbalism/models/item/rhubarb.j
 4ceb3e9b9b98770397688b7295ba961f5f514b98 assets/vherbalism/models/item/rhubarb_leaf.json
 18bca224bf1368a650f83fdd9ed6635a46a64e7e assets/vherbalism/models/item/rosemary_bundle.json
 59f0c26cdd06a53232e59dfdc968db8656abf2db assets/vherbalism/models/item/rush_bundle.json
+c8225b438df42c33ed4bec9988045cf0c2e09dd6 assets/vherbalism/models/item/sand_clump.json
 e3ff0b77422005725f67fffc4aebadffaf24fdd7 assets/vherbalism/models/item/sappy_birch_log.json
 58101560ef8f6cf48336c3957b9d134ea362f3c8 assets/vherbalism/models/item/sappy_birch_sapling.json
 6366adbcdf1bab0aba53b1b597a03845869b290c assets/vherbalism/models/item/sheep_sorrel_bundle.json

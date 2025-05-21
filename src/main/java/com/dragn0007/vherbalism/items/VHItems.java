@@ -26,6 +26,14 @@ public class VHItems {
 
     public static final RegistryObject<Item> MUDBALL = ITEMS.register("mudball",
             () -> new MudballItem((new Item.Properties()).stacksTo(16)));
+    public static final RegistryObject<Item> SAND_CLUMP = ITEMS.register("sand_clump",
+            () -> new SandClumpItem((new Item.Properties()).stacksTo(16)));
+    public static final RegistryObject<Item> GRASS_CLUMP = ITEMS.register("grass_clump",
+            () -> new GrassClumpItem((new Item.Properties()).stacksTo(64)));
+    public static final RegistryObject<Item> COAL_CHUNK = ITEMS.register("coal_chunk",
+            () -> new CoalChunkItem((new Item.Properties()).stacksTo(64)));
+    public static final RegistryObject<Item> CHARCOAL_CHUNK = ITEMS.register("charcoal_chunk",
+            () -> new CharcoalChunkItem((new Item.Properties()).stacksTo(64)));
 
     public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
             () -> new BlackberryItem(VHBlocks.BLACKBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));

@@ -24,6 +24,10 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleItem(VHItems.MOSS_BALL);
 
         simpleItem(VHItems.MUDBALL);
+        simpleItem(VHItems.SAND_CLUMP);
+        simpleItem(VHItems.COAL_CHUNK);
+        simpleItem(VHItems.GRASS_CLUMP);
+        simpleItem(VHItems.CHARCOAL_CHUNK);
 
         simpleItem(VHItems.ALDER_BARK);
         simpleBlockItem(VHBlocks.ALDER_SAPLING);
@@ -130,6 +134,8 @@ public class VHItemModelProvider extends ItemModelProvider {
         simpleBlockItem(VHBlocks.WILLOW_SAPLING);
         parentRotatedBlockItem(VHBlocksNoDatagenLoot.WILLOW_LOG);
         simpleItem(VHItems.WILLOW_BARK);
+
+        parentRotatedBlockItem(VHBlocksNoDatagenLoot.CHARCOAL_LOG);
     }
 
     public ItemModelBuilder simpleItem(RegistryObject<Item> item) {

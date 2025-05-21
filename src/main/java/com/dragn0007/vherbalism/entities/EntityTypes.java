@@ -26,5 +26,11 @@ public class EntityTypes {
                     .sized(0.25F, 0.25F)
                     .build(new ResourceLocation(MODID, "mudball").toString()));
 
+    public static final RegistryObject<EntityType<SandClump>> SAND_CLUMP = ENTITY_TYPES.register("sand_clump",
+            () -> EntityType.Builder.<SandClump>of(SandClump::new,
+                            MobCategory.MISC)
+                    .sized(0.25F, 0.25F)
+                    .build(new ResourceLocation(MODID, "sand_clump").toString()));
+
 }
 

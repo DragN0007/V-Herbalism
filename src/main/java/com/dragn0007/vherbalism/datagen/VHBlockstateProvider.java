@@ -23,6 +23,8 @@ public class VHBlockstateProvider extends BlockStateProvider {
     }
     @Override
     public void registerStatesAndModels() {
+
+        logBlock(VHBlocksNoDatagenLoot.CHARCOAL_LOG.get());
         
         logBlock(VHBlocksNoDatagenLoot.ALDER_LOG.get());
         blockWithItem(VHBlocks.ALDER_PLANKS);

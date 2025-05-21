@@ -86,6 +86,7 @@ public class VHPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MEADOW_SAFFRON = registerKey("meadow_saffron");
     public static final ResourceKey<PlacedFeature> HEMLOCK = registerKey("hemlock");
     public static final ResourceKey<PlacedFeature> SNAKEROOT = registerKey("snakeroot");
+    public static final ResourceKey<PlacedFeature> CHARCOAL_LOG = registerKey("charcoal_log");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -355,6 +356,10 @@ public class VHPlacedFeatures {
 
         register(context, SNAKEROOT, configuredFeatures.getOrThrow(VHConfigFeatures.SNAKEROOT),
                 List.of(RarityFilter.onAverageOnceEvery(48),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, CHARCOAL_LOG, configuredFeatures.getOrThrow(VHConfigFeatures.CHARCOAL_LOG),
+                List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 

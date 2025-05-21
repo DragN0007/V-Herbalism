@@ -7,6 +7,7 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
@@ -97,6 +98,7 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> MEADOW_SAFFRON = registerKey("meadow_saffron");
     public static final ResourceKey<BiomeModifier> HEMLOCK = registerKey("hemlock");
     public static final ResourceKey<BiomeModifier> SNAKEROOT = registerKey("snakeroot");
+    public static final ResourceKey<BiomeModifier> CHARCOAL_LOG = registerKey("charcoal_log");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
@@ -506,6 +508,11 @@ public class BiomeHitter {
         context.register(SNAKEROOT, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_DENSE),
                 HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.SNAKEROOT)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(CHARCOAL_LOG, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(VHPlacedFeatures.CHARCOAL_LOG)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }
