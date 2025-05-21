@@ -26,7 +26,6 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class MossBall extends Mob implements GeoEntity {
 
-
     public MossBall(EntityType<? extends Mob> type, Level level) {
         super(type, level);
     }

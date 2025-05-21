@@ -23,6 +23,8 @@ public class VHItemModelProvider extends ItemModelProvider {
     public void registerModels() {
         simpleItem(VHItems.MOSS_BALL);
 
+        simpleItem(VHItems.MUDBALL);
+
         simpleItem(VHItems.ALDER_BARK);
         simpleBlockItem(VHBlocks.ALDER_SAPLING);
         parentRotatedBlockItem(VHBlocksNoDatagenLoot.ALDER_LOG);

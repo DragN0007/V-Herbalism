@@ -3,6 +3,8 @@
 
   "item.vherbalism.moss_ball": "Moss Ball",
   "entity.vherbalism.moss_ball": "Moss Ball",
+  "item.vherbalism.mudball": "Mudball",
+  "entity.vherbalism.mudball": "Mudball",
 
   "item.vherbalism.birch_sap": "Birch Sap",
   "tooltip.vherbalism.birch_sap.tooltip": "Helps soothe and treat Yellowcough when eaten.",

@@ -3,6 +3,7 @@ package com.dragn0007.vherbalism.items;
 import com.dragn0007.vherbalism.Herbalism;
 import com.dragn0007.vherbalism.blocks.VHBlocks;
 import com.dragn0007.vherbalism.entities.EntityTypes;
+import com.dragn0007.vherbalism.entities.Mudball;
 import com.dragn0007.vherbalism.items.custom.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -22,6 +23,9 @@ public class VHItems {
 
     public static final RegistryObject<Item> MOSS_BALL = ITEMS.register("moss_ball",
             () -> new ForgeSpawnEggItem(EntityTypes.MOSS_BALL, 0x00FFFFFF, 0x00FFFFFF, new Item.Properties().stacksTo(64)));
+
+    public static final RegistryObject<Item> MUDBALL = ITEMS.register("mudball",
+            () -> new MudballItem((new Item.Properties()).stacksTo(16)));
 
     public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
             () -> new BlackberryItem(VHBlocks.BLACKBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));

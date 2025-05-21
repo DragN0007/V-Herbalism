@@ -22,6 +22,8 @@ public class VHItemGroup {
 
                         output.accept(VHItems.MOSS_BALL.get());
 
+                        output.accept(VHItems.MUDBALL.get());
+
                         output.accept(VHBlocksNoDatagenLoot.ALDER_LOG.get());
                         output.accept(VHBlocks.ALDER_LEAVES.get());
                         output.accept(VHBlocks.ALDER_PLANKS.get());
