@@ -23,6 +23,6 @@ public class AlderTreeBarkItem extends HerbalItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.alder_bark.tooltip").withStyle(ChatFormatting.GOLD));
+        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.alder_bark.tooltip").withStyle(ChatFormatting.GRAY));
     }
 }

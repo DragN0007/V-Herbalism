@@ -25,6 +25,6 @@ public class GarlicCrop extends HerbalismCropBlock {
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.GARLIC.get();
     }
 }

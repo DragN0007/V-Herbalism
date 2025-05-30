@@ -25,6 +25,6 @@ public class WatermintCrop extends HerbalismCropBlock {
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.WATERMINT_BUNDLE.get();
     }
 }

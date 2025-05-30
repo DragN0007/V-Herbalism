@@ -1,5 +1,5 @@
 {
-  "itemGroup.vherbalism": "V-Herbalism",
+  "itemGroup.vherbalism": "SL-Herbalism",
 
   "item.vherbalism.moss_ball": "Moss Ball",
   "entity.vherbalism.moss_ball": "Moss Ball",
@@ -418,7 +418,7 @@
   "block.vherbalism.loner_scent": "Loner Scent",
   "block.vherbalism.mediator_scent": "Mediator Scent",
   "block.vherbalism.rogue_scent": "Rogue Scent",
-  "block.vherbalism.sharp_scent": "Sharp Scent",
-  "block.vherbalism.wharf_scent": "Wharf Scent",
-  "block.vherbalism.whistle_scent": "Whistle Scent"
+  "block.vherbalism.sharp_scent": "Spire Scent",
+  "block.vherbalism.wharf_scent": "Coast Scent",
+  "block.vherbalism.whistle_scent": "Valley Scent"
 }

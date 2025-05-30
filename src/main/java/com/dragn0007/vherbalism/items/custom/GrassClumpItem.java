@@ -54,6 +54,6 @@ public class GrassClumpItem extends HerbalItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.grass_clump.tooltip").withStyle(ChatFormatting.GOLD));
+        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.grass_clump.tooltip").withStyle(ChatFormatting.GRAY));
     }
 }

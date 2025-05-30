@@ -103,6 +103,6 @@ public class BayLaurelItem extends HerbalNameBlockItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.bay_laurel.tooltip").withStyle(ChatFormatting.GOLD));
+        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.bay_laurel.tooltip").withStyle(ChatFormatting.GRAY));
     }
 }

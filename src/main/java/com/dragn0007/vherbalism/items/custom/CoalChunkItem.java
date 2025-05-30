@@ -49,6 +49,6 @@ public class CoalChunkItem extends HerbalItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.coal.tooltip").withStyle(ChatFormatting.GOLD));
+        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.coal.tooltip").withStyle(ChatFormatting.GRAY));
     }
 }

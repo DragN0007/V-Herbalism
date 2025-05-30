@@ -24,6 +24,6 @@ public class WillowItem extends HerbalNameBlockItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.willow_bundle.tooltip").withStyle(ChatFormatting.GOLD));
+        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.willow_bundle.tooltip").withStyle(ChatFormatting.GRAY));
     }
 }

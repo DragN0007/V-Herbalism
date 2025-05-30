@@ -24,6 +24,6 @@ public class GoatweedItem extends ItemNameBlockItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.goatweed_bundle.tooltip").withStyle(ChatFormatting.GOLD));
+        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.goatweed_bundle.tooltip").withStyle(ChatFormatting.GRAY));
     }
 }

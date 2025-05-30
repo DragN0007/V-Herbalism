@@ -25,6 +25,6 @@ public class CeladineCrop extends HerbalismCropBlock {
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.CELADINE_BUNDLE.get();
     }
 }

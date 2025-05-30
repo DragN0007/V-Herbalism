@@ -57,7 +57,7 @@ public class VHItems {
             () -> new BurdockRootItem(new Item.Properties()));
 
     public static final RegistryObject<Item> BURNET_BUNDLE = ITEMS.register("burnet_bundle",
-            () -> new BurnetItem(VHBlocks.BURNET.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(0).build()))));
+            () -> new BurnetItem(VHBlocks.BURNET.get(), (new Item.Properties())));
 
     public static final RegistryObject<Item> CATCHWEED_BUNDLE = ITEMS.register("catchweed_bundle",
             () -> new CatchweedItem(VHBlocks.CATCHWEED.get(), (new Item.Properties())));
@@ -72,7 +72,7 @@ public class VHItems {
             () -> new CeladineJuiceItem(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> CAMOMILE_FLOWER = ITEMS.register("camomile_flower",
-            () -> new CamomileItem(VHBlocks.CAMOMILE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1F).saturationMod(0).build()))));
+            () -> new CamomileItem(VHBlocks.CAMOMILE.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> COBWEB = ITEMS.register("cobweb",
             () -> new CobwebItem(new Item.Properties()));
@@ -87,9 +87,9 @@ public class VHItems {
             () -> new ColtsfootItem(VHBlocks.COLTSFOOT.get(), (new Item.Properties())));
 
     public static final RegistryObject<Item> COMFREY_LEAF = ITEMS.register("comfrey_leaf",
-            () -> new ComfreyItem(VHBlocks.COMFREY.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build()))));
+            () -> new ComfreyItem(VHBlocks.COMFREY.get(), (new Item.Properties().stacksTo(64))));
     public static final RegistryObject<Item> COMFREY_ROOT = ITEMS.register("comfrey_root",
-            () -> new ComfreyRootItem(VHBlocks.COMFREY.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build()))));
+            () -> new ComfreyRootItem(VHBlocks.COMFREY.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> DAISY_LEAVES = ITEMS.register("daisy_leaves",
             () -> new DaisyItem(VHBlocks.DAISY.get(), (new Item.Properties())));
@@ -124,7 +124,7 @@ public class VHItems {
     public static final RegistryObject<Item> GOLDENROD_BUNDLE = ITEMS.register("goldenrod_bundle",
             () -> new GoldenrodItem(VHBlocks.GOLDENROD.get(), (new Item.Properties())));
     public static final RegistryObject<Item> GOLDENROD_POULTICE = ITEMS.register("goldenrod_poultice",
-            () -> new GoldenrodPoulticeItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build())));
+            () -> new GoldenrodPoulticeItem(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> HAWKWEED_BUNDLE = ITEMS.register("hawkweed_bundle",
             () -> new HawkweedItem(VHBlocks.HAWKWEED.get(), new Item.Properties().stacksTo(64)));
@@ -185,7 +185,7 @@ public class VHItems {
             () -> new DriedOakLeavesItem(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> POPPY_SEEDS = ITEMS.register("poppy_seeds",
-            () -> new PoppySeedsItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.DARKNESS, 500, 2), 1F).saturationMod(0).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 500, 3), 1F).saturationMod(0).build())));
+            () -> new PoppySeedsItem(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> RASPBERRY = ITEMS.register("raspberry",
             () -> new RaspberryItem(VHBlocks.RASPBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
@@ -196,7 +196,7 @@ public class VHItems {
             () -> new ParsleyItem(VHBlocks.PARSLEY.get(), new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> RAGWEED_BUNDLE = ITEMS.register("ragweed_bundle",
-            () -> new RagweedItem(VHBlocks.RAGWEED.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1F).saturationMod(0).build()))));
+            () -> new RagweedItem(VHBlocks.RAGWEED.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> RAGWORT_LEAVES = ITEMS.register("ragwort_leaves",
             () -> new RagwortItem(VHBlocks.RAGWORT.get(), new Item.Properties().stacksTo(64)));
@@ -216,7 +216,7 @@ public class VHItems {
             () -> new SheepSorrelItem(VHBlocks.SHEEP_SORREL.get(), new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> SORREL_LEAVES = ITEMS.register("sorrel_leaves",
-            () -> new SorrelItem(VHBlocks.SORREL.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.HUNGER, 300, 0), 1F).saturationMod(0).build()))));
+            () -> new SorrelItem(VHBlocks.SORREL.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> STINGING_NETTLE_LEAVES = ITEMS.register("stinging_nettle_leaves",
             () -> new StingingNettleItem(VHBlocks.STINGING_NETTLE.get(), new Item.Properties().stacksTo(64)));
@@ -247,7 +247,7 @@ public class VHItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).build())));
 
     public static final RegistryObject<Item> WINTERGREEN_BERRY = ITEMS.register("wintergreen_berry",
-            () -> new WintergreenBerryItem(VHBlocks.WINTERGREEN_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build()))));
+            () -> new WintergreenBerryItem(VHBlocks.WINTERGREEN_BUSH.get(), (new Item.Properties().stacksTo(64))));
     public static final RegistryObject<Item> WINTERGREEN_LEAVES = ITEMS.register("wintergreen_leaves",
             () -> new WintergreenLeavesItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> WINTERGREEN_LEAF_POULTICE = ITEMS.register("wintergreen_leaf_poultice",
@@ -259,32 +259,32 @@ public class VHItems {
             () -> new WoodSorrelLeafPoulticeItem(new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> YARROW_BUNDLE = ITEMS.register("yarrow_bundle",
-            () -> new YarrowItem(VHBlocks.YARROW.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1F).saturationMod(0).build()))));
+            () -> new YarrowItem(VHBlocks.YARROW.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> DEATHBERRY = ITEMS.register("deathberry",
-            () -> new DeathberryItem(VHBlocks.DEATHBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.WITHER, 600, 0), 1F).build()))));
+            () -> new DeathberryItem(VHBlocks.DEATHBERRY_BUSH.get(), (new Item.Properties().stacksTo(64))));
     public static final RegistryObject<Item> DEATHBERRY_SEEDS = ITEMS.register("deathberry_seeds",
             () -> new DeathberrySeedsItem(VHBlocks.DEATHBERRY_BUSH.get(), new Item.Properties().stacksTo(64)));
 
     public static final RegistryObject<Item> FOXGLOVE_SEEDS = ITEMS.register("foxglove_seeds",
-            () -> new FoxgloveSeedsItem(VHBlocks.FOXGLOVE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.WITHER, 800, 3), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 800, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 0), 1F).build()))));
+            () -> new FoxgloveSeedsItem(VHBlocks.FOXGLOVE.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> HOLLYBERRY = ITEMS.register("hollyberry",
-            () -> new HollyberryItem(VHBlocks.HOLLYBERRY_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.POISON, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 800, 0), 1F).build()))));
+            () -> new HollyberryItem(VHBlocks.HOLLYBERRY_BUSH.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> HEMLOCK_BUNDLE = ITEMS.register("hemlock_bundle",
-            () -> new HemlockItem(VHBlocks.HEMLOCK.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.WITHER, 1200, 4), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 2), 1F).effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 1200, 2), 1F).build()))));
+            () -> new HemlockItem(VHBlocks.HEMLOCK.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> NIGHTSHADE_BERRY = ITEMS.register("nightshade_berry",
-            () -> new NightshadeBerryItem(VHBlocks.NIGHTSHADE_BUSH.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).effect(new MobEffectInstance(MobEffects.POISON, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 800, 0), 1F).build()))));
+            () -> new NightshadeBerryItem(VHBlocks.NIGHTSHADE_BUSH.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> MEADOW_SAFFRON_BUNDLE = ITEMS.register("meadow_saffron_bundle",
-            () -> new SaffronItem(VHBlocks.MEADOW_SAFFRON.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.POISON, 1200, 1), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 0), 1F).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1200, 2), 1F).build()))));
+            () -> new SaffronItem(VHBlocks.MEADOW_SAFFRON.get(), (new Item.Properties().stacksTo(64))));
 
     public static final RegistryObject<Item> SNAKEROOT_BUNDLE = ITEMS.register("snakeroot_bundle",
-            () -> new SnakerootItem(VHBlocks.SNAKEROOT.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.WITHER, 1200, 4), 1F).effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 2), 1F).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1200, 2), 1F).effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 1200, 2), 1F).build()))));
+            () -> new SnakerootItem(VHBlocks.SNAKEROOT.get(), (new Item.Properties().stacksTo(64))));
     public static final RegistryObject<Item> SNAKEROOT_PETALS = ITEMS.register("snakeroot_petals",
-            () -> new SnakerootPetalsItem(VHBlocks.SNAKEROOT.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(0).effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 0), 1F).effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 3), 1F).build()))));
+            () -> new SnakerootPetalsItem(VHBlocks.SNAKEROOT.get(), (new Item.Properties().stacksTo(64))));
 
 
     public static final RegistryObject<Item> BIRCH_SAP = ITEMS.register("birch_sap",

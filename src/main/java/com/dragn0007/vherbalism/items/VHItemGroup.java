@@ -152,9 +152,9 @@ public class VHItemGroup {
 
                         output.accept(VHBlocks.KITTYPET_SCENT.get());
                         output.accept(VHBlocks.LONER_SCENT.get());
-                        output.accept(VHBlocks.MEDIATOR_SCENT.get());
-                        output.accept(VHBlocks.ROGUE_SCENT.get());
-                        output.accept(VHBlocks.SHARP_SCENT.get());
+//                        output.accept(VHBlocks.MEDIATOR_SCENT.get());
+//                        output.accept(VHBlocks.ROGUE_SCENT.get());
+//                        output.accept(VHBlocks.SHARP_SCENT.get());
                         output.accept(VHBlocks.WHARF_SCENT.get());
                         output.accept(VHBlocks.WHISTLE_SCENT.get());
 

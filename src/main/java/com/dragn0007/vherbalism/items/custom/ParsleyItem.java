@@ -46,6 +46,6 @@ public class ParsleyItem extends HerbalNameBlockItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.parsley_leaves.tooltip").withStyle(ChatFormatting.GOLD));
+        pTooltipComponents.add(Component.translatable("tooltip.vherbalism.parsley_leaves.tooltip").withStyle(ChatFormatting.GRAY));
     }
 }

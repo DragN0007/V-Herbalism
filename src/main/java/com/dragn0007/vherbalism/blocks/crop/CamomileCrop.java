@@ -25,6 +25,6 @@ public class CamomileCrop extends HerbalismCropBlock {
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.CAMOMILE_FLOWER.get();
     }
 }

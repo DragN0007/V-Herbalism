@@ -25,6 +25,6 @@ public class GoatweedCrop extends HerbalismCropBlock {
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.GOATWEED_BUNDLE.get();
     }
 }

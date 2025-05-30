@@ -25,6 +25,6 @@ public class ChervilCrop extends HerbalismCropBlock {
 
     @Override
     public ItemLike getBaseSeedId() {
-        return VHItems.CATMINT_LEAVES.get();
+        return VHItems.CHERVIL.get();
     }
 }
