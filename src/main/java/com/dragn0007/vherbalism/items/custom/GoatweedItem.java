@@ -1,5 +1,6 @@
 package com.dragn0007.vherbalism.items.custom;
 
+import com.dragn0007.vherbalism.items.custom.base.HerbalNameBlockItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -12,7 +13,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class GoatweedItem extends ItemNameBlockItem {
+public class GoatweedItem extends HerbalNameBlockItem {
 
     public GoatweedItem(Block block, Properties properties) {
         super(block, properties);

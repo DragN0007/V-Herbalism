@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "visionssmp:paw"
+      "item": "secondlight_mod:paws"
     }
   ],
   "result": {

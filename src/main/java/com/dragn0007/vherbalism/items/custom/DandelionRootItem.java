@@ -1,5 +1,6 @@
 package com.dragn0007.vherbalism.items.custom;
 
+import com.dragn0007.vherbalism.items.custom.base.HerbalNameBlockItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.network.chat.Component;
@@ -18,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DandelionRootItem extends ItemNameBlockItem {
+public class DandelionRootItem extends HerbalNameBlockItem {
 
     public DandelionRootItem(Block block, Properties properties) {
         super(block, properties);
